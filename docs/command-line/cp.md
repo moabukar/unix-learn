@@ -34,10 +34,12 @@ One thing to note, if you copy a file over to a directory that has the same file
 
 Copy over a couple of files, be careful not to overwrite anything important.
 
-## Quiz Question
 
-What flag do you need to specify to copy over a directory?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>What flag do you need to specify to copy over a directory?</summary>
 -r
+</details>

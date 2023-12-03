@@ -36,10 +36,11 @@ Commands have things called flags (or arguments or options, whatever you want to
 
 Run ls with different flags and see the output you receive.
 
-## Quiz Question
+## Quiz Questions 
 
-What command would you use to see hidden files?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command would you use to see hidden files?</summary>
 ls -a
+</details>

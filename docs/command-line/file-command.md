@@ -14,10 +14,12 @@ To find out what kind of file a file is, you can use the file command. It will s
 
 Run the file command on a few different directories and files and note the output.
 
-## Quiz Question
 
-What command can you use to find the file type of a file?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>What command can you use to find the file type of a file?</summary>
 file
+</details>

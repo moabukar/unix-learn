@@ -22,10 +22,12 @@ One cool thing to note is that find doesn’t stop at the directory you are sear
 <li>Find a file from the root directory that has the word net in it.</li>
 </ol>
 
-## Quiz Question
+## Quiz Questions 
 
-What option should I specify for find if I want to search by name?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What option should I specify for find if I want to search by name?
+</summary>
 -name
+</details>

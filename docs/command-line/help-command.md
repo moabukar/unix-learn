@@ -16,10 +16,11 @@ Not all developers who ship out executables will conform to this standard, but i
 
 Run help on the echo command, logout command and pwd command.
 
-## Quiz Question
+## Quiz Questions 
 
-How do you get quick command line help for built-in bash commands?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How do you get quick command line help for built-in bash commands?</summary>
 help
+</details>

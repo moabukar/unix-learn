@@ -18,10 +18,11 @@ Or if you are working out of a terminal GUI, you can just close the terminal, se
 
 Exit out of the shell and see what happens. Make sure you don't need to do anymore work in that shell.
 
-## Quiz Question
+## Quiz Questions 
 
-How can you exit from the shell?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How can you exit from the shell?</summary>
 exit
+</details>

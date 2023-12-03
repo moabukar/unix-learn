@@ -12,10 +12,11 @@ It’s not great for viewing large files and it’s only meant for short content
 
 Run cat on different files and directories. Then try to cat multiple files. 
 
-## Quiz Question
+## Quiz Questions 
 
-What's a good way to see the contents of a file?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What's a good way to see the contents of a file?</summary>
 cat
+</details>

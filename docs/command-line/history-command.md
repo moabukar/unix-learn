@@ -24,10 +24,11 @@ While we are talking about useful things, one of the most useful features in any
 
 Navigate through your previous command history with the Up and Down keys. Play around with ctrl-R reverse search. 
 
-## Quiz Question
+## Quiz Questions 
 
-What is the command to clear the terminal? 
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the command to clear the terminal?</summary>
 clear
+</details>

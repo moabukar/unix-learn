@@ -20,10 +20,11 @@ You can remove aliases with the unalias command:
 
 Create a couple of aliases then remove them.
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to make an alias?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to make an alias?</summary>
 alias
+</details>

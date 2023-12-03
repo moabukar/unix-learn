@@ -48,16 +48,35 @@ nav:
         - Help: command-line/help-command.md
         - History: command-line/history-command.md
         - Less: command-line/less-command.md
+        - List: command-line/ls-command.md
+        - Man: command-line/man-command.md
+        - Mkdir: command-line/mkdir-command.md
+        - Move: command-line/mv-command.md
+        - Pwd: command-line/pwd-command.md
+        - Remove: command-line/rm-command.md
+        - Shell: command-line/the-shell.md
+        - Touch: command-line/touch-command.md
+        - What is: command-line/whatis-command.md
+    - Text Maniplutaion:
+        - Cut: text-manipulation/cut-command.md
+        - Env: text-manipulation/env-command.md
+        - Expand: text-manipulation/expand-command.md
+        - Grep: text-manipulation/grep-command.md
+        - Head: text-manipulation/head-command.md
+        - Pipe/Tee: text-manipulation/pipe-tee-command.md
+        - Sort: text-manipulation/sort-command.md
+        - Tail: text-manipulation/tail-command.md
+        - Translate (TR): text-manipulation/tr-translate-command.md
     - DNS:
         - What is DNS?: dns/what-is-dns.md
-        - DNS-Components: dns/dns-components.md
-        - DNS-Process: dns/dns-process.md
-        - DNS-Setup: dns/dns-setup.md
-        - DNS-Tools: dns/dns-tools.md
+        - Components: dns/dns-components.md
+        - Process: dns/dns-process.md
+        - Setup: dns/dns-setup.md
+        - Tools: dns/dns-tools.md
         - etc-hosts: dns/etc-hosts.md
     - Networking Fundamentals:
-        - OSI-Model: network-fundamentals/osi-model.md
-        - TCP-IP: network-fundamentals/tcp-ip-model.md
+        - OSI Model: network-fundamentals/osi-model.md
+        - TCP/IP Model: network-fundamentals/tcp-ip-model.md
         - Network Basics: network-fundamentals/network-basics.md
     - Routing:
         - What is a router: routing/what-is-a-router.md
@@ -81,11 +100,11 @@ nav:
         - Disk partitioning: filesystem/disk-partitioning.md
         - Anatomy of a disk: filesystem/anatomy-of-a-disk.md
     - Kernel:
-        - Kernel Overview: kernel/kernel-overview.md
-        - Kernel Installation: kernel/kernel-installation.md
-        - Kernel Modules: kernel/kernel-modules.md
-        - Kernel Location: kernel/kernel-location.md
-        - Kernel Privilege Levels: kernel/kernel-privilege-levels.md
+        - Overview: kernel/kernel-overview.md
+        - Installation: kernel/kernel-installation.md
+        - Modules: kernel/kernel-modules.md
+        - Location: kernel/kernel-location.md
+        - Privilege Levels: kernel/kernel-privilege-levels.md
         - System calls: kernel/system-calls.md
     - Network Troubleshooting:
         - Ping: network-troubleshooting/ping.md
@@ -98,15 +117,15 @@ nav:
         - User Management Tools: user-management/user-management-tools.md
         - Root User: user-management/root-user.md
     - Linux Boot Process:
-        - Boot Process Overview: linux-process/boot-process-overview.md
-        - Boot Process BIOS: linux-process/boot-process-bios.md
-        - Boot Process Bootloader: linux-process/boot-process-bootloader.md
-        - Boot Process Kernel: linux-process/boot-process-kernel.md
-        - Boot Process Init: linux-process/boot-process-init.md
+        - Overview: linux-process/boot-process-overview.md
+        - (1) BIOS: linux-process/boot-process-bios.md
+        - (2) Bootloader: linux-process/boot-process-bootloader.md
+        - (3) Kernel: linux-process/boot-process-kernel.md
+        - (4) Init: linux-process/boot-process-init.md
     - Subnetting:
         - Subnets: subnetting/subnets.m
-        - ipv4: subnetting/ipv4.md
-        - ipv6: subnetting/ipv6.md
+        - IPv4: subnetting/ipv4.md
+        - IPv6: subnetting/ipv6.md
         - NAT: subnetting/nat.md
         - CIDR: subnetting/cidr.md
     - Access:
@@ -122,7 +141,15 @@ nav:
         - DD command: devices/dd.md
         - Sysfs: devices/sysfs.md
         - Udev: devices/udev.md
-
+    - Process Utilisation:
+        - Monitoring: process-utilization/continuous-monitoring.md
+        - CPU Monitoring: process-utilization/cpu-monitoring.md
+        - Cron Jobs: process-utilization/cron-jobs.md
+        - I/O Monitoring: process-utilization/io-monitoring.md
+        - Memory Monitoring: process-utilization/memory-monitoring.md
+        - Process Threads: process-utilization/process-threads.md
+        - Tracking Processes lsof: process-utilization/tracking-processes-lsof.md
+        - Tracking Processes top: process-utilization/tracking-processes-top.md
 
 
 - Contribute: CONTRIBUTING.md

@@ -23,10 +23,12 @@ Use the following command to navigate through less:
 
 Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file.
 
-## Quiz Question
 
-How do you quit out of a less command?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>How do you quit out of a less command?</summary>
 q
+</details>

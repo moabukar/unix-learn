@@ -44,10 +44,12 @@ Give them a try!
 <li>Run the cd command without any flags, where does it take you?</li>
 </ol>
 
-## Quiz Question
 
-If you are in /home/pete/Pictures and wanted to go to /home/pete, what’s a good shortcut to use?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>If you are in /home/mo/Documents and wanted to go to /home/mo, what’s a good shortcut to use?</summary>
 cd ..
+</details>
