@@ -1,7 +1,5 @@
 # tail
 
-## Lesson Content
-
 Similar to the head command, the tail command lets you see the last 10 lines of a file by default.
 
 <pre>$ tail /var/log/syslog</pre>
@@ -22,10 +20,11 @@ Look at the man page of tail and read some of the other commands we didn't discu
 
 <pre>$ man tail</pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What is the flag used to follow a file in tail?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the flag used to follow a file in tail?</summary>
 -f
+</details>

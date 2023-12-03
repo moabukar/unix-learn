@@ -1,6 +1,4 @@
-# uniq (Unique)
-
-## Lesson Content
+# uniq (unique)
 
 The uniq (unique) command is another useful tool for parsing text.
 
@@ -87,10 +85,11 @@ paper</pre>
 
 What result would you get if you tried uniq -uc?
 
-## Quiz Question
+## Quiz Questions 
 
-What command would you use to remove duplicates in a file?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command would you use to remove duplicates in a file?</summary>
 uniq
+</details>

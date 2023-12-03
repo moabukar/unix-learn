@@ -1,7 +1,5 @@
 # stdout (Standard Out)
 
-## Lesson Content
-
 By now, we've become familiar with many commands and their output and that brings us to our next subject I/O (input/output) streams. Let's run the following command and we'll discuss how this works. 
 
 <pre>$ echo Hello World > peanuts.txt</pre>
@@ -41,8 +39,17 @@ $ > somefile.txt
 
 ## Quiz Question
 
-What redirector do you use to append output to a file? 
+
 
 ## Quiz Answer
 
+
+
+## Quiz Questions 
+
+Click the right arrow to view the answers
+
+<details>
+<summary>What redirector do you use to append output to a file? </summary>
 >>
+</details>

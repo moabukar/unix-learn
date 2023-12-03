@@ -1,7 +1,5 @@
 # pipe and tee
 
-## Lesson Content
-
 Let's get into some plumbing now, not really but kinda. Let's try a command: 
 
 <pre>$ ls -la /etc</pre>
@@ -23,10 +21,11 @@ You should see the output of ls on your screen and if you open up the peanuts.tx
 Try the following commands: 
 <pre>$ ls | tee peanuts.txt banan.txt</pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What key represents the pipe operator?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
-|
+<details>
+<summary>What key represents the pipe operator?</summary>
+"|"
+</details>

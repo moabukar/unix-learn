@@ -1,7 +1,5 @@
 # stdin (Standard In)
 
-## Lesson Content
-
 In our previous lesson we learned that we have different stdout streams we can use, such as a file or the screen. Well there are also different standard input (stdin) streams we can use as well. We know that we have stdin from devices like the keyboard, but we can use files, output from other processes and the terminal as well, let's see an example. 
 
 Let's use the peanuts.txt file in the previous lesson for this example, remember it had the text Hello World in it. 
@@ -21,10 +19,11 @@ $ ls <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt
 $ pwd <b>&lt;</b> peanuts.txt <b>&gt;</b> banana.txt
 </pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What redirector do you use to redirect stdin?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What redirector do you use to redirect stdin?</summary>
 <
+</details>

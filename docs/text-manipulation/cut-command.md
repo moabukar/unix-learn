@@ -1,7 +1,5 @@
 # cut
 
-## Lesson Content
-
 We're gonna learn a couple of useful commands that you can use to process text. Before we get started, let's create a file that we'll be working with. Copy and paste the following command, once you do that add a TAB in between lazy and dog (hold down Ctrl-v + TAB).
 
 <pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>
@@ -35,10 +33,11 @@ $ cut -c 5- sample.txt
 $ cut -c -5 sample.txt
 </pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What command would you use to get the first character of every line in a file?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command would you use to get the first character of every line in a file?</summary>
 cut -c 1
+</details>

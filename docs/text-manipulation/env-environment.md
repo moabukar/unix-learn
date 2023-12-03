@@ -1,12 +1,11 @@
-# env (Environment)
+# env (environment)
 
-## Lesson Content
 
 Run the following command: 
 
 <pre>$ echo $HOME</pre>
 
-You should see the path to your home directory, mine looks like /home/pete. 
+You should see the path to your home directory, mine looks like /home/mo. 
 
 What about this command? 
 
@@ -25,7 +24,7 @@ Here is a short example:
 <pre>
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin
 PWD=/home/user
-USER=pete
+USER=mo
 </pre>
 
 
@@ -46,10 +45,11 @@ Let's say you had tons of binaries you wanted to run out of that directory, you 
 What does the following output? Why?
 <pre>$ echo $HOME</pre>
 
-## Quiz Question
+## Quiz Questions 
 
-How do you see your environment variables?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How do you see your environment variables?</summary>
 env
+</details>

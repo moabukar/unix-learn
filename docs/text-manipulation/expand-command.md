@@ -1,7 +1,5 @@
 # expand and unexpand
 
-## Lesson Content
-
 In our lesson on the cut command, we had our sample.txt file that contained a tab. Normally TABs would usually show a noticeable difference but some text files don't show that well enough. Having TABs in a text file may not be the desired spacing you want. To change your TABs to spaces, use the expand command. 
 
 <pre>$ expand sample.txt</pre>
@@ -18,10 +16,11 @@ Opposite to expand, we can convert back each group of spaces to a TAB with the u
 
 What happens if you just type expand with no file input?
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to convert TABs to spaces? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to convert TABs to spaces? </summary>
 expand
+</details>

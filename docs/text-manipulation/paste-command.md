@@ -1,7 +1,5 @@
 # paste
 
-## Lesson Content
-
 The paste command is similar to the cat command, it merges lines together in a file. Let's create a new file with the following contents: 
 
 <pre>
@@ -28,10 +26,11 @@ Now everything should be on one line delimited by spaces.
 
 Try to paste multiple files together, what happens?
 
-## Quiz Question
+## Quiz Questions 
 
-What flag do you use with paste to make everything go on one line? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What flag do you use with paste to make everything go on one line? </summary>
 -s
+</details>

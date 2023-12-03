@@ -1,7 +1,5 @@
 # wc and nl
 
-## Lesson Content
-
 The wc (word count) command shows the total count of words in a file. 
 
 <pre>$ wc /etc/passwd
@@ -34,10 +32,11 @@ turtles
 
 How would you get the total count of lines by using the nl file without searching through the entire output? Hint: Use some of the other commands you learned in this course.
 
-## Quiz Question
+## Quiz Questions 
 
-What command would you use to get the total number of words in a file and just the words?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command would you use to get the total number of words in a file and just the words?</summary>
 wc -w
+</details>

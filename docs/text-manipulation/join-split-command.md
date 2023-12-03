@@ -1,7 +1,5 @@
 # join and split
 
-## Lesson Content
-
 The join command allows you to join multiple files together by a common field: 
 
 Let's say I had two files that I wanted to join together:
@@ -55,10 +53,11 @@ This will split it into different files, by default it will split them once they
 
 Join two files with different number of lines in each file, what happens?
 
-## Quiz Question
+## Quiz Questions 
 
-What command would you use to join files named cat dog cow?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
-join cat dog cow
+<details>
+<summary>What command would you use to join files named foo bar tar?</summary>
+join foo bar tar
+</details>

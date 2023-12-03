@@ -1,7 +1,5 @@
 # stderr (Standard Error)
 
-## Lesson Content
-
 Let's try something a little different now, let's try to list the contents of a directory that doesn't exist on your system and redirect the output to the peanuts.txt file again.
 
 <pre>$ ls /fake/directory > peanuts.txt </pre>
@@ -40,10 +38,11 @@ What is the following command doing?
 
 <pre>$ ls /fake/directory >> /dev/null 2>&1</pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What is the redirector for stderr?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the redirector for stderr?</summary>
 2>
+</details>

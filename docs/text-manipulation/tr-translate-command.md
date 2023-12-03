@@ -1,6 +1,4 @@
-# tr (Translate)
-
-## Lesson Content
+# tr (translate)
 
 The tr (translate) command allows you to translate a set of characters into another set of characters. Let's try an example of translating all lower case characters to uppercase characters. 
 
@@ -17,10 +15,11 @@ Try the following command what happens?
 <pre>$ tr -d ello
 hello</pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to translate characters?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to translate characters?</summary>
 tr
+</details>

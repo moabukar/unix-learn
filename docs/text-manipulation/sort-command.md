@@ -1,7 +1,5 @@
 # sort
 
-## Lesson Content
-
 The sort command is useful for sorting lines.
 
 <pre>
@@ -48,8 +46,17 @@ The real power of sort comes with its ability to be combined with other commands
 
 ## Quiz Question
 
-What flag do you use to do a reverse sort?
+
 
 ## Quiz Answer
 
+
+
+## Quiz Questions 
+
+Click the right arrow to view the answers
+
+<details>
+<summary>What flag do you use to do a reverse sort?</summary>
 -r
+</details>
