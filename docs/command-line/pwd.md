@@ -25,14 +25,11 @@ Navigation of the filesystem, much like real life is helpful if you know where y
 
 Where are you? Where am I? Give it a try.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+- Click the right arrow to view the answers
 
-## Quiz Question
-
-How do I find what directory you are currently in?
-
-## Quiz Answer
-
+<details>
+<summary>How do I find what directory you are currently in?</summary>
 pwd
+</details>

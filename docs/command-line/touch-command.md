@@ -20,10 +20,11 @@ There are many other ways to create files that involve other things like redirec
 <li>Touch the file and check the timestamp once again</li>
 </ol>
 
-## Quiz Question
+## Quiz Questions 
 
-How do you create a file called myfile?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How do you create a file called myfile?</summary>
 touch myfile
+</details>

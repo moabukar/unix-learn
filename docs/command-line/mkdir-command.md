@@ -14,10 +14,12 @@ You can also create subdirectories at the same time with the -p (parent flag).
 
 Make a couple of directories and move some files into that directory.
 
-## Quiz Question
 
-What command is use to make a directory?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>What command is use to make a directory?</summary>
 mkdir
+</details>

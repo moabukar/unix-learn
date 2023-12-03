@@ -25,10 +25,11 @@ Try some other Linux commands and see what they output:
 <li>$ whoami</li>
 </ol>
 
-## Quiz Question
+## Quiz Questions 
 
-What should be outputted to the display when you type echo Hello World?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
-Hello World
+<details>
+<summary>What should be outputted to the display when you type echo FooBar?</summary>
+FooBar
+</details>

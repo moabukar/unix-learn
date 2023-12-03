@@ -14,10 +14,11 @@ Try it out on a few commands to get more information about them.
 
 Run the man command on the ls command.
 
-## Quiz Question
+## Quiz Questions 
 
-How do you see the manuals for a command?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How do you see the manuals for a command?</summary>
 man
+</details>

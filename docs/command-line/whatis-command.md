@@ -12,10 +12,12 @@ The description gets sourced from the manual page of each command. If you ran wh
 
 Run the whatis command on the less command.
 
-## Quiz Question
 
-What command can you use to see a small description of a command?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>What command can you use to see a small description of a command?</summary>
 whatis
+</details>

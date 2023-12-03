@@ -32,10 +32,12 @@ Let’s say you did want to mv a file to overwrite the previous one. You can als
 
 Rename a file, then move that file to a different directory.
 
-## Quiz Question
 
-How do you rename a file called cat to dog?
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
-mv cat dog
+<details>
+<summary>How do you rename a file called foo to bar?</summary>
+mv foo bar
+</details>
