@@ -22,3 +22,7 @@
 ### Chapter 8: [Network Troubleshooting](https://moabukar.github.io/unix-learn/network-troubleshooting/ping)
 
 ### Chapter 9: [User Management](https://moabukar.github.io/unix-learn/user-management/users-and-groups)
+
+### Chapter 10: [Linx Boot Process](https://moabukar.github.io/unix-learn/booting/boot-process-overview)
+
+### Chapter 11: [Subnetting](https://moabukar.github.io/unix-learn/subnetting/subnets)

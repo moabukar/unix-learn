@@ -59,7 +59,7 @@ nav:
         - OSI-Model: network-fundamentals/osi-model.md
         - TCP-IP: network-fundamentals/tcp-ip-model.md
         - Network Basics: network-fundamentals/network-basics.md
-    - Routing & Subnets:
+    - Routing:
         - What is a router: routing/what-is-a-router.md
         - Routing Protocols: routing/routing-protocols.md
         - Routing Table: routing/routing-table.md
@@ -97,6 +97,19 @@ nav:
         - Users & Groups: user-management/users-and-groups.md
         - User Management Tools: user-management/user-management-tools.md
         - Root User: user-management/root-user.md
+    - Linux Boot Process:
+        - Boot Process Overview: linux-process/boot-process-overview.md
+        - Boot Process BIOS: linux-process/boot-process-bios.md
+        - Boot Process Bootloader: linux-process/boot-process-bootloader.md
+        - Boot Process Kernel: linux-process/boot-process-kernel.md
+        - Boot Process Init: linux-process/boot-process-init.md
+    - Subnetting:
+        - Subnets: subnetting/subnets.m
+        - ipv4: subnetting/ipv4.md
+        - ipv6: subnetting/ipv6.md
+        - NAT: subnetting/nat.md
+        - CIDR: subnetting/cidr.md
+
 
 
 - Contribute: CONTRIBUTING.md
