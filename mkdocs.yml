@@ -30,8 +30,8 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: cyan
-      accent: cyan
+      primary: indigo
+      accent: indigo
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
