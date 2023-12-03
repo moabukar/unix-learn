@@ -34,8 +34,6 @@ protobuf==4.25.1
 pydyf==0.8.0
 Pygments==2.17.2
 pymdown-extensions==10.5
-pyobjc==10.0
-pyobjc-core==10.0
 pyphen==0.14.0
 python-dateutil==2.8.2
 PyYAML==6.0.1
