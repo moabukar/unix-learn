@@ -26,12 +26,22 @@ There it is, the (very) simple explanation of the Linux boot process. We will go
 
 ## Exercise
 
-Reboot your system and see if you can spot each step as your machine boots up. 
+Reboot your system (Linux server) and see if you can spot each step as your machine boots up. 
 
-## Quiz Question
+## Quiz Questions 
 
-What is the last stage in the Linux boot process?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the last stage in the Linux boot process?</summary>
 init
+</details>
+
+
+<details>
+<summary>What are the stages in order?</summary>
+1. BIOS
+2. Bootloader
+3. Kernel
+4. Init
+</details>

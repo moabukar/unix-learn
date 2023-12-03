@@ -20,10 +20,12 @@ UEFI stores all the information about startup in an .efi file. This file is stor
 
 Go into your BIOS menu and see if you have UEFI booting enabled. 
 
-## Quiz Question
 
-What does the BIOS load? 
+## Quiz Questions 
 
-## Quiz Answer
+- Click the right arrow to view the answers
 
+<details>
+<summary>What does the BIOS load? </summary>
 bootloader
+</details>

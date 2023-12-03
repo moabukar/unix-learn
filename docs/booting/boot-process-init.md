@@ -20,14 +20,12 @@ This is the new standard for init, it is goal oriented. Basically you have a goa
 
 We have an entire course on Init systems where we will dive into each of these systems in more detail.
 
-## Exercise
 
-No exercises for this lesson.
+## Quiz Questions 
 
-## Quiz Question
+- Click the right arrow to view the answers
 
-What is the newest standard for init?
-
-## Quiz Answer
-
+<details>
+<summary>What is the newest standard for init?</summary>
 systemd
+</details>

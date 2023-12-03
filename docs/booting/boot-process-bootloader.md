@@ -27,10 +27,11 @@ So we know that the bootloader's main goal is to load up the kernel, but where d
 
 If you have GRUB as your bootloader, go into the GRUB menu with 'e' and take a look at the settings.
 
-## Quiz Question
+## Quiz Questions 
 
-What kernel parameter makes it so you don't see bootup messages?
+- Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What kernel parameter makes it so you don't see bootup messages?</summary>
 quiet
+</details>

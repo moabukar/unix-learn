@@ -12,14 +12,11 @@ There is a bit of a chicken and egg problem when we talk about the kernel bootup
 
 Now the kernel has all the modules it needs to create a root device and mount the root partition. Before you go any further though, the root partition is actually mounted in read-only mode first so that fsck can run safely and check for system integrity. Afterwards it remounts the root filesystem in read-write mode. Then the kernel locates the init program and executes it. 
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+- Click the right arrow to view the answers
 
-## Quiz Question
-
-What is used in modern systems to load up a temporary root filesystem?
-
-## Quiz Answer
-
+<details>
+<summary>What is used in modern systems to load up a temporary root filesystem?</summary>
 initramfs
+</details>
