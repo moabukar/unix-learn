@@ -17,16 +17,20 @@ There is also one more useful ls flag, -l for long, this shows a detailed list o
 
 <pre>$ ls -l</pre>
 
-<pre>mo@icebox:~$ ls -l
-total 80
-drwxr-x--- 7 mo foobargroup   4096 Nov 20 16:37 Desktop
-drwxr-x--- 2 mo foobargroup   4096 Oct 19 10:46  Documents
-drwxr-x--- 4 mo foobargroup   4096 Nov 20 09:30 Downloads
-drwxr-x--- 2 mo foobargroup   4096 Oct  7 13:13   Music
-drwxr-x--- 2 mo foobargroup   4096 Sep 21 14:02 Pictures
-drwxr-x--- 2 mo foobargroup   4096 Jul 27 12:41   Public
-drwxr-x--- 2 mo foobargroup   4096 Jul 27 12:41   Templates
-drwxr-x--- 2 mo foobargroup   4096 Jul 27 12:41   Videos</pre>
+<pre>mo:~$ ls -l
+total 19592
+drwx------@   8 mohameda  staff      256  1 Jun  2023 Applications
+-rw-r--r--    1 mohameda  staff     1093 14 Sep  2022 Brewfile
+-rw-r--r--@   1 mohameda  staff     7015  6 Jul 16:35 CHANGELOG.md
+drwx------@   8 mohameda  staff      256 28 Nov 00:38 Desktop
+drwx------@  60 mohameda  staff     1920 27 Nov 18:15 Documents
+drwx------@ 342 mohameda  staff    10944  3 Dec 19:45 Downloads
+-rw-r--r--    1 mohameda  staff        0 27 Nov 20:19 JO.txt
+-rw-r--r--    1 mohameda  staff        0 27 Nov 20:19 L.txt
+-rw-r--r--    1 mohameda  staff     1084  6 Oct  2021 LICENSE
+drwx------@  94 mohameda  staff     3008 28 Nov 00:16 Library
+drwx------    8 mohameda  staff      256 28 Nov 00:23 Movies
+drwx------+   5 mohameda  staff      160 28 Nov 00:23 Music
 
 Commands have things called flags (or arguments or options, whatever you want to call it) to add more functionality. See how we added -a and -l, well you can add them both together with -la. The order of the flags determines which order it goes in, most of the time this doesn’t really matter so you can also do ls -al and it would still work.
 
