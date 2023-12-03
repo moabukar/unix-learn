@@ -1,7 +1,5 @@
 # Kernel Installation
 
-## Lesson Content
-
 Ok, now that we've got all that boring stuff out of the way, let's talk about actually installing and modifying kernels. You can install multiple kernels on your system, remember in our lesson on the boot process? In our GRUB menu we can choose which kernel to boot to. 
 
 To see what kernel version you have on your system, use the following command:
@@ -30,10 +28,11 @@ There are many different kernel versions, some are used as LTS (long term suppor
 <li>Research the different versions of kernels available</li>
 </ol>
 
-## Quiz Question
+## Quiz Questions 
 
-How do you see the kernel version of your system?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How do you see the kernel version of your system?</summary>
 uname -r
+</details>

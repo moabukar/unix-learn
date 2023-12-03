@@ -1,7 +1,5 @@
 # Kernel Location
 
-## Lesson Content
-
 What happens when you install a new kernel? Well it actually adds a couple of files to your system, these files are usually added to the /boot directory. 
 
 You will see multiple files for different kernel versions:
@@ -19,10 +17,11 @@ If your /boot directory runs out of space, you can always delete old versions of
 
 Go into your boot directory and see what files are in there. 
 
-## Quiz Question
+## Quiz Questions 
 
-What is the kernel image called in /boot?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the kernel image called in /boot?</summary>
 vmlinuz
+</details>

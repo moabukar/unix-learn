@@ -1,7 +1,5 @@
 # Kernel Modules
 
-## Lesson Content
-
 Let's say I have a sweet ride, I invest a lot of time and money into it. I add a spoiler, hitch, bike rack and other random things. These components don't actually change the core functionality of the car and I can remove and add them very easily. The kernel uses the same concept with kernel modules.
 
 The kernel in itself is a monolithic piece of software, when we want to add support for a new type of keyboard, we don't write this code directly into the kernel code. Just as we wouldn't meld a bike rack to our car (well maybe some people would do that). Kernel modules are pieces of code that can be loaded and unloaded into the kernel on demand. They allow us to extend the functionality of the kernel without actually adding to the core kernel code. We can also add modules and not have to reboot the system (in most cases).
@@ -44,10 +42,11 @@ blacklist peanut_butter
 
 Unload your bluetooth module with modprobe and see what happens. How will you fix this?
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to unload a module?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to unload a module?</summary>
 modprobe -r
+</details>

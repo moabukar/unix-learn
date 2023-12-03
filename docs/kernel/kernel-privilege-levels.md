@@ -1,7 +1,5 @@
 # Privilege Levels
 
-## Lesson Content
-
 The next few lessons get pretty theoretical, so if you're looking for some practical stuff you can skip ahead and come back later.
 
 Why do we have different abstraction layers for user space and kernel? Why can't you combine both powers into one layer? Well there is a very good reason why these two layers exist separately. They both operate in different modes, the kernel operates in kernel mode and the user space operates in user mode. 
@@ -12,14 +10,11 @@ These different modes are called privilege levels (aptly named for the levels of
 
 The answer is with system calls, system calls allow us to perform a privileged instruction in kernel mode and then switch back to user mode.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What ring number has the highest privileges?
-
-## Quiz Answer
-
+<details>
+<summary>What ring number has the highest privileges?</summary>
 0
+</details>
