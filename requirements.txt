@@ -2,6 +2,8 @@ mkdocs==1.2.2
 mkdocs-traefiklabs>=100.0.7
 mkdocs-material
 mkdocs-dracula-theme
+# pillow cairosvg
+mkdocs-git-revision-date-plugi
 
 appdirs==1.4.4
 CacheControl==0.12.6

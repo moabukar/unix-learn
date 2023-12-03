@@ -20,4 +20,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-dracula-theme
       - run: pip install pillow cairosvg
+      # - pip3 install mkdocs-git-revision-date-plugi
+      - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
