@@ -1,6 +1,4 @@
-# swap
-
-## Lesson Content
+# Swap
 
 In our previous example, I showed you how to see your partition table, let's revisit that example, more specifically this line:
 
@@ -29,10 +27,11 @@ Generally you should allocate about twice as much swap space as you have memory.
 
 Partition the free space in the USB drive for swap space.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the command to enable swap space on a device? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the command to enable swap space on a device? </summary>
 swapon
+</details>

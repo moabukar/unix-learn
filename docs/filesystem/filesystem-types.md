@@ -1,7 +1,5 @@
 # Filesystem Types
 
-## Lesson Content
-
 There are many different filesystem implementations available. Some are faster than others, some support larger capacity storage and others only work on smaller capacity storage. Different filesystems have different ways of organizing their data and we'll go into detail about what types of filesystems there are. Since there are so many different implementations available, applications need a way to deal with the different operations. So there is something called the Virtual File System (VFS) abstraction layer. It is a layer between applications and the different filesystem types, so no matter what filesystem you have, your applications will be able to work with it. 
 
 You can have many filesystem on your disks, depending on how they are partitioned and we will go through that in a coming lesson.
@@ -39,10 +37,11 @@ The <b>df</b> command reports file system disk space usage and other details abo
 
 Do a little bit of research online on the other filesystem types: ReiserFS, ZFS, JFS and others you can find.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the common Linux filesystem type?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the common Linux filesystem type?</summary>
 ext4
+</details>

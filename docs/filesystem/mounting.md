@@ -1,6 +1,4 @@
-# mount and umount
-
-## Lesson Content
+# Mounting
 
 Before you can view the contents of your filesystem, you will have to mount it. To do that I'll need the device location, the filesystem type and a mount point, the mount point is a directory on the system where the filesystem is going to be attached. So we basically want to mount our device to a mount point. 
 
@@ -37,10 +35,11 @@ Most of the time you won't need to mount devices via their UUIDs, it's much easi
 
 Look at the manpage for mount and umount and see what other options you can use.
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to attach a filesystem?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to attach a filesystem?</summary>
 mount
+</details>

@@ -1,7 +1,5 @@
 # Inodes
 
-## Lesson Content
-
 Remember how our filesystem is comprised of all our actual files and a database that manages these files? The database is known as the inode table. 
 
 <b>What is an inode?</b>
@@ -63,10 +61,11 @@ We know our data is out there on the disk somewhere, unfortunately it probably w
 
 Observe some inode numbers for different files, which ones are usually created first?
 
-## Quiz Question
+## Quiz Questions 
 
-How do you see how many inodes are left on your system?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How do you see how many inodes are left on your system?</summary>
 df -i
+</details>
