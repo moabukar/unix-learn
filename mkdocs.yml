@@ -114,6 +114,14 @@ nav:
         - Modifying Permissions: access/modifying-permissions.md
         - Ownership Permissions: access/ownership-permissions.md
         - Process Permissions: access/process-permissions.md
+    - Devices:
+        - Dev directory: devices/dev-directory.md
+        - Device Types: devices/device-types.md
+        - Device Names: devices/device-names.md
+        - Listing Devices: devices/listing-devices.md
+        - DD command: devices/dd.md
+        - Sysfs: devices/sysfs.md
+        - Udev: devices/udev.md
 
 
 

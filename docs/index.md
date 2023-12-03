@@ -28,3 +28,5 @@
 ### Chapter 11: [Subnetting](https://moabukar.github.io/unix-learn/subnetting/subnets)
 
 ### Chapter 12: [Access Permissions](https://moabukar.github.io/unix-learn/access/file-permissions)
+
+### Chapter 13: [Devices](https://moabukar.github.io/unix-learn/devices/dev-directory)
