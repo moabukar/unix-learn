@@ -59,6 +59,15 @@ nav:
         - OSI-Model: network-fundamentals/osi-model.md
         - TCP-IP: network-fundamentals/tcp-ip-model.md
         - Network Basics: network-fundamentals/network-basics.md
+    - Routing & Subnets:
+        - What is a router: routing/what-is-a-router.md
+        - Routing Protocols: routing/routing-protocols.md
+        - Routing Table: routing/routing-table.md
+        - Path of a packet: routing/path-of-a-packet.md
+        - BGP Border Gateway Protocol: routing/bgp.md
+    - Processes:
+        - Process Details: processes/process-details.md
+        - Process Creation: processes/process-creation.md
 
 - Contribute: CONTRIBUTING.md
 - Code of Conduct: CODE_OF_CONDUCT.md

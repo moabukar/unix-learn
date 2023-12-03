@@ -10,4 +10,7 @@
 
 ### - [Network Fundamentals](https://moabukar.github.io/unix-learn/network-fundamentals/osi-model)
 
-### 
+### [Routing & Subnets](https://moabukar.github.io/unix-learn/routing/what-is-a-router)
+
+
+### [Processes](https://moabukar.github.io/unix-learn/processes/what-is-a-process)
