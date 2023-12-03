@@ -1,6 +1,4 @@
-# Application Layer
-
-## Lesson Content
+# Application Layer (Layer 7)
 
 Let's say I wanted to send an email to Patty. We'll go through each of the TCP/IP layers to see this in action. 
 
@@ -8,14 +6,11 @@ Remember that packets are used to transmit data across networks, a packet consis
 
 First we start off in the application layer. When we send our email through our email client, the application layer will encapsulate this data. The application layer talks to the transport layer through a specified port and through this port it sends its data. We want to send an email through the application layer protocol SMTP (simple mail transfer protocol). The data is sent through our transport protocol which opens a connection to this port (port 25 is used for SMTP), so we get this data sent through this port and that data is sent to the Transport layer to be encapsulated into segments.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What layer is used to present the packet data in a user friendly format?
-
-## Quiz Answer
-
-Application
+<details>
+<summary>What layer is used to present the packet data in a user friendly format?</summary>
+Layer 7 - Application
+</details>

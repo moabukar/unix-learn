@@ -1,7 +1,5 @@
 # TCP/IP Model
 
-## Lesson Content
-
 The OSI model gave birth to what eventually became the TCP/IP model and this model is actually what the Internet is based off of. It is the actual implementation of networking. The TCP/IP model uses the TCP/IP protocol suite, which we just commonly refer to as TCP/IP. These protocols work together to specify how data should be gathered, addressed, transmitted and routed through a network. Using the TCP/IP model, we can see how these protocols are used to show the breakdown of how a packet travels through the network.
 
 <b>Application Layer</b>
@@ -42,14 +40,17 @@ The lists above of protocols each layer uses is not extensive and you'll encount
 
 In the following lessons, we will dive through each of these layers and discuss how our packet traverses through the network in the eyes of the TCP/IP model (there are many perspectives on how a packet travels across networks, we won't look at them all, but be aware that they exist).
 
-## Exercise
 
-No exercises for this lesson.
+## Quiz Questions 
 
-## Quiz Question
+Click the right arrow to view the answers
 
-What is the top layer of the TCP/IP model?
-
-## Quiz Answer
-
+<details>
+<summary>What is the top layer of the TCP/IP model?</summary>
 Application
+</details>
+
+<details>
+<summary>What are the bottom layers of the TCP/IP model?</summary>
+Link & Network layers
+</details>

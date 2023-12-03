@@ -1,6 +1,4 @@
-# route
-
-## Lesson Content
+# Route
 
 We've already discussed viewing our routing tables with the route command, if you wanted to add or remove routes you can do so manually.
 
@@ -40,10 +38,11 @@ There are no exercises for this lesson but you can read more information on comm
 
 <pre>$ man ip-route</pre>
 
-## Quiz Question
+## Quiz Questions 
 
-What is the command flag to delete a route?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the command flag to delete a route?</summary>
 del
+</details>

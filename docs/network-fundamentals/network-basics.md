@@ -1,7 +1,5 @@
 # Network Basics
 
-## Lesson Content
-
 Let's look at a typical home network, you have a few different components. 
 
 <ul>
@@ -15,14 +13,11 @@ Let's look at a typical home network, you have a few different components.
 
 The data and information that gets transmitted through networks are known as packets and by the end of the Networking Nomad section, you'll understand in detail how a packet travels to and from hosts.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What is the local area network known as?
-
-## Quiz Answer
-
+<details>
+<summary>What is the local area network known as?</summary>
 LAN
+</details>

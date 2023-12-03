@@ -1,11 +1,9 @@
-# arp
-
-## Lesson Content
+# ARP
 
 Remember when we lookup a MAC address with ARP, it first checks the locally stored ARP cache on our system, you can actually view this cache: 
 
 <pre>
-pete@icebox:~$ arp
+mo:~$ arp
 Address                  HWtype  HWaddress           Flags Mask            Iface
 192.168.22.1            ether   00:12:24:fc:12:cc   C                     eth0
 192.168.22.254          ether   00:12:45:f2:84:64   C                     eth0
@@ -31,10 +29,11 @@ $ ip neighbour show
 
 Observe what happens to your ARP cache when you reboot your machine and then do something on the network.
 
-## Quiz Question
+## Quiz Questions 
 
-What command can you use to view your ARP cache?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command can you use to view your ARP cache?</summary>
 arp
+</details>

@@ -1,7 +1,5 @@
 # Network Addressing
 
-## Lesson Content
-
 Before we jump into seeing how a packet moves across a network, we have to familiarize ourselves with some terminology. When you mail a letter, you must know who it is being sent to and where it is coming from. Packets need the same information, our hosts and other hosts are identified using MAC (media access control) addresses and IP addresses, to make it easier on us humans we use hostnames to identify a host.
 
 <b>MAC Addresses</b>
@@ -18,14 +16,16 @@ Remember it takes both software and hardware to move packets across networks, so
 
 One last way to identify your machines is through hostname. Hostnames take your IP address and allow you to tie that address to a human readable name. Instead of remembering 192.12.41.4 you can just remember myhost.com.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-How many bytes are in an IPv4 address?
-
-## Quiz Answer
-
+<details>
+<summary>How many bytes are in an IPv4 address?</summary>
 4
+</details>
+
+<details>
+<summary>How many bytes are in an IPv6 address?</summary>
+16
+</details>

@@ -1,7 +1,5 @@
 # Transport Layer
 
-## Lesson Content
-
 The transports layer helps us transfer our data in a way networks can read it. It breaks our data into chunks that will be transported and put back together in the correct order. These chunks are known as segments. Segments make it easier to transport data across networks. 
 
 <b>Ports</b>
@@ -26,14 +24,11 @@ TCP provides a reliable connection-oriented stream of data. TCP uses ports to se
 
 Once this connection is established, data can be exchanged over a TCP connection. The data is sent over in different segments and are tracked with TCP sequence numbers so they can be arranged in the correct order when they are delivered. In our email example, the transport layer attaches the destination port (25) to the source port of the source host.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What is a reliable transport protocol?
-
-## Quiz Answer
-
+<details>
+<summary>What is a reliable transport protocol?</summary>
 TCP
+</details>

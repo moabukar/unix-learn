@@ -1,7 +1,5 @@
 # DHCP Overview
 
-## Lesson Content
-
 An important networking concept that we did not go over yet is DHCP (Dynamic Host Configuration Protocol)
 
 DHCP assigns IP addresses, subnet masks and gateways to our machines. For example, let's say you have a cell phone and you want to get a cell phone number to start talking to people. You have to call up your phone carrier and they will give you a number. As long as your pay your bills you can keep using your phone. DHCP is the phone carrier in this case, it gives you an IP address so that you can talk to other IP addresses. You are also leased an IP address, these last for a certain period of time, then will get renewed depending on how you have your lease settings. 
@@ -19,14 +17,11 @@ The way DHCP gets all your dynamic host information is:
 
 DHCP gets more involved than this, but this is the gist of it.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What are the steps in a DHCP request? 
-
-## Quiz Answer
-
+<details>
+<summary>What are the steps in a DHCP request? </summary>
 DISCOVER, OFFER, REQUEST, ACK
+</details>

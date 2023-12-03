@@ -1,6 +1,4 @@
-# Link Layer
-
-## Lesson Content
+# Link Layer (Layer 2)
 
 At the bottom of the TCP/IP model sits the Link Layer. This layer is the hardware specific layer.
 
@@ -31,14 +29,11 @@ And there it is a simple (or not so simple) packet traversal down the TCP/IP lay
 <li>The application layer receives the data from the transport layer on the port that was specified and presents it to Patty in the form of the final email message</li>
 </ol>
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What is used to find the MAC address on the same network?
-
-## Quiz Answer
-
+<details>
+<summary>What is used to find the MAC address on the same network?</summary>
 ARP
+</details>

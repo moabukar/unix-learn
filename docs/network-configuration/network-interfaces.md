@@ -1,11 +1,9 @@
 # Network Interfaces
 
-## Lesson Content
-
 A network interface is how the kernel links up the software side of networking to the hardware side. We've already seen an example of this: 
 
 <pre>
-pete@icebox:~$ ifconfig -a
+mo:~$ ifconfig -a
 eth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  
           inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0
           inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link
@@ -63,20 +61,17 @@ $ ip link set eth0 down
 $ ip address add 192.168.1.1/24 dev eth0
 </pre>
 
-
-
-
 ## Exercise
 
 Try changing the state of your network interfaces to either up or down and observe what happens.
 
 Can you change your network interface's with both the ifconfig and ip commands ?
 
+## Quiz Questions 
 
-## Quiz Question
+Click the right arrow to view the answers
 
-What is the command to configure our network interfaces?
-
-## Quiz Answer
-
+<details>
+<summary>What is the command to configure our network interfaces?</summary>
 ifconfig
+</details>
