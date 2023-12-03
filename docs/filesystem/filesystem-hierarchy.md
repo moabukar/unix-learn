@@ -1,7 +1,5 @@
 # Filesystem Hierarchy
 
-## Lesson Content
-
 At this point, you're probably well familiar with the directory structure of your system, if not you will be soon. Filesystems can vary with how they are structured, but for the most part they should conform to the Filesystem Hierarchy Standard. 
 
 Go ahead and do an <b>ls -l /</b> to see the directories listed under the root directory, yours may look different than mine, but the directories should for the most part look like the following:
@@ -31,10 +29,16 @@ Go ahead and do an <b>ls -l /</b> to see the directories listed under the root d
 
 Look inside your /usr directory, what kind of information is located there?
 
-## Quiz Question
+## Quiz Questions 
 
-What directory is used to store logs? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What directory is used to store logs? </summary>
 /var
+</details>
+
+<details>
+<summary>What directory is used to store configs? </summary>
+/etc
+</details>

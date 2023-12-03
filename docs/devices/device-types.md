@@ -1,6 +1,4 @@
-# device types
-
-## Lesson Content
+# Device types
 
 Before we chat about how devices are managed, let's actually take a look at some devices.
 
@@ -58,10 +56,11 @@ The major device number represents the device driver that is used, in this case 
 
 Look at your /dev directory and find out what types of devices you can see.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the symbol for character devices in the ls -l command?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the symbol for character devices in the ls -l command?</summary>
 c
+</details>

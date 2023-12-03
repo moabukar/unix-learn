@@ -1,7 +1,5 @@
 # Disk Usage
 
-## Lesson Content
-
 There are a few tools you can used to see the utilization of your disks: 
 
 <pre>
@@ -24,10 +22,11 @@ Both of these commands are so similar in syntax it can be hard to remember which
 
 Look at your disk usage and free space with both du and df. 
 
-## Quiz Question
+## Quiz Questions 
 
-What command is use to show how much space is free on your disk?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is use to show how much space is free on your disk?</summary>
 df
+</details>

@@ -1,7 +1,5 @@
 # DNS Process
 
-## Lesson Content
-
 Let's look at an example of how your host finds a domain (google.com) with DNS. Essentially, we funnel our way down until we reach the DNS server that knows of that domain.
 
 <b>Local DNS Server</b>
@@ -20,14 +18,11 @@ So now we send another request to the name server that knows about ".com" addres
 
 Now we send a final request to the DNS server that actually has the record we want. The name server sees that it has a zone file for google.com and there is a resource record for 'www' for this host. It then gives us the IP address of this host and we can finally see some cats on the Internet. 
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What is the abbreviation for the nameservers where .com, .net, .org, etc addresses are found? 
-
-## Quiz Answer
-
+<details>
+<summary>What is the abbreviation for the nameservers where .com, .net, .org, etc addresses are found? </summary>
 TLD
+</details>

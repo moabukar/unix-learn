@@ -1,7 +1,5 @@
 # /etc/hosts
 
-## Lesson Content
-
 Before our machine actually hits DNS to do a query, it first looks locally on our machines. 
 
 <b>/etc/hosts</b>
@@ -35,14 +33,11 @@ nameserver 127.0.1.1
 search localdomain
 </pre>
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What file is used to map hostnames to IP addresses on our machines?
-
-## Quiz Answer
-
+<details>
+<summary>What file is used to map hostnames to IP addresses on our machines?</summary>
 /etc/hosts
+</details>

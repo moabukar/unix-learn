@@ -1,7 +1,5 @@
 # Disk Partitioning
 
-## Lesson Content
-
 Let's do some practical stuff with filesytems by working through the process on a USB drive. If you don't have one, no worries, you can still follow along these next couple of lessons. 
 
 First we'll need to partition our disk. There are many tools available to do this: 
@@ -65,10 +63,11 @@ Parted is a very powerful tool and you should be careful when partitioning your 
 
 Partition a USB drive with half of the drive as ext4 and the other half as free space. 
 
-## Quiz Question
+## Quiz Questions 
 
-What is the parted command to make a partition?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the parted command to make a partition?</summary>
 mkpart
+</details>

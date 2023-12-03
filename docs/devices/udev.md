@@ -20,10 +20,11 @@ You can also view the udev database and sysfs using the <b>udevadm</b> command. 
 
 Run the udevadm command given and check out the input.
 
-## Quiz Question
+## Quiz Questions 
 
-What dynamically adds and removes devices? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What dynamically adds and removes devices? </summary>
 udev
+</details>

@@ -1,7 +1,5 @@
 # Anatomy of a Disk
 
-## Lesson Content
-
 Hard disks can be subdivided into partitions, essentially making multiple block devices. Recall such examples as, /dev/sda1 and /dev/sda2, /dev/sda is the whole disk, but /dev/sda1 is the first partition on that disk. Partitions are extremely useful for separating data and if you need a certain filesystem, you can easily create a partition instead of making the entire disk one filesystem type.
 
 <b>Partition Table</b>
@@ -76,10 +74,11 @@ Number  Start   End     Size     File system  Name        Flags
 
 Run <b>parted -l</b> on your machine and evaluate your results.
 
-## Quiz Question
+## Quiz Questions 
 
-What partition type is used to create more than 4 partitions in the MBR partitioning scheme?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What partition type is used to create more than 4 partitions in the MBR partitioning scheme?</summary>
 extended
+</details>

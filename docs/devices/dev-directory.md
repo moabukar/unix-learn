@@ -1,7 +1,5 @@
 # /dev directory
 
-## Lesson Content
-
 When you connect a device to your machine, it generally needs a device driver to function properly. You can interact with device drivers through device files or device nodes, these are special files that look like regular files. Since these device files are just like regular files, you can use programs such as ls, cat, etc to interact with them. These device files are generally stored in the /dev directory. Go ahead and ls the /dev directory on your system, you'll see a large amount of devices files that are on your system. 
 
 <pre>$ ls /dev </pre>
@@ -16,10 +14,11 @@ Thankfully we no longer use that method, now we have something that we use to dy
 
 Check out the contents of the /dev directory, do you recognize any familiar devices? 
 
-## Quiz Question
+## Quiz Questions 
 
-Where are device files stored on the system?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>Where are device files stored on the system?</summary>
 /dev
+</details>

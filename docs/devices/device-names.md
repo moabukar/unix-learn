@@ -1,7 +1,5 @@
 # Device Names
 
-## Lesson Content
-
 Here are the most common device names that you will encounter: 
 
 <b>SCSI Devices</b>
@@ -39,10 +37,11 @@ Sometimes in older systems you may see hard drives being referred to with an hd 
 
 Write to the pseudo devices and see what happens, be careful not to write your disks to those devices!
 
-## Quiz Question
+## Quiz Questions 
 
-What would commonly be the device name for the first partition on the second SCSI disk?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What would commonly be the device name for the first partition on the second SCSI disk?</summary>
 sdb1
+</details>

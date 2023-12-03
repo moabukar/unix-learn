@@ -1,6 +1,4 @@
-# lsusb, lspci, lssci
-
-## Lesson Content
+# Listing devices - lsusb, lspci, lssci
 
 Just like we would use the ls command to list files and directories, we can use similar tools that list information about devices.
 
@@ -20,10 +18,11 @@ Just like we would use the ls command to list files and directories, we can use 
 
 Try out each of these commands and see the output you receive.
 
-## Quiz Question
+## Quiz Questions 
 
-What command can be used to view usb devices?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command can be used to view usb devices?</summary>
 lsusb
+</details>

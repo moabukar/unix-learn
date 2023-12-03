@@ -1,7 +1,5 @@
 # DNS Setup
 
-## Lesson Content
-
 We won't got through setting up a DNS server, as that would be quite a lengthy tutorial. Instead here is a quick comparison list of the popular DNS servers to use with Linux.
 
 <b>BIND</b>
@@ -18,14 +16,11 @@ Full-featured and similar to BIND, it offers you a little bit more flexibility w
 
 This isn't a complete list, but it should give you an idea of where to look if you are setting up your own DNS server. 
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What is the de facto DNS server for Linux?
-
-## Quiz Answer
-
+<details>
+<summary>What is the de facto DNS server for Linux?</summary>
 BIND
+</details>

@@ -1,7 +1,5 @@
 # DNS Components
 
-## Lesson Content
-
 The DNS database of the Internet relies on sites and organizations providing part of that database. To do that, they need:
 
 <b>Name Server</b>
@@ -27,14 +25,11 @@ A zone file is comprised of entries of resource records. Each line is a record a
 patty    IN  A      192.168.0.4 
 </pre>
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What resource record type is used for mail exchangers?
-
-## Quiz Answer
-
+<details>
+<summary>What resource record type is used for mail exchangers?</summary>
 MX
+</details>

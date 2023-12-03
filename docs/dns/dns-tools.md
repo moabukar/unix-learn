@@ -1,7 +1,5 @@
 # DNS Tools
 
-## Lesson Content
-
 <b>nslookup</b>
 
 The "name server lookup" tool is used to query name servers to find information about resource records. Let's find where the name server for google.com is:
@@ -52,10 +50,11 @@ www.google.com.         5       IN      A       74.125.239.148
 
 Read up on the manpage for dig.
 
-## Quiz Question
+## Quiz Questions 
 
-What tool is used to get detailed information about DNS name servers? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What tool is used to get detailed information about DNS name servers?</summary>
 dig
+</details>

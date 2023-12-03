@@ -1,7 +1,5 @@
 # /etc/fstab
 
-## Lesson Content
-
 When we want to automatically mount filesystems at startup we can add them to a file called /etc/fstab (pronounced "eff es tab" not "eff stab") short for filesystem table. This file contains a permanent list of filesystems that are mounted.
 
 <pre>
@@ -28,10 +26,11 @@ To add an entry, just directly modify the /etc/fstab file using the entry syntax
 
 Add the USB drive we've been working on as a entry in /etc/fstab, when you reboot you should still see it mounted. 
 
-## Quiz Question
+## Quiz Questions 
 
-What file is used to define how filesystems should be mounted? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What file is used to define how filesystems should be mounted? </summary>
 /etc/fstab
+</details>
