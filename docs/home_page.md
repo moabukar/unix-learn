@@ -26,3 +26,5 @@
 ### Chapter 10: [Linx Boot Process](https://moabukar.github.io/unix-learn/booting/boot-process-overview)
 
 ### Chapter 11: [Subnetting](https://moabukar.github.io/unix-learn/subnetting/subnets)
+
+### Chapter 12: [Access Permissions](https://moabukar.github.io/unix-learn/access/file-permissions)

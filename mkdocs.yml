@@ -109,6 +109,11 @@ nav:
         - ipv6: subnetting/ipv6.md
         - NAT: subnetting/nat.md
         - CIDR: subnetting/cidr.md
+    - Access:
+        - File Permissions: access/file-permissions.md
+        - Modifying Permissions: access/modifying-permissions.md
+        - Ownership Permissions: access/ownership-permissions.md
+        - Process Permissions: access/process-permissions.md
 
 
 
