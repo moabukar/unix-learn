@@ -1,7 +1,5 @@
 # Boot Process: Bootloader
 
-## Lesson Content
-
 The bootloader's main responsibilities are:
 
 <ul>
@@ -29,7 +27,7 @@ If you have GRUB as your bootloader, go into the GRUB menu with 'e' and take a l
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What kernel parameter makes it so you don't see bootup messages?</summary>

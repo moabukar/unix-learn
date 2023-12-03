@@ -1,7 +1,5 @@
 # Boot Process Overview
 
-## Lesson Content
-
 Now that we've gotten a pretty good grasp at some of the important components of Linux, let's piece them altogether by learning about how the system boots. When you turn on your machine, it does some neat things like show you the logo screen, run through some different messages and then at the end you're prompted with a login window. Well there is actually a ton of stuff happening between when you push the power button to when you login and we'll discuss those in this course. 
 
 The Linux boot process can be broken down in 4 simple stages: 
@@ -30,7 +28,7 @@ Reboot your system (Linux server) and see if you can spot each step as your mach
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What is the last stage in the Linux boot process?</summary>

@@ -1,7 +1,5 @@
 # Boot Process: BIOS
 
-## Lesson Content
-
 <b>BIOS</b>
 
 The first step in the Linux boot process is the BIOS which performs system integrity checks. The BIOS is a firmware that comes most common in IBM PC compatible computers, the dominant type of computers out there today. You've probably used the BIOS firmware to change the boot order of your harddisks, check system time, your machine's mac address, etc. The BIOS's main goal is to find the system bootloader.
@@ -23,7 +21,7 @@ Go into your BIOS menu and see if you have UEFI booting enabled.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What does the BIOS load? </summary>

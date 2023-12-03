@@ -1,7 +1,5 @@
 # Boot Process: Kernel
 
-## Lesson Content
-
 So now that our bootloader has passed on the necessary parameters, let's see how it get's started:
 
 <b>Initrd vs Initramfs</b>
@@ -14,7 +12,7 @@ Now the kernel has all the modules it needs to create a root device and mount th
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What is used in modern systems to load up a temporary root filesystem?</summary>

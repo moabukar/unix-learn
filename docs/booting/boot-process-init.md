@@ -1,7 +1,5 @@
 # Boot Process: Init
 
-## Lesson Content
-
 We've discussed init in previous lessons and know that it is the first process that gets started and it starts all the other essential services on our system. But how?
 
 There are actually three major implementations of init in Linux: 
@@ -23,7 +21,7 @@ We have an entire course on Init systems where we will dive into each of these s
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What is the newest standard for init?</summary>
