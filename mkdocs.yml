@@ -56,9 +56,9 @@ nav:
         - DNS-Tools: dns/dns-tools.md
         - etc-hosts: dns/etc-hosts.md
     - Networking Fundamentals:
-        - OSI-Model: networking-fundamentals/osi-model.md
-        - TCP-IP: networking-fundamentals/tcp-ip-model.md
-        - Network Basics: networking-fundamentals/network-basics.md
+        - OSI-Model: network-fundamentals/osi-model.md
+        - TCP-IP: network-fundamentals/tcp-ip-model.md
+        - Network Basics: network-fundamentals/network-basics.md
 
 - Contribute: CONTRIBUTING.md
 - Code of Conduct: CODE_OF_CONDUCT.md
