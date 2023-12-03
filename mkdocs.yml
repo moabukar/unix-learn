@@ -7,11 +7,12 @@ repo_url: https://github.com/moabukar/unix-learn
 dev_addr: "127.0.0.1:8000"
 docs_dir: docs
 theme: 
-  name: material
+  # name: material
+  name: dracula
   include_sidebar: true
   # custom_dir: overrides
   extra_css:
-    - stylesheets/custom.css
+    - assets/stylesheets/custom.css
 
   features:
     - navigation.tabs
@@ -50,6 +51,9 @@ plugins:
   # - exclude:
   #     glob:
   #       - "**/include-*.md"
+  - git-revision-date
+  # - pdf-export:
+  #     combined: true
 
 markdown_extensions:
   - meta
@@ -66,8 +70,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - toc:
-      permalink: true
+  # - toc:
+  #     permalink: true
 
 nav:
 - Home: index.md
