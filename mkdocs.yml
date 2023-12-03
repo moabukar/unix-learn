@@ -68,6 +68,36 @@ nav:
     - Processes:
         - Process Details: processes/process-details.md
         - Process Creation: processes/process-creation.md
+    - Filesystem:
+        - Filesystem Hierarchy: filesystem/filesystem-hierarchy.md
+        - Filesystem types: filesystem/filesystem-types.md
+        - Creating filesytems: filesystem/creating-filesystems.md
+        - Filesystem repair: filesystem/filesystem-repair.md
+        - Inodes: filesystem/inodes.md
+        - Symbolic Links: filesystem/symlinks.md
+        - Swap Space: filesystem/swap-space.md
+        - Mounting: filesystem/mounting.md
+        - Disk Usage: filesystem/disk-usage.md
+        - Disk partitioning: filesystem/disk-partitioning.md
+        - Anatomy of a disk: filesystem/anatomy-of-a-disk.md
+    - Kernel:
+        - Kernel Overview: kernel/kernel-overview.md
+        - Kernel Installation: kernel/kernel-installation.md
+        - Kernel Modules: kernel/kernel-modules.md
+        - Kernel Location: kernel/kernel-location.md
+        - Kernel Privilege Levels: kernel/kernel-privilege-levels.md
+        - System calls: kernel/system-calls.md
+    - Network Troubleshooting:
+        - Ping: network-troubleshooting/ping.md
+        - Netstat: network-troubleshooting/netstat.md
+        - Traceroute: network-troubleshooting/traceroute.md
+        - ICMP: network-troubleshooting/icmp.md
+        - Packet Analysis: network-troubleshooting/packet-analysis.md
+    - User Management:
+        - Users & Groups: user-management/users-and-groups.md
+        - User Management Tools: user-management/user-management-tools.md
+        - Root User: user-management/root-user.md
+
 
 - Contribute: CONTRIBUTING.md
 - Code of Conduct: CODE_OF_CONDUCT.md
