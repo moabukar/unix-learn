@@ -1,7 +1,5 @@
 # whatis
 
-## Lesson Content
-
 Whew, we’ve learned quite a bit of commands so far, if you are ever feeling doubtful about what a command does, you can use the whatis command. The whatis command provides a brief description of command line programs. 
 
 <pre>$ whatis cat</pre>
@@ -15,7 +13,7 @@ Run the whatis command on the less command.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What command can you use to see a small description of a command?</summary>

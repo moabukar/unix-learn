@@ -1,6 +1,4 @@
-# mv (Move)
-
-## Lesson Content
+# mv (move)
 
 Used for moving files and also renaming them. Quite similar to the cp command in terms of flags and functionality. 
 
@@ -35,7 +33,7 @@ Rename a file, then move that file to a different directory.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How do you rename a file called foo to bar?</summary>

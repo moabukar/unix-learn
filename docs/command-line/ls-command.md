@@ -1,6 +1,4 @@
-# ls (List Directories)
-
-## Lesson Content
+# ls (list directories)
 
 Now that we know how to move around the system, how do we figure out what is available to us? Right now it’s like we are moving around in the dark. Well, we can use the wonderful ls command to list directory contents. The ls command will list directories and files in the current directory by default, however you can specify which path you want to list the directories of.
 
@@ -42,7 +40,7 @@ Run ls with different flags and see the output you receive.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What command would you use to see hidden files?</summary>

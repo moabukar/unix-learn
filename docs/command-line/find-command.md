@@ -1,7 +1,5 @@
 # find
 
-## Lesson Content
-
 With all these files we have on the system it can get a little hectic trying to find a specific one. Well there’s a command we can use for that, find! 
 
 <pre>$ find /home -name puppies.jpg</pre>
@@ -24,7 +22,7 @@ One cool thing to note is that find doesn’t stop at the directory you are sear
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What option should I specify for find if I want to search by name?

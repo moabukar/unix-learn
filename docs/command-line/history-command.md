@@ -1,7 +1,5 @@
 # history
 
-## Lesson Content
-
 In your shell, there is a history of the commands that you previously entered, you can actually look through these commands. This is quite useful when you want to find and run a command you used previously without actually typing it again.
 
 <pre>$ history</pre>
@@ -26,7 +24,7 @@ Navigate through your previous command history with the Up and Down keys. Play a
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What is the command to clear the terminal?</summary>

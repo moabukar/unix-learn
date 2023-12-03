@@ -1,6 +1,4 @@
-# cat
-
-## Lesson Content
+# Cat
 
 We’re almost done navigating files, but first let’s learn how to read a file. A simple command to use is the cat command, short for concatenate, it not only displays file contents but it can combine multiple files and show you the output of them. 
 
@@ -14,7 +12,7 @@ Run cat on different files and directories. Then try to cat multiple files.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What's a good way to see the contents of a file?</summary>

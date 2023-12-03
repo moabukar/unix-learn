@@ -1,7 +1,5 @@
 # man
 
-## Lesson Content
-
 Gee I wish some of these programs had a manual so we can see some more information about them. Well luckily they do! Aptly named man pages, you can see the manuals for a command with the man command. 
 
 <pre>$ man ls</pre>
@@ -16,7 +14,7 @@ Run the man command on the ls command.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How do you see the manuals for a command?</summary>

@@ -1,6 +1,4 @@
-# cd (Change Directory)
-
-## Lesson Content
+# cd (change directory)
 
 Now that you know where you are, let’s see if we can move around the filesystem a bit. Remember we’ll need to navigate our way using paths. There are two different ways to specify a path, with absolute and relative paths. 
 
@@ -47,7 +45,7 @@ Give them a try!
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>If you are in /home/mo/Documents and wanted to go to /home/mo, what’s a good shortcut to use?</summary>

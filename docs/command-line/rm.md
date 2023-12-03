@@ -1,6 +1,4 @@
-# rm (Remove)
-
-## Lesson Content
+# rm (remove)
 
 Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. 
 
@@ -37,7 +35,7 @@ You can remove a directory with the rmdir command.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How do you remove a file called myfile?</summary>

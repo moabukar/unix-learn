@@ -1,6 +1,4 @@
-# The Shell
-
-## Lesson Content
+# Shell
 
 The world is your oyster, or really the shell is your oyster. What is the shell? The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform. If you’ve ever used a GUI, you’ve probably seen programs such as “Terminal” or “Console” these are just programs that launch a shell for you. Throughout this entire course we will be learning about the wonders of the shell. 
 
@@ -27,7 +25,7 @@ Try some other Linux commands and see what they output:
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What should be outputted to the display when you type echo FooBar?</summary>

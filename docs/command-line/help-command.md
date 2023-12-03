@@ -1,7 +1,5 @@
 # help
 
-## Lesson Content
-
 Linux has some great built-in tools to help you how to use a command or check what flags are available for a command. One tool, help, is a built-in bash command that provides help for other bash commands (echo, logout, pwd, etc).
 
 <pre>$ help echo</pre>
@@ -18,7 +16,7 @@ Run help on the echo command, logout command and pwd command.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How do you get quick command line help for built-in bash commands?</summary>

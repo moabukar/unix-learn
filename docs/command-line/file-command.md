@@ -1,7 +1,5 @@
 # file
 
-## Lesson Content
-
 In the previous lesson we learned about touch, let’s go back to that for a bit. Did you notice that the filename didn’t conform to standard naming like you’ve probably seen with other operating systems like Windows? Normally you would expect a file called banana.jpeg and expect a JPEG picture file. 
 
 In Linux, filenames aren’t required to represent the contents of the file. You can create a file called funny.gif that isn’t actually a GIF. 
@@ -17,7 +15,7 @@ Run the file command on a few different directories and files and note the outpu
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What command can you use to find the file type of a file?</summary>

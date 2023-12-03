@@ -1,7 +1,5 @@
 # touch
 
-## Lesson Content
-
 Let’s learn how to make some files. A very simple way is to use the touch command. Touch allows you to the create new empty files.
 
 <pre>$ touch mysuperduperfile</pre>
@@ -22,7 +20,7 @@ There are many other ways to create files that involve other things like redirec
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How do you create a file called myfile?</summary>

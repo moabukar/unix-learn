@@ -1,7 +1,5 @@
 # less
 
-## Lesson Content
-
 If you are viewing text files larger than a simple output, less is more. (There is actually a command called more that does something similar, so this is ironic.) The text is displayed in a paged manner, so you can navigate through a text file page by page. 
 
 Go ahead and look at the contents of a file with less. Once you’re in the less command, you can actually use other keyboard commands to navigate in the file. 
@@ -26,7 +24,7 @@ Run less on a file, then page up and around the file. Try searching for a specif
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How do you quit out of a less command?</summary>

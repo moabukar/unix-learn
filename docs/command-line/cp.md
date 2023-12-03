@@ -1,6 +1,4 @@
-# cp (Copy)
-
-## Lesson Content
+# cp (copy)
 
 Let’s start making some copies of these files. Much like copy and pasting files in other operating systems, the shell gives us an even simpler way of doing that. 
 
@@ -37,7 +35,7 @@ Copy over a couple of files, be careful not to overwrite anything important.
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>What flag do you need to specify to copy over a directory?</summary>

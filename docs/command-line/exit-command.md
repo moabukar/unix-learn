@@ -1,7 +1,5 @@
 # exit
 
-## Lesson Content
-
 Well, you sure did a good job getting through the basics. We’ve only scratched the surface, now that you’ve learned to crawl, in the next set of courses, I’m gonna teach how to walk. 
 
 For now, you can pat yourself on the back and take a break. To exit from the shell, you can use the exit command
@@ -20,7 +18,7 @@ Exit out of the shell and see what happens. Make sure you don't need to do anymo
 
 ## Quiz Questions 
 
-- Click the right arrow to view the answers
+Click the right arrow to view the answers
 
 <details>
 <summary>How can you exit from the shell?</summary>
