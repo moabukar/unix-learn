@@ -1,7 +1,5 @@
 # Simple HTTP Server
 
-## Lesson Content
-
 Python has a super useful tool for serving files over HTTP. This is great if you just want to create a quick network share that other machines on your network can access. To do that just go to the directory you want to share and run:
 
 <pre>$ python -m SimpleHTTPServer</pre>
@@ -14,10 +12,11 @@ You can also do this with node or if you are running Python 3, the syntax will b
 
 Try setting up a SimpleHTTPServer!
 
-## Quiz Question
+## Quiz Questions 
 
-What tool can you use to create a simple http server with python?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What tool can you use to create a simple http server with python?</summary>
 SimpleHTTPServer
+</details>

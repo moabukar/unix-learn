@@ -1,7 +1,5 @@
 # CPU Monitoring
 
-## Lesson Content
-
 Let's go over a useful command, <b>uptime</b>.
 
 <pre>
@@ -21,10 +19,11 @@ When observing load average, you have to take the number of cores into account, 
 
 Check the load average of your system and see what it's doing. 
 
-## Quiz Question
+## Quiz Questions 
 
-What command can you use to see the load average?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command can you use to see the load average?</summary>
 uptime
+</details>

@@ -1,7 +1,5 @@
 # /proc filesystem
 
-## Lesson Content
-
 Remember everything in Linux is a file, even processes. Process information is stored in a special filesystem known as the /proc filesystem.
 
 <pre>$ ls /proc</pre>
@@ -14,14 +12,11 @@ Go ahead and enter one of the processes and look at that file:
 
 You should see process state information and well as more detailed information. The /proc directory is how the kernel is views the system, so there is a lot more information here than what you would see in ps.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What filesystem stores process information?
-
-## Quiz Answer
-
+<details>
+<summary>What filesystem stores process information?</summary>
 /proc
+</details>

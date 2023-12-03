@@ -1,6 +1,4 @@
-# rsync
-
-## Lesson Content
+# Rsync
 
 Another tool used to copy data from different hosts is rsync (short for remote synchronization). Rsync is very similar to scp, but it does have a major difference. Rsync uses a special algorithm that checks in advanced if there is already data that you are copying to and will only copy over the differences. For example, let's say that you were copying over a file and your network got interrupted, therefore your copy stopped midway. Instead of re-copying everything from the beginning, rsync will only copy over the parts that didn't get copied. 
 
@@ -31,10 +29,11 @@ Some commonly-used rsync options:
 
 Use rsync to sync a directory to another directory, be sure not to overwrite an important directory!
 
-## Quiz Question
+## Quiz Questions 
 
-What command would be useful for data backups?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command would be useful for data backups?</summary>
 rsync
+</details>

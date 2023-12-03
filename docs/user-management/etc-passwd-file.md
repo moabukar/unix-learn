@@ -1,7 +1,5 @@
 # /etc/passwd
 
-## Lesson Content
-
 Remember that usernames aren't really identifications for users. The system uses a user ID (UID) to identify a user. To find out what users are mapped to what ID, look at the /etc/passwd file. 
 
 <pre>$ cat /etc/passwd</pre>
@@ -30,10 +28,11 @@ Also should note that you can edit the /etc/passwd file by hand if you want to a
 
 Look at your /etc/passwd file, take a look at some of the users and note the access they have. 
 
-## Quiz Question
+## Quiz Questions 
 
-If a user doesn't have login access how is that denoted in /etc/passwd?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>If a user doesn't have login access how is that denoted in /etc/passwd?</summary>
 *
+</details>

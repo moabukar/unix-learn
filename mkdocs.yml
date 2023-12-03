@@ -110,6 +110,15 @@ nav:
     - Processes:
         - Process Details: processes/process-details.md
         - Process Creation: processes/process-creation.md
+        - Process Signals: processes/process-signals.md
+        - Process States: processes/process-states.md
+        - Process Termination: processes/process-termination.md
+        - Process Niceness: processes/process-niceness.md
+        - Ps command: processes/ps-command.md
+        - Proc Filesystem: processes/proc-filesystem.md
+        - Killing processes: processes/killing-processes.md
+        - Job Control: processes/job-control.md
+        - Controlling Terminal: processes/controlling-terminal.md
     - Access:
         - File Permissions: access/file-permissions.md
         - Modifying Permissions: access/modifying-permissions.md

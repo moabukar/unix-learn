@@ -1,7 +1,5 @@
 # Packet Analysis
 
-## Lesson Content
-
 The subject of packet analysis could fill an entire course of its own and there are many books written just on packet analysis. However, today we will just learn the basics. There are two extremely popular packet analyzers, Wireshark and tcpdump. These tools scan your network interfaces, capture the packet activity, parse the packages and output the information for us to see. They allows us to get into the nitty gritty of network analysis and get into the low level stuff. We'll be using tcpdump since it has a simpler interface, however if you were to pick up packet analysis for your toolbelt, I would recommend looking into Wireshark.
 
 <b>Install tcpdump</b>
@@ -60,10 +58,11 @@ Some final thoughts: we only scraped the surface of the subject of packet analys
 
 Download and install the Wireshark tool and play around with the interface.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the flag to capture a specific interface with tcpdump?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the flag to capture a specific interface with tcpdump?</summary>
 -i
+</details>

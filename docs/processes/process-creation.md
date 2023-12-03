@@ -1,7 +1,5 @@
 # Process Creation
 
-## Lesson Content
-
 Again this lesson and the next are purely information to let you see what's under the hood, feel free to circle back to this once you've worked with processes a bit more.
 
 When a new process is created, an existing process basically clones itself using something called the fork system call (system calls will be discussed very far into the future). The fork system call creates a mostly identical child process, this child process takes on a new process ID (PID) and the original process becomes its parent process and has something called a parent process ID <b>PPID</b>. Afterwards, the child process can either continue to use the same program its parent was using before or more often use the execve system call to launch up a new program. This system call destroys the memory management that the kernel put into place for that process and sets up new ones for the new program. 
@@ -18,10 +16,11 @@ So if every process has to have a parent and they are just forks of each other, 
 
 Take a look at your running processes, can you see what other processes have parents?
 
-## Quiz Question
+## Quiz Questions 
 
-What system call creates a new process?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What system call creates a new process?</summary>
 fork
+</details>

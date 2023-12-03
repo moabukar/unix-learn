@@ -1,6 +1,4 @@
-# netstat
-
-## Lesson Content
+# Netstat
 
 <b>Well Known Ports</b>
 
@@ -65,10 +63,11 @@ See the manpage for a list of socket states, but here are a few:
 
 Look at the manpage for netstat and learn all the features it has to offer.
 
-## Quiz Question
+## Quiz Questions 
 
-What port is used for HTTPS?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What port is used for HTTPS?</summary>
 443
+</details>

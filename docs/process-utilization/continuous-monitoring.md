@@ -1,7 +1,5 @@
 # Continuous Monitoring
 
-## Lesson Content
-
 These monitoring tools are good to look at when your machine is having issues, but what about machines that are having issues when you aren't looking. For those, you'll need to use a continuous monitoring tool, something that will collect, report and save your system activity information. In this lesson we will go over a great tool to use <b>sar</b>.
 
 <b>Installing sar</b>
@@ -32,10 +30,11 @@ To see a view of a different day, you can go into /var/log/sysstat/saXX where XX
 
 Install sar on your system and start collecting and analyzing your system resource utilization.
 
-## Quiz Question
+## Quiz Questions 
 
-What is a good tool to use for monitoring system resources?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is a good tool to use for monitoring system resources?</summary>
 sar
+</details>

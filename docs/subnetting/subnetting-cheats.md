@@ -1,7 +1,5 @@
 # Subnetting Cheats
 
-## Lesson Content
-
 I hate to have to add this section, in the real world you would most likely never have to do subnet math by hand, however if you were getting interviewed on this, you'll have to know how to convert to and from binary form for subnetting. Luckily there are some arithmetic cheats you can memorize. 
 
 First memorize your base-2 calculations, just do it:
@@ -54,10 +52,11 @@ For binary to decimal conversion you add up the numbers that have a 1, so:
 
 Look at your IP address and subnet mask and see how many hosts you can have on your subnet.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the binary conversion of 123?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the binary conversion of 123?</summary>
 1111011
+</details>

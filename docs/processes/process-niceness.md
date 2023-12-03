@@ -1,6 +1,4 @@
-# niceness
-
-## Lesson Content
+# Niceness
 
 When you run multiple things on your computer, like perhaps Chrome, Microsoft Word or Photoshop at the same time, it may seem like these processes are running at the same time, but that isn't quite true. 
 
@@ -24,10 +22,11 @@ The nice command is used to set priority for a new process. The renice command i
 
 What processes aren't very nice and why?
 
-## Quiz Question
+## Quiz Questions 
 
-If I want a process to get more CPU priority, do I use a lower or higher nice number?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>If I want a process to get more CPU priority, do I use a lower or higher nice number?</summary>
 lower
+</details>

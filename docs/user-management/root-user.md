@@ -1,6 +1,4 @@
-# root
-
-## Lesson Content
+# Root
 
 We've looked at one way to get superuser access using the sudo command. You can also run commands as the superuser with the su command. This command will "substitute users" and open a root shell if no username is specified. You can use this command to substitute to any user as long as you know the password. 
 
@@ -14,10 +12,11 @@ Now that you know what commands to run as the superuser, the question is how do 
 
 Open up the /etc/sudoers file and see what superuser permissions other users on the machine have.
 
-## Quiz Question
+## Quiz Questions 
 
-What file shows the users who have access to sudo?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What file shows the users who have access to sudo?</summary>
 /etc/sudoers
+</details>

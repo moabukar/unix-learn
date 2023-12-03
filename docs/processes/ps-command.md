@@ -1,7 +1,5 @@
 # ps (Processes)
 
-## Lesson Content
-
 Processes are the programs that are running on your machine. They are managed by the kernel and each process has an ID associated with it called the <b>process ID (PID).</b> This PID is assigned in the order that processes are created. 
 
 Go ahead and run the ps command to see a list of running processes:
@@ -55,10 +53,11 @@ Another very useful command is the <b>top</b> command, top gives you real time i
 
 Use the ps command with different flags and see how the output changes. 
 
-## Quiz Question
+## Quiz Questions 
 
-What ps flag is used to view detailed information about processes?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What ps flag is used to view detailed information about processes?</summary>
 u
+</details>

@@ -1,7 +1,5 @@
 # What is a router?
 
-## Lesson Content
-
 We've used this term router before, hopefully you know what one is, since you probably have one in your home. A router enables machines on a network to communicate with each other as well as other networks. On a typical router, you will have LAN ports, that allow your machines to connect to the same local area network and you will also have an Internet uplink port that connects you to the Internet, sometimes you'll see this port being labelled as WAN, because it is essentially connecting you to a wider network. When we do any sort of networking activity, it has to go through the router. The router decides where our network packets go and which ones come in. It routes our packets between multiple networks to get from it's source host to it's destination host. 
 
 <b>How does a router work?</b>
@@ -19,14 +17,11 @@ Packet SWITCHING is basically receiving, processing and forwarding data to the d
 ROUTING is a process of creating the routing table, so that we can do SWITCHING better.
 Before routing, FLOODING was used. If a router don't know which way to send a packet than every incoming packet is sent through every outgoing link except the one it arrived on.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-How do packets measure distance?
-
-## Quiz Answer
-
+<details>
+<summary>How do packets measure distance?</summary>
 hops
+</details>

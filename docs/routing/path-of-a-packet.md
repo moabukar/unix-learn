@@ -1,7 +1,5 @@
 # Path of a Packet
 
-## Lesson Content
-
 <b>Let's look at how a packet travels within it's local network</b>
 
 <ol>
@@ -21,14 +19,11 @@
 <li>During this process, our packet doesn't change the source or destination IP address.</li>
 </ol>
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-How do we find the MAC address of an IP address?
-
-## Quiz Answer
-
+<details>
+<summary>How do we find the MAC address of an IP address?</summary>
 ARP
+</details>

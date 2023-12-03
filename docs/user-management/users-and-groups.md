@@ -1,7 +1,4 @@
 # Users and Groups
-
-## Lesson Content
-
 In any traditional operating system, there are users and groups. They exist solely for access and permissions. When running a process, it will run as the owner of that process whether that is Jane or Bob. File access and ownership is also permission dependent. You wouldn't want Jane to see Bob's documents and vice versa. 
 
 Each user has their own home directory where their user specific files get stored, this is usually located in /home/username, but can vary in different distributions. 
@@ -27,14 +24,11 @@ We haven't gone through permissions yet, but what's happening here is that root 
 
 Now you'll be able to see the contents of the file!
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What command do you use to run as root?
-
-## Quiz Answer
-
+<details>
+<summary>What command do you use to run as root?</summary>
 sudo
+</details>

@@ -1,6 +1,4 @@
-# ping
-
-## Lesson Content
+# Ping
 
 One of the most simplest networking tools <b>ping</b>, it's used to test whether or not a packet can reach a host. It works by sending ICMP echo request (Type 8) packets to the destination host and waits for an ICMP echo reply (Type 0). Ping is successful when a host sends out the request packet and receives a response from the target. Let's look at an example: 
 
@@ -32,10 +30,12 @@ The roundtrip time it took from you sending the echo request packet to getting a
 
 Do a ping on a website and look at the output you receive.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the roundtrip time unit of measurement?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the roundtrip time unit of measurement?
+</summary>
 ms
+</details>

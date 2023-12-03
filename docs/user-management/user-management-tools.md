@@ -1,7 +1,5 @@
 # User Management Tools
 
-## Lesson Content
-
 Most enterprise environments are using management systems to manage users, accounts and passwords. However, on a single machine computer there are useful commands to run to manage users.
 
 <b>Adding Users</b>
@@ -30,10 +28,11 @@ This will allow you to change the password of yourself or another user (if you a
 
 Create a new user then change their password and login as the new user.
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to change a password?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to change a password?</summary>
 passwd
+</details>

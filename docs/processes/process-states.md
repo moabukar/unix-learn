@@ -1,7 +1,5 @@
 # Process States
 
-## Lesson Content
-
 Let's take a look at the ps aux command again:
 
 <pre>$ ps aux</pre>
@@ -20,10 +18,11 @@ In the STAT column, you'll see lots of values. A linux process can be in a numbe
 
 Take a look at the running processes on your system and check out their process states.
 
-## Quiz Question
+## Quiz Questions 
 
-What STAT code is used to represent an uninterruptible sleep? 
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What STAT code is used to represent an uninterruptible sleep? </summary>
 D
+</details>

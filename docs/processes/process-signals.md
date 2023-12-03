@@ -1,7 +1,5 @@
 # Signals
 
-## Lesson Content
-
 A signal is a notification to a process that something has happened.
 
 <b>Why we have signals</b>
@@ -43,14 +41,11 @@ Numbers can vary with signals so they are usually referred by their names.
 
 Some signals are unblockable, one example is the SIGKILL signal. The KILL signal destroys the process.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What signal is unblockable?
-
-## Quiz Answer
-
+<details>
+<summary>What signal is unblockable?</summary>
 SIGKILL
+</details>

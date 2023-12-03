@@ -1,7 +1,5 @@
 # /etc/shadow
 
-## Lesson Content
-
 The /etc/shadow file is used to store information about user authentication. It requires superuser read permissions. 
 
 <pre>$ sudo cat /etc/shadow
@@ -29,8 +27,11 @@ In most distributions today, user authentication doesn't rely on just the /etc/s
 
 Take a look at the /etc/shadow file
 
-## Quiz Question
+## Quiz Questions 
 
-No questions move along!
+Click the right arrow to view the answers
 
-## Quiz Answer
+<details>
+<summary>Add question</summary>
+Add asnwer here
+</details>

@@ -1,7 +1,5 @@
 # NAT
 
-## Lesson Content
-
 We've brought up NAT (network address translation) before but didn't touch upon it, when we are working on our network, does that mean that the Internet can see our IP address? Not quite.
 
 NAT makes a device like our router act as an intermediary between the Internet and private network. So only a single, unique IP address is required to represent an entire group of computers.
@@ -20,14 +18,11 @@ A simple case would look like this:
 
 NAT and packet routing in general can get pretty ugly, but we won't dive into the specifics.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What is used to represent a single private address to the Internet?
-
-## Quiz Answer
-
+<details>
+<summary>What is used to represent a single private address to the Internet?</summary>
 NAT
+</details>

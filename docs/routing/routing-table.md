@@ -1,11 +1,9 @@
 # Routing Table
 
-## Lesson Content
-
 Look at your machine's routing table:
 
 <pre>
-pete@icebox:~$ sudo route -n
+mo:~$ sudo route -n
 Kernel IP routing table
 Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 0.0.0.0         192.168.224.2   0.0.0.0         UG    0      0        0 eth0
@@ -41,10 +39,11 @@ This is the interface that our packet will be going out of, eth0 usually stands 
 
 Look at your routing table and see where your packets can go.
 
-## Quiz Question
+## Quiz Questions 
 
-Where are packets routed to if our routing table doesn't know?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>Where are packets routed to if our routing table doesn't know?</summary>
 Gateway
+</details>

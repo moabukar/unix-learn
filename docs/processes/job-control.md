@@ -1,7 +1,5 @@
 # Job Control
 
-## Lesson Content
-
 Let's say you're working on a single terminal window and you're running a command that is taking forever. You can't interact with the shell until it is complete, however we want to keep working on our machines, so we need that shell open. Fortunately we can control how our processes run with jobs: 
 
 <b>Sending a job to the background</b>
@@ -32,14 +30,14 @@ This will show you the job id in the first column, then the status and the comma
 If you already ran a job and want to send it to the background, you don't have to terminate it and start over again. First suspend the job with Ctrl-Z, then run the <b>bg</b> command to send it to the background.
 
 <pre>
-pete@icebox ~ $ sleep 1003
+mo ~ $ sleep 1003
 ^Z
 [4]+    Stopped     sleep 1003
 
-pete@icebox ~ $ bg
+mo ~ $ bg
 [4]+    sleep 1003 &
 
-pete@icebox ~ $ jobs
+mo ~ $ jobs
 
 [1]    Running     sleep 1000 &
 [2]    Running     sleep 1001 &
@@ -63,10 +61,11 @@ Similar to moving jobs out of the background, you can use the same form to kill 
 
 Move some jobs between the background and the foreground
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to list background jobs?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command is used to list background jobs?</summary>
 jobs
+</details>

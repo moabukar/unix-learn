@@ -1,7 +1,5 @@
 # /etc/group
 
-## Lesson Content
-
 Another file that is used in user management is the /etc/group file. This file allows for different groups with different permissions. 
 
 <pre>$ cat /etc/group
@@ -22,10 +20,11 @@ Very similar to the /etc/password field, the /etc/group fields are as follows:
 
 Run the command <b>groups</b>. What do you see?
 
-## Quiz Question
+## Quiz Questions 
 
-What is the GID of root?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the GID of root?</summary>
 0
+</details>

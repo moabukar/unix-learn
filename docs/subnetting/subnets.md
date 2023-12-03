@@ -1,7 +1,5 @@
 # Subnets
 
-## Lesson Content
-
 How can I tell if I'm on the same network as Patty? Well we can just look at the subnet short for subnetwork. A subnet is a group of hosts with IP addresses that are similar in a certain way. These hosts usually are in a proximate location from each other and you can easily send data to and from hosts on the same subnet. Think about it as sending mail in the same zip code, it's a lot easier than sending mail to a different state. 
 
 For example, all hosts with an IP address that starts with 123.45.67 would be on the same subnet. My host has an IP of 123.45.67.8 and Patty's has an IP of 123.45.67.9. The common numbers are my network prefix and the 8 and 9 are our hosts, therefore my network is the same as Patty's. A subnet is divided into a network prefix, such as 123.45.67.0 and a subnet mask.
@@ -32,10 +30,11 @@ But wait a minute, what if I want to connect to other hosts like yahoo.com? Then
 
 Use ifconfig to view your subnet mask.
 
-## Quiz Question
+## Quiz Questions 
 
-True or false, a subnet consists of a subnet mask and network prefix.
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>True or false, a subnet consists of a subnet mask and network prefix.</summary>
 True
+</details>

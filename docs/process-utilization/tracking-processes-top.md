@@ -1,7 +1,5 @@
 # Tracking processes: top
 
-## Lesson Content
-
 In this course, we'll go over how to read and analyze the resource utilization on your system, this lesson shows some great tools to use when you need to track what a process is doing. 
 
 <b>top</b>
@@ -16,8 +14,8 @@ KiB Mem:  32870888 total, 27467976 used,  5402912 free,   518808 buffers
 KiB Swap: 33480700 total,    39892 used, 33440808 free. 19454152 cached Mem
 
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                             
- 6675 patty    20   0 1731472 520960  30876 S   8.3  1.6 160:24.79 chrome                             
- 6926 patty    20   0  935888 163456  25576 S   4.3  0.5   5:28.13 chrome 
+ 6675 mo    20   0 1731472 520960  30876 S   8.3  1.6 160:24.79 chrome                             
+ 6926 mo    20   0  935888 163456  25576 S   4.3  0.5   5:28.13 chrome 
 </pre>
 
 Let's go over what this output means, you don't have to memorize this, but come back to this when you need a reference.
@@ -74,10 +72,11 @@ You can also specify a process ID if you just want to track certain processes:
 
 Play around with the top command and see what processes are using the most resources.
 
-## Quiz Question
+## Quiz Questions 
 
-What command displays the same output as the first line in top?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command displays the same output as the first line in top?</summary>
 uptime
+</details>

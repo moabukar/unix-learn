@@ -1,7 +1,5 @@
 # Samba
 
-## Lesson Content
-
 In the early days of computing, it became necessary for Windows machines to share files with Linux machines, thus the Server Message Block (SMB) protocol was born. SMB was used for sharing files between Windows operating systems (Mac also has file sharing with SMB) and then it was later cleaned up and optimized in the form of the Common Internet File System (CIFS) protocol. 
 
 Samba is what we call the Linux utilities to work with CIFS on Linux. In addition to file sharing, you can also share resources like printers. 
@@ -53,10 +51,11 @@ Instead of transferring files one by one, you can just mount the network share o
 
 Setup a Samba share, if you don't have one, open up smb.conf and familiarize yourself with the options in the config file.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the latest protocol used for file transfer between Windows and Linux?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the latest protocol used for file transfer between Windows and Linux?</summary>
 CIFS
+</details>

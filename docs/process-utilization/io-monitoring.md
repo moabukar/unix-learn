@@ -1,11 +1,9 @@
 # I/O Monitoring
 
-## Lesson Content
-
 We can also monitor CPU usage as well as monitor disk usage with a handy tool known as <b>iostat</b>
 
 <pre>
-pete@icebox:~$ iostat
+mo:~$ iostat
 Linux 3.13.0-39-lowlatency (icebox)     01/28/2016      _i686_  (1 CPU)
 
 avg-cpu:  %user   %nice %system %iowait  %steal   %idle
@@ -40,10 +38,11 @@ The second part is the disk utilization:
 
 Use iostat to view your disk usage.
 
-## Quiz Question
+## Quiz Questions 
 
-What command can be used to view I/O and CPU usage?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command can be used to view I/O and CPU usage?</summary>
 iostat
+</details>

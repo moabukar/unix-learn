@@ -1,7 +1,5 @@
 # IPv4
 
-## Lesson Content
-
 So we know that network hosts have a unique address they can be found at. These addresses are known as IP addresses. An IPv4 address looks something like this:
 
 <pre>204.23.124.23</pre>
@@ -13,7 +11,7 @@ An IP address is separated into octets by the periods. So there are 4 octets in 
 You can view your IP address with the ifconfig -a command:
 
 <pre>
-pete@icebox:~$ ifconfig -a
+mo:~$ ifconfig -a
 eth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce  
           inet addr:192.168.1.129  Bcast:192.168.1.255  Mask:255.255.255.0
           inet6 addr: fd60::21c:29ff:fe63:5cdc/64 Scope:Link
@@ -25,10 +23,11 @@ As you can see my IPv4 address is: 192.168.1.129
 
 Find your IP address with ifconfig.
 
-## Quiz Question
+## Quiz Questions 
 
-How many bytes are in an IPv4 address?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>How many bytes are in an IPv4 address?</summary>
 4
+</details>

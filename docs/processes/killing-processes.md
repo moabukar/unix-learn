@@ -1,6 +1,4 @@
-# kill (Terminate)
-
-## Lesson Content
+# Kill (Terminate)
 
 You can send signals that terminate processes, such a command is aptly named the kill command. 
 
@@ -30,10 +28,11 @@ These signals all sound reasonably similar, but they do have their differences.
 
 Kill some processes using different signals.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the signal name for the default kill command?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the signal name for the default kill command?</summary>
 SIGTERM
+</details>

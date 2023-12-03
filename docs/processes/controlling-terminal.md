@@ -1,7 +1,5 @@
 # Controlling Terminal
 
-## Lesson Content
-
 We discussed how there is a TTY field in the ps output. The TTY is the terminal that executed the command.
 
 There are two types of terminals, regular <b>terminal devices</b> and <b>pseudoterminal devices</b>. A regular terminal device is a native terminal device that you can type into and send output to your system, this sounds like the terminal application you've been launching to get to your shell, but it's not. 
@@ -18,10 +16,11 @@ There are processes such as daemon processes, which are special processes that a
 
 Look at your ps output and list all the unique TTY values.
 
-## Quiz Question
+## Quiz Questions 
 
-What value is given for a process that does not have a controlling terminal?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What value is given for a process that does not have a controlling terminal?</summary>
 ?
+</details>

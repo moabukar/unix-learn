@@ -1,7 +1,5 @@
 # NFS
 
-## Lesson Content
-
 The most standard network file share for Linux is NFS (Network File System), NFS allows a server to share directories and files with one or more clients over the network. 
 
 We won't get into the details of how to create an NFS server as it can get complex, however we will discuss setting up NFS clients.
@@ -19,10 +17,11 @@ Let's say you use the NFS server quite often and you want to keep it permanently
 
 Read the manpage for NFS to learn more.
 
-## Quiz Question
+## Quiz Questions 
 
-What tool is used to manage mount points automatically?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What tool is used to manage mount points automatically?</summary>
 automount
+</details>
