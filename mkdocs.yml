@@ -36,7 +36,7 @@ theme:
       accent: lime
 
 nav:
-- Home: index.md
+- Home: home_page.md
 - Linux:
     - Command-line:
         - Alias: command-line/alias-command.md
