@@ -6,7 +6,7 @@ If you are viewing text files larger than a simple output, less is more. (There 
 
 Go ahead and look at the contents of a file with less. Once you’re in the less command, you can actually use other keyboard commands to navigate in the file. 
 
-<pre>$ less /home/pete/Documents/text1</pre>
+<pre>$ less /home/mo/Documents/text1</pre>
 
 Use the following command to navigate through less: 
 

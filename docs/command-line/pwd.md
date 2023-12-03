@@ -17,7 +17,7 @@ Everything in Linux is a file, as you journey deeper into Linux you’ll underst
 |-- var
 </pre>
 
-The location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named pete and another folder in that folder called Movies, that path would look like this: /home/pete/Movies, pretty simple huh?
+The location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named mo and another folder in that folder called Movies, that path would look like this: /home/mo/Movies, pretty simple huh?
 
 Navigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the pwd command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.
 

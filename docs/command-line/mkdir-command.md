@@ -8,7 +8,7 @@ We’re gonna need some directories to store all these files we’ve been workin
 
 You can also create subdirectories at the same time with the -p (parent flag).
 
-<pre>$ mkdir -p books/hemmingway/favorites</pre>
+<pre>$ mkdir -p books/foobar/favorites</pre>
 
 ## Exercise
 
