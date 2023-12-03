@@ -1,19 +1,13 @@
 # Learn UNIX & Networking
 
--  Learn Linux
+-  Learn Linux in a simple and fun way.
  
-### Command-Line
-
-- **Linux**
-    - [Alias Command](https://moabukar.github.io/unix-learn/command-line/)
-    - [Linux CLI](https://moabukar.github.io/unix-learn/command-line/cli/)
-- **Git**
-    - [Git Basics](https://moabukar.github.io/unix-learn/level1/git/git-basics/)
-- **Networking**
-    - [Networking Syllabus](https://moabukar.github.io/unix-learn/level1/networking/plan/)
+### - [Command Line](https://moabukar.github.io/unix-learn/command-line/)
 
 
-### DNS
+### - [DNS](https://moabukar.github.io/unix-learn/dns/what-is-dns)
 
+
+### - [Network Fundamentals](https://moabukar.github.io/unix-learn/network-fundamentals/osi-model)
 
 ### 
