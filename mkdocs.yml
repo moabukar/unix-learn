@@ -57,6 +57,38 @@ nav:
         - Shell: command-line/the-shell.md
         - Touch: command-line/touch-command.md
         - What is: command-line/whatis-command.md
+    - Filesystem:
+        - Filesystem Hierarchy: filesystem/filesystem-hierarchy.md
+        - Filesystem types: filesystem/filesystem-types.md
+        - Creating filesytems: filesystem/creating-filesystems.md
+        - Filesystem repair: filesystem/filesystem-repair.md
+        - Inodes: filesystem/inodes.md
+        - Symbolic Links: filesystem/symlinks.md
+        - Swap Space: filesystem/swap-space.md
+        - Mounting: filesystem/mounting.md
+        - Disk Usage: filesystem/disk-usage.md
+        - Disk partitioning: filesystem/disk-partitioning.md
+        - Anatomy of a disk: filesystem/anatomy-of-a-disk.md
+    - Processes:
+        - Process Details: processes/process-details.md
+        - Process Creation: processes/process-creation.md
+    - Access:
+        - File Permissions: access/file-permissions.md
+        - Modifying Permissions: access/modifying-permissions.md
+        - Ownership Permissions: access/ownership-permissions.md
+        - Process Permissions: access/process-permissions.md
+    - User Management:
+        - Users & Groups: user-management/users-and-groups.md
+        - User Management Tools: user-management/user-management-tools.md
+        - Root User: user-management/root-user.md
+    - Devices:
+        - Dev directory: devices/dev-directory.md
+        - Device Types: devices/device-types.md
+        - Device Names: devices/device-names.md
+        - Listing Devices: devices/listing-devices.md
+        - DD command: devices/dd.md
+        - Sysfs: devices/sysfs.md
+        - Udev: devices/udev.md
     - Text Maniplutaion:
         - Cut: text-manipulation/cut-command.md
         - Env: text-manipulation/env-command.md
@@ -67,6 +99,28 @@ nav:
         - Sort: text-manipulation/sort-command.md
         - Tail: text-manipulation/tail-command.md
         - Translate (TR): text-manipulation/tr-translate-command.md
+    - Linux Boot Process:
+        - Overview: linux-process/boot-process-overview.md
+        - (1) BIOS: linux-process/boot-process-bios.md
+        - (2) Bootloader: linux-process/boot-process-bootloader.md
+        - (3) Kernel: linux-process/boot-process-kernel.md
+        - (4) Init: linux-process/boot-process-init.md
+    - Kernel:
+        - Overview: kernel/kernel-overview.md
+        - Installation: kernel/kernel-installation.md
+        - Modules: kernel/kernel-modules.md
+        - Location: kernel/kernel-location.md
+        - Privilege Levels: kernel/kernel-privilege-levels.md
+        - System calls: kernel/system-calls.md
+    - Process Utilisation:
+        - Monitoring: process-utilization/continuous-monitoring.md
+        - CPU Monitoring: process-utilization/cpu-monitoring.md
+        - Cron Jobs: process-utilization/cron-jobs.md
+        - I/O Monitoring: process-utilization/io-monitoring.md
+        - Memory Monitoring: process-utilization/memory-monitoring.md
+        - Process Threads: process-utilization/process-threads.md
+        - Tracking Processes lsof: process-utilization/tracking-processes-lsof.md
+        - Tracking Processes top: process-utilization/tracking-processes-top.md
     - DNS:
         - What is DNS?: dns/what-is-dns.md
         - Components: dns/dns-components.md
@@ -84,72 +138,18 @@ nav:
         - Routing Table: routing/routing-table.md
         - Path of a packet: routing/path-of-a-packet.md
         - BGP Border Gateway Protocol: routing/bgp.md
-    - Processes:
-        - Process Details: processes/process-details.md
-        - Process Creation: processes/process-creation.md
-    - Filesystem:
-        - Filesystem Hierarchy: filesystem/filesystem-hierarchy.md
-        - Filesystem types: filesystem/filesystem-types.md
-        - Creating filesytems: filesystem/creating-filesystems.md
-        - Filesystem repair: filesystem/filesystem-repair.md
-        - Inodes: filesystem/inodes.md
-        - Symbolic Links: filesystem/symlinks.md
-        - Swap Space: filesystem/swap-space.md
-        - Mounting: filesystem/mounting.md
-        - Disk Usage: filesystem/disk-usage.md
-        - Disk partitioning: filesystem/disk-partitioning.md
-        - Anatomy of a disk: filesystem/anatomy-of-a-disk.md
-    - Kernel:
-        - Overview: kernel/kernel-overview.md
-        - Installation: kernel/kernel-installation.md
-        - Modules: kernel/kernel-modules.md
-        - Location: kernel/kernel-location.md
-        - Privilege Levels: kernel/kernel-privilege-levels.md
-        - System calls: kernel/system-calls.md
-    - Network Troubleshooting:
-        - Ping: network-troubleshooting/ping.md
-        - Netstat: network-troubleshooting/netstat.md
-        - Traceroute: network-troubleshooting/traceroute.md
-        - ICMP: network-troubleshooting/icmp.md
-        - Packet Analysis: network-troubleshooting/packet-analysis.md
-    - User Management:
-        - Users & Groups: user-management/users-and-groups.md
-        - User Management Tools: user-management/user-management-tools.md
-        - Root User: user-management/root-user.md
-    - Linux Boot Process:
-        - Overview: linux-process/boot-process-overview.md
-        - (1) BIOS: linux-process/boot-process-bios.md
-        - (2) Bootloader: linux-process/boot-process-bootloader.md
-        - (3) Kernel: linux-process/boot-process-kernel.md
-        - (4) Init: linux-process/boot-process-init.md
     - Subnetting:
         - Subnets: subnetting/subnets.m
         - IPv4: subnetting/ipv4.md
         - IPv6: subnetting/ipv6.md
         - NAT: subnetting/nat.md
         - CIDR: subnetting/cidr.md
-    - Access:
-        - File Permissions: access/file-permissions.md
-        - Modifying Permissions: access/modifying-permissions.md
-        - Ownership Permissions: access/ownership-permissions.md
-        - Process Permissions: access/process-permissions.md
-    - Devices:
-        - Dev directory: devices/dev-directory.md
-        - Device Types: devices/device-types.md
-        - Device Names: devices/device-names.md
-        - Listing Devices: devices/listing-devices.md
-        - DD command: devices/dd.md
-        - Sysfs: devices/sysfs.md
-        - Udev: devices/udev.md
-    - Process Utilisation:
-        - Monitoring: process-utilization/continuous-monitoring.md
-        - CPU Monitoring: process-utilization/cpu-monitoring.md
-        - Cron Jobs: process-utilization/cron-jobs.md
-        - I/O Monitoring: process-utilization/io-monitoring.md
-        - Memory Monitoring: process-utilization/memory-monitoring.md
-        - Process Threads: process-utilization/process-threads.md
-        - Tracking Processes lsof: process-utilization/tracking-processes-lsof.md
-        - Tracking Processes top: process-utilization/tracking-processes-top.md
+    - Network Troubleshooting:
+        - Ping: network-troubleshooting/ping.md
+        - Netstat: network-troubleshooting/netstat.md
+        - Traceroute: network-troubleshooting/traceroute.md
+        - ICMP: network-troubleshooting/icmp.md
+        - Packet Analysis: network-troubleshooting/packet-analysis.md
 
 
 - Contribute: CONTRIBUTING.md
