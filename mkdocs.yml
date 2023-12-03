@@ -188,6 +188,12 @@ nav:
         - Traceroute: network-troubleshooting/traceroute.md
         - ICMP: network-troubleshooting/icmp.md
         - Packet Analysis: network-troubleshooting/packet-analysis.md
+    - Network Sharing:
+        - Network File Sharing: network-sharing/network-file-sharing.md
+        - Network File Share (NFS): network-sharing/nfs.md
+        - Rsync: network-sharing/rsync.md
+        - Samba: network-sharing/samba.md
+        - Simple HTTP Server: network-sharing/simple-http-server.md
 
 
 - Contribute: CONTRIBUTING.md

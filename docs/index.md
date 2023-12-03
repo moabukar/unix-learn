@@ -33,3 +33,6 @@
 
 
 ### Chapter 15: [Network Troubleshooting](https://moabukar.github.io/unix-learn/network-troubleshooting/ping)
+
+
+### Chapter 16: [Network Sharing](https://moabukar.github.io/unix-learn/network-sharing/nfs)
