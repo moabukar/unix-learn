@@ -1,16 +1,27 @@
 # UDP
 
 
-UDP is a transport layer protocol. DNS is an application layer protocol that runs on top of UDP(most of the times). Before jumping into UDP, let's try to understand what an application and transport layer is. DNS protocol is used by a DNS client(eg dig) and DNS server(eg named). The transport layer makes sure the DNS request reaches the DNS server process and similarly the response reaches the DNS client process. Multiple processes can run on a system and they can listen on any [ports](https://en.wikipedia.org/wiki/Port_(computer_networking)). DNS servers usually listen on port number 53. When a client makes a DNS request, after filling the necessary application payload, it passes the payload to the kernel via **sendto** system call. The kernel picks a random port number([>1024](https://www.cyberciti.biz/tips/linux-increase-outgoing-network-sockets-range.html)) as source port number and puts 53 as destination port number and sends the packet to lower layers. When the kernel on server side receives the packet, it checks the port number and queues the packet to the application buffer of the DNS server process which makes a **recvfrom** system call and reads the packet. This process by the kernel is called multiplexing(combining packets from multiple applications to same lower layers) and demultiplexing(segregating packets from single lower layer to multiple applications). Multiplexing and Demultiplexing is done by the Transport layer.
+UDP is a transport layer protocol. DNS is an application layer protocol that runs on top of UDP (most of the times). Before jumping into UDP, let's try to understand what an application and transport layer is. Here's how they interact with each other:
 
-UDP is one of the simplest transport layer protocol and it does only multiplexing and demultiplexing. Another common transport layer protocol TCP does a bunch of other things like reliable communication, flow control and congestion control. UDP is designed to be lightweight and handle communications with little overhead. So it doesn’t do anything beyond multiplexing and demultiplexing. If applications running on top of UDP need any of the features of TCP, they have to implement that in their application
+1. Application and Transport Layers: The transport layer (UDP, in this case) ensures that data from the application layer (like a DNS request) reaches the intended destination.
 
-This [example from python wiki](https://wiki.python.org/moin/UdpCommunication) covers a sample UDP client and server where “Hello World” is an application payload sent to server listening on port number 5005. The server receives the packet and prints the “Hello World” string from the client
+2. Port Usage: DNS servers typically listen on port 53. Clients send DNS requests using a random source port number above 1024, targeting port 53 on the server.
+
+3. Kernel's Role: The client's kernel sends the request using the sendto system call. The server's kernel receives it, checks the port number, and forwards it to the DNS server process using recvfrom. This process is known as multiplexing and demultiplexing.
+
+
+## Characteristics of UDP
+
+- UDP is designed for simplicity and low overhead, performing only multiplexing and demultiplexing.
+- Unlike TCP, UDP does not provide reliable communication, flow control, or congestion control. Any additional requirements must be implemented at the application level.
+
+## Example:
+
+A basic example involves a UDP client/server where the client sends a "Hello World" message to a server listening on port 5005. The server receives and prints this message.
 
 ## Applications in DevOps & Software Engineering
 
 
-1. If the underlying network is slow and the UDP layer is unable to queue packets down to the networking layer, sendto syscall from the application will hang till the kernel finds some of its buffer is freed. This can affect the throughput of the system. Increasing write memory buffer values using [sysctl variables](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/tuning_and_optimizing_red_hat_enterprise_linux_for_oracle_9i_and_10g_databases/sect-oracle_9i_and_10g_tuning_guide-adjusting_network_settings-changing_network_kernel_settings) *net.core.wmem_max* and *net.core.wmem_default* provides some cushion to the application from the slow network
+1. Buffer Management in Slow Networks: In scenarios where the underlying network is slow, the sendto system call might hang if the UDP layer can't queue packets efficiently. Increasing sysctl variables like net.core.wmem_max and net.core.wmem_default can help manage this by providing a larger buffer, which can accommodate more data during network slowdowns, thus maintaining throughput.
 
-2. Similarly if the receiver process is slow in consuming from its buffer, the kernel has to drop packets which it can’t queue due to the buffer being full. Since UDP doesn’t guarantee reliability these dropped packets can cause data loss unless tracked by the application layer. Increasing  sysctl variables *rmem_default* and *rmem_max* can provide some cushion to slow applications from fast senders.
-
+2. Managing Fast Senders and Slow Receivers: If the receiving process is slower than the sending rate, the kernel may need to drop packets if its buffer gets full, since UDP doesn’t manage flow control. To mitigate this, increasing the rmem_default and rmem_max sysctl variables can provide a larger buffer on the receiving end, reducing the likelihood of packet loss in such scenarios.
