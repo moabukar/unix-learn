@@ -1,5 +1,5 @@
-site_name: Learn Linux
-site_description: Learning Linux Doc
+site_name: Learn Linux & Netowrking
+site_description: Learning Linux & Networking Doc
 site_url: https://moabukar.github.io/unux-learn/
 site_author: Mo Abukar
 
@@ -75,144 +75,144 @@ markdown_extensions:
 
 nav:
 - Home: index.md
-- Linux:
-    - Command-line:
-        - Alias: command-line/alias-command.md
-        - Cat: command-line/cat-command.md
-        - Change Directory: command-line/cd.md
-        - Copy: command-line/cp.md
-        - Exit: command-line/exit-command.md
-        - Find: command-line/find-command.md
-        - Help: command-line/help-command.md
-        - History: command-line/history-command.md
-        - Less: command-line/less-command.md
-        - List: command-line/ls-command.md
-        - Man: command-line/man-command.md
-        - Mkdir: command-line/mkdir-command.md
-        - Move: command-line/mv-command.md
-        - Pwd: command-line/pwd.md
-        - Remove: command-line/rm.md
-        - Shell: command-line/the-shell.md
-        - Touch: command-line/touch-command.md
-        - What is: command-line/whatis-command.md
-    - Filesystem:
-        - Filesystem Hierarchy: filesystem/filesystem-hierarchy.md
-        - Filesystem types: filesystem/filesystem-types.md
-        - Creating filesytems: filesystem/creating-filesystems.md
-        - Filesystem repair: filesystem/filesystem-repair.md
-        - Inodes: filesystem/inodes.md
-        - Symbolic Links: filesystem/symlinks.md
-        - Swap Space: filesystem/swap-space.md
-        - Mounting: filesystem/mounting.md
-        - Disk Usage: filesystem/disk-usage.md
-        - Disk partitioning: filesystem/disk-partitioning.md
-        - Anatomy of a disk: filesystem/anatomy-of-a-disk.md
-    - Processes:
-        - Process Details: processes/process-details.md
-        - Process Creation: processes/process-creation.md
-        - Process Signals: processes/process-signals.md
-        - Process States: processes/process-states.md
-        - Process Termination: processes/process-termination.md
-        - Process Niceness: processes/process-niceness.md
-        - Ps command: processes/ps-command.md
-        - Proc Filesystem: processes/proc-filesystem.md
-        - Killing processes: processes/killing-processes.md
-        - Job Control: processes/job-control.md
-        - Controlling Terminal: processes/controlling-terminal.md
-    - Access:
-        - File Permissions: access/file-permissions.md
-        - Modifying Permissions: access/modifying-permissions.md
-        - Ownership Permissions: access/ownership-permissions.md
-        - Process Permissions: access/process-permissions.md
-    - User Management:
-        - Users & Groups: user-management/users-and-groups.md
-        - User Management Tools: user-management/user-management-tools.md
-        - Root User: user-management/root-user.md
-    - Devices:
-        - Dev directory: devices/dev-directory.md
-        - Device Types: devices/device-types.md
-        - Device Names: devices/device-names.md
-        - Listing Devices: devices/listing-devices.md
-        - DD command: devices/dd-command.md
-        - Sysfs: devices/sysfs.md
-        - Udev: devices/udev.md
-    - Text Maniplutaion:
-        - Cut: text-manipulation/cut-command.md
-        - Env: text-manipulation/env-environment.md
-        - Expand: text-manipulation/expand-command.md
-        - Grep: text-manipulation/grep-command.md
-        - Head: text-manipulation/head-command.md
-        - Pipe/Tee: text-manipulation/pipe-tee-redirect.md
-        - Sort: text-manipulation/sort-command.md
-        - Tail: text-manipulation/tail-command.md
-        - Translate (TR): text-manipulation/tr-translate-command.md
-    - Linux Boot Process:
-        - Overview: booting/boot-process-overview.md
-        - (1) BIOS: booting/boot-process-bios.md
-        - (2) Bootloader: booting/boot-process-bootloader.md
-        - (3) Kernel: booting/boot-process-kernel.md
-        - (4) Init: booting/boot-process-init.md
-    - Kernel:
-        - Overview: kernel/kernel-overview.md
-        - Installation: kernel/kernel-installation.md
-        - Modules: kernel/kernel-modules.md
-        - Location: kernel/kernel-location.md
-        - Privilege Levels: kernel/kernel-privilege-levels.md
-        - System calls: kernel/system-calls.md
-    - Process Utilisation:
-        - Monitoring: process-utilization/continuous-monitoring.md
-        - CPU Monitoring: process-utilization/cpu-monitoring.md
-        - Cron Jobs: process-utilization/cron-jobs.md
-        - I/O Monitoring: process-utilization/io-monitoring.md
-        - Memory Monitoring: process-utilization/memory-monitoring.md
-        - Process Threads: process-utilization/process-threads.md
-        - Tracking Processes lsof: process-utilization/tracking-processes-lsof.md
-        - Tracking Processes top: process-utilization/tracking-processes-top.md
-    - DNS:
-        - What is DNS?: dns/what-is-dns.md
-        - Components: dns/dns-components.md
-        - Process: dns/dns-process.md
-        - Setup: dns/dns-setup.md
-        - Tools: dns/dns-tools.md
-        - etc-hosts: dns/etc-hosts.md
-    - Networking Fundamentals:
-        - OSI Model: network-fundamentals/osi-model.md
-        - TCP/IP Model: network-fundamentals/tcp-ip-model.md
-        - Network Basics: network-fundamentals/network-basics.md
-        - TCP: network-fundamentals/tcp.md
-        - UDP: network-fundamentals/udp.md
-        - Application Layer: network-fundamentals/application-layer.md
-        - DHCP Overview: network-fundamentals/dhcp-overview.md
-        - Network layer: network-fundamentals/network-layer.md
-        - Network Addressing: network-fundamentals/network-addressing.md
-        - Link Layer: network-fundamentals/link-layer.md
-    - Routing:
-        - What is a router: routing/what-is-a-router.md
-        - Routing Protocols: routing/routing-protocols.md
-        - Routing Table: routing/routing-table.md
-        - Path of a packet: routing/path-of-a-packet.md
-        - BGP Border Gateway Protocol: routing/bgp.md
-    - Subnetting:
-        - Subnets: subnetting/subnets.md
-        - IPv4: subnetting/ipv4.md
-        - IPv6: subnetting/ipv6.md
-        - NAT: subnetting/nat.md
-        - CIDR: subnetting/cidr.md
-    - Network Troubleshooting:
-        - Ping: network-troubleshooting/ping.md
-        - Netstat: network-troubleshooting/netstat.md
-        - Traceroute: network-troubleshooting/traceroute.md
-        - ICMP: network-troubleshooting/icmp.md
-        - Packet Analysis: network-troubleshooting/packet-analysis.md
-    - Network Sharing:
-        - Network File Sharing: network-sharing/network-file-sharing.md
-        - Network File Share (NFS): network-sharing/nfs.md
-        - Rsync: network-sharing/rsync.md
-        - Samba: network-sharing/samba.md
-        - Simple HTTP Server: network-sharing/simple-http-server.md
-    - Advanced Debugging & Troubleshooting:
-        - SSH not working: advanced-debugging/ssh-not-working.md
-        - Log not working: advanced-debugging/log-not-working.md
+# - Unix & Networking:
+- Command-line:
+    - Alias: command-line/alias-command.md
+    - Cat: command-line/cat-command.md
+    - Change Directory: command-line/cd.md
+    - Copy: command-line/cp.md
+    - Exit: command-line/exit-command.md
+    - Find: command-line/find-command.md
+    - Help: command-line/help-command.md
+    - History: command-line/history-command.md
+    - Less: command-line/less-command.md
+    - List: command-line/ls-command.md
+    - Man: command-line/man-command.md
+    - Mkdir: command-line/mkdir-command.md
+    - Move: command-line/mv-command.md
+    - Pwd: command-line/pwd.md
+    - Remove: command-line/rm.md
+    - Shell: command-line/the-shell.md
+    - Touch: command-line/touch-command.md
+    - What is: command-line/whatis-command.md
+- Filesystem:
+    - Filesystem Hierarchy: filesystem/filesystem-hierarchy.md
+    - Filesystem types: filesystem/filesystem-types.md
+    - Creating filesytems: filesystem/creating-filesystems.md
+    - Filesystem repair: filesystem/filesystem-repair.md
+    - Inodes: filesystem/inodes.md
+    - Symbolic Links: filesystem/symlinks.md
+    - Swap Space: filesystem/swap-space.md
+    - Mounting: filesystem/mounting.md
+    - Disk Usage: filesystem/disk-usage.md
+    - Disk partitioning: filesystem/disk-partitioning.md
+    - Anatomy of a disk: filesystem/anatomy-of-a-disk.md
+- Processes:
+    - Process Details: processes/process-details.md
+    - Process Creation: processes/process-creation.md
+    - Process Signals: processes/process-signals.md
+    - Process States: processes/process-states.md
+    - Process Termination: processes/process-termination.md
+    - Process Niceness: processes/process-niceness.md
+    - Ps command: processes/ps-command.md
+    - Proc Filesystem: processes/proc-filesystem.md
+    - Killing processes: processes/killing-processes.md
+    - Job Control: processes/job-control.md
+    - Controlling Terminal: processes/controlling-terminal.md
+- Access:
+    - File Permissions: access/file-permissions.md
+    - Modifying Permissions: access/modifying-permissions.md
+    - Ownership Permissions: access/ownership-permissions.md
+    - Process Permissions: access/process-permissions.md
+- User Management:
+    - Users & Groups: user-management/users-and-groups.md
+    - User Management Tools: user-management/user-management-tools.md
+    - Root User: user-management/root-user.md
+- Devices:
+    - Dev directory: devices/dev-directory.md
+    - Device Types: devices/device-types.md
+    - Device Names: devices/device-names.md
+    - Listing Devices: devices/listing-devices.md
+    - DD command: devices/dd-command.md
+    - Sysfs: devices/sysfs.md
+    - Udev: devices/udev.md
+- Text Maniplutaion:
+    - Cut: text-manipulation/cut-command.md
+    - Env: text-manipulation/env-environment.md
+    - Expand: text-manipulation/expand-command.md
+    - Grep: text-manipulation/grep-command.md
+    - Head: text-manipulation/head-command.md
+    - Pipe/Tee: text-manipulation/pipe-tee-redirect.md
+    - Sort: text-manipulation/sort-command.md
+    - Tail: text-manipulation/tail-command.md
+    - Translate (TR): text-manipulation/tr-translate-command.md
+- Linux Boot Process:
+    - Overview: booting/boot-process-overview.md
+    - (1) BIOS: booting/boot-process-bios.md
+    - (2) Bootloader: booting/boot-process-bootloader.md
+    - (3) Kernel: booting/boot-process-kernel.md
+    - (4) Init: booting/boot-process-init.md
+- Kernel:
+  - Overview: kernel/kernel-overview.md
+  - Installation: kernel/kernel-installation.md
+  - Modules: kernel/kernel-modules.md
+  - Location: kernel/kernel-location.md
+  - Privilege Levels: kernel/kernel-privilege-levels.md
+  - System calls: kernel/system-calls.md
+- Process Utilisation:
+    - Monitoring: process-utilization/continuous-monitoring.md
+    - CPU Monitoring: process-utilization/cpu-monitoring.md
+    - Cron Jobs: process-utilization/cron-jobs.md
+    - I/O Monitoring: process-utilization/io-monitoring.md
+    - Memory Monitoring: process-utilization/memory-monitoring.md
+    - Process Threads: process-utilization/process-threads.md
+    - Tracking Processes lsof: process-utilization/tracking-processes-lsof.md
+    - Tracking Processes top: process-utilization/tracking-processes-top.md
+- DNS:
+    - What is DNS?: dns/what-is-dns.md
+    - Components: dns/dns-components.md
+    - Process: dns/dns-process.md
+    - Setup: dns/dns-setup.md
+    - Tools: dns/dns-tools.md
+    - etc-hosts: dns/etc-hosts.md
+- Networking Fundamentals:
+    - OSI Model: network-fundamentals/osi-model.md
+    - TCP/IP Model: network-fundamentals/tcp-ip-model.md
+    - Network Basics: network-fundamentals/network-basics.md
+    - TCP: network-fundamentals/tcp.md
+    - UDP: network-fundamentals/udp.md
+    - Application Layer: network-fundamentals/application-layer.md
+    - DHCP Overview: network-fundamentals/dhcp-overview.md
+    - Network layer: network-fundamentals/network-layer.md
+    - Network Addressing: network-fundamentals/network-addressing.md
+    - Link Layer: network-fundamentals/link-layer.md
+- Routing:
+    - What is a router: routing/what-is-a-router.md
+    - Routing Protocols: routing/routing-protocols.md
+    - Routing Table: routing/routing-table.md
+    - Path of a packet: routing/path-of-a-packet.md
+    - BGP Border Gateway Protocol: routing/bgp.md
+- Subnetting:
+    - Subnets: subnetting/subnets.md
+    - IPv4: subnetting/ipv4.md
+    - IPv6: subnetting/ipv6.md
+    - NAT: subnetting/nat.md
+    - CIDR: subnetting/cidr.md
+- Network Troubleshooting:
+    - Ping: network-troubleshooting/ping.md
+    - Netstat: network-troubleshooting/netstat.md
+    - Traceroute: network-troubleshooting/traceroute.md
+    - ICMP: network-troubleshooting/icmp.md
+    - Packet Analysis: network-troubleshooting/packet-analysis.md
+- Network Sharing:
+    - Network File Sharing: network-sharing/network-file-sharing.md
+    - Network File Share (NFS): network-sharing/nfs.md
+    - Rsync: network-sharing/rsync.md
+    - Samba: network-sharing/samba.md
+    - Simple HTTP Server: network-sharing/simple-http-server.md
+- Advanced Debugging & Troubleshooting:
+    - SSH not working: advanced-debugging/ssh-not-working.md
+    - Log not working: advanced-debugging/log-not-working.md
 
 
 - Contribute: CONTRIBUTING.md
