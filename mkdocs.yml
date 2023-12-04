@@ -179,6 +179,13 @@ nav:
         - OSI Model: network-fundamentals/osi-model.md
         - TCP/IP Model: network-fundamentals/tcp-ip-model.md
         - Network Basics: network-fundamentals/network-basics.md
+        - TCP: network-fundamentals/tcp.md
+        - UDP: network-fundamentals/udp.md
+        - Application Layer: network-fundamentals/application-layer.md
+        - DHCP Overview: network-fundamentals/dhcp-overview.md
+        - Network layer: network-fundamentals/network-layer.md
+        - Network Addressing: network-fundamentals/network-addressing.md
+        - Link Layer: network-fundamentals/link-layer.md
     - Routing:
         - What is a router: routing/what-is-a-router.md
         - Routing Protocols: routing/routing-protocols.md
