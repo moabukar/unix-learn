@@ -23,7 +23,7 @@ Now if you were on a journaled system, before your machine even begins to copy t
 Check out what filesystems are on your machine: 
 
 <pre>
-pete@icebox:~$ df -T
+mo:~$ df -T
 Filesystem     Type     1K-blocks    Used Available Use% Mounted on
 /dev/sda1      ext4       6461592 2402708   3707604  40% /
 udev           devtmpfs    501356       4    501352   1% /dev

@@ -7,7 +7,7 @@ The /sys filesystem basically contains all the information for all devices on yo
 Take a look at the contents of the /sys directory:
 
 <pre>
-pete@icebox:~$ ls /sys/block/sda
+mo:~$ ls /sys/block/sda
 alignment_offset  discard_alignment  holders   removable  sda6       trace
 bdi               events             inflight  ro         size       uevent
 capability        events_async       power     sda1       slaves

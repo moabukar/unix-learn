@@ -65,10 +65,11 @@ Similar to a symlink creation, except this time you leave out the -s.
 
 Play around with making symlinks and hardlinks, delete a couple and see what happens.
 
-## Quiz Question
+## Quiz Questions 
 
-What is the command used to make a symlink?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What is the command used to make a symlink/soft link?</summary>
 ln -s
+</details>

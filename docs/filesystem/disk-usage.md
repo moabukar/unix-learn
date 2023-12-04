@@ -3,7 +3,7 @@
 There are a few tools you can used to see the utilization of your disks: 
 
 <pre>
-pete@icebox:~$ df -h
+mo:~$ df -h
 Filesystem     1K-blocks    Used Available Use% Mounted on
 /dev/sda1       6.2G  2.3G  3.6G  40% /
 </pre>

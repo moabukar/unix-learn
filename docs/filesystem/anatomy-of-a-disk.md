@@ -43,7 +43,7 @@ We know from our previous lesson that a filesystem is an organized collection of
 Let's take a look at the different partition tables. Below is an example of a partition using the MBR partitioning table (msdos). You can see the primary, extended and logical partitions on the machine.
 
 <pre>
-pete@icebox:~$ sudo parted -l
+mo:~$ sudo parted -l
 Model: Seagate (scsi)
 Disk /dev/sda: 21.5GB
 Sector size (logical/physical): 512B/512B

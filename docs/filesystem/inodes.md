@@ -31,9 +31,9 @@ To see how many inodes are left on your system, use the command <b>df -i</b>
 Inodes are identified by numbers, when a file gets created it is assigned an inode number, the number is assigned in sequential order. However, you may sometimes notice when you create a new file, it gets an inode number that is lower than others, this is because once inodes are deleted, they can be reused by other files. To view inode numbers run <b>ls -li</b>:
 
 <pre>
-pete@icebox:~$ ls -li
-140 drwxr-xr-x 2 pete pete 6 Jan 20 20:13 Desktop
-141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents
+mo:~$ ls -li
+140 drwxr-xr-x 2 mo mo 6 Jan 20 20:13 Desktop
+141 drwxr-xr-x 2 mo mo 6 Jan 20 20:01 Documents
 </pre>
 
 The first field in this command lists the inode number.
@@ -41,11 +41,11 @@ The first field in this command lists the inode number.
 You can also see detailed information about a file with stat, it tells you information about the inode as well.
 
 <pre>
-pete@icebox:~$ stat ~/Desktop/
-  File: ‘/home/pete/Desktop/’
+mo:~$ stat ~/Desktop/
+  File: ‘/home/mo/Desktop/’
   Size: 6               Blocks: 0          IO Block: 4096   directory
 Device: 806h/2054d      Inode: 140         Links: 2
-Access: (0755/drwxr-xr-x)  Uid: ( 1000/   pete)   Gid: ( 1000/   pete)
+Access: (0755/drwxr-xr-x)  Uid: ( 1000/   mo)   Gid: ( 1000/   mo)
 Access: 2016-01-20 20:13:50.647435982 -0800
 Modify: 2016-01-20 20:13:06.191675843 -0800
 Change: 2016-01-20 20:13:06.191675843 -0800

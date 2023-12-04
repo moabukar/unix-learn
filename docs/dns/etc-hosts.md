@@ -7,7 +7,7 @@ Before our machine actually hits DNS to do a query, it first looks locally on ou
 The /etc/hosts file contains mappings of some hostnames to IP addresses. The fields are pretty self explanatory, there is one for the IP address, the hostname and then any alias's for the host. 
 
 <pre>
-pete@icebox:~$ cat /etc/hosts
+mo:~$ cat /etc/hosts
 127.0.0.1       localhost
 127.0.1.1       icebox
 </pre>

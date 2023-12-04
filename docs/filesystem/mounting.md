@@ -19,7 +19,7 @@ Remember that the kernel names devices in the order it finds them. What if our d
 To view the UUIDS on your system for block devices:
 
 <pre>
-pete@icebox:~$ sudo blkid
+mo:~$ sudo blkid
 /dev/sda1: UUID="130b882f-7d79-436d-a096-1e594c92bb76" TYPE="ext4" 
 /dev/sda5: UUID="22c3d34b-467e-467c-b44d-f03803c2c526" TYPE="swap" 
 /dev/sda6: UUID="78d203a0-7c18-49bd-9e07-54f44cdb5726" TYPE="xfs" 

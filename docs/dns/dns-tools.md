@@ -5,7 +5,7 @@
 The "name server lookup" tool is used to query name servers to find information about resource records. Let's find where the name server for google.com is:
 
 <pre>
-pete@icebox:~$ nslookup www.google.com
+mo:~$ nslookup www.google.com
 Server:         127.0.1.1
 Address:        127.0.1.1#53
 
@@ -20,7 +20,7 @@ Dig (domain information groper) is a powerful tool for getting information about
 
 
 <pre>
-pete@icebox:~$ dig www.google.com
+mo:~$ dig www.google.com
 
 ; <<>> DiG 9.9.5-3-Ubuntu <<>> www.google.com
 ;; global options: +cmd
@@ -42,7 +42,7 @@ www.google.com.         5       IN      A       74.125.239.148
 
 ;; Query time: 27 msec
 ;; SERVER: 127.0.1.1#53(127.0.1.1)
-;; WHEN: Sun Feb 07 10:14:00 PST 2016
+;; WHEN: Mon Dec 04 10:14:00 GMT 2023
 ;; MSG SIZE  rcvd: 123
 </pre>
 

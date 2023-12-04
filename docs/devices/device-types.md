@@ -3,10 +3,10 @@
 Before we chat about how devices are managed, let's actually take a look at some devices.
 
 <pre>$ ls -l /dev
-brw-rw----   1 root disk      8,   0 Dec 20 20:13 sda
-crw-rw-rw-   1 root root      1,   3 Dec 20 20:13 null
-srw-rw-rw-   1 root root           0 Dec 20 20:13 log
-prw-r--r--   1 root root           0 Dec 20 20:13 fdata
+brw-rw----   1 root disk      8,   0 Dec 4 15:11 sda
+crw-rw-rw-   1 root root      1,   3 Dec 4 15:11 null
+srw-rw-rw-   1 root root           0 Dec 4 15:11 log
+prw-r--r--   1 root root           0 Dec 4 1:11 fdata
 </pre>
 
 The columns are as follows from left to right:
