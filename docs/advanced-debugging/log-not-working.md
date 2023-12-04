@@ -16,26 +16,28 @@ Click the right arrow to view the answers
 <details>
 <summary>Solution</summary>
 
-- check process config files in /proc
-1. **Check disk space**: Verify available disk space and ensure it is not full. Free up space if necessary. `Du -h, Df -h , ls -arl`
+1. check process config files in /proc<br><br>
 
 
-2. **Review file permissions**: Check if the process has proper write permissions to the log directory. User perms? Ownership of directory has changed. `Chmod`, `Chown`. `Chgrp`
+2. **Check disk space**: Verify available disk space and ensure it is not full. Free up space if necessary. `Du -h, Df -h , ls -arl`<br><br>
 
 
-3. **Investigate log rotation**: Ensure log rotation is properly configured to prevent log files from filling up the disk. **/etc/logrotate.d/**
+3. **Review file permissions**: Check if the process has proper write permissions to the log directory. User perms? Ownership of directory has changed. `Chmod`, `Chown`. `Chgrp`<br><br>
 
 
-4. **Monitor disk I/O**: Monitor disk I/O performance to identify any issues affecting logging. **iostat, iotop**
+4. **Investigate log rotation**: Ensure log rotation is properly configured to prevent log files from filling up the disk. **/etc/logrotate.d/**<br><br>
 
 
-5. **Implement centralized logging**: Adopt a centralized logging solution to streamline log management and analysis. CloudWatch Logs or Elasticsearch
+5. **Monitor disk I/O**: Monitor disk I/O performance to identify any issues affecting logging. **iostat, iotop**<br><br>
 
 
-6. **Enable process-level logging**: Configure the process to perform its own logging, using frameworks or libraries. mplement a logging framework (e.g., Logrus, Zap
+6. **Implement centralized logging**: Adopt a centralized logging solution to streamline log management and analysis. CloudWatch Logs or Elasticsearch<br><br>
 
 
-7. **Implement fault tolerance**: Design the system with redundancy to ensure logging continuity in case of process failures. Implement redundancy by deploying multiple instances of the process, using load balancers or orchestrators, and considering backup log streams or alternate logging mechanisms
+7. **Enable process-level logging**: Configure the process to perform its own logging, using frameworks or libraries. mplement a logging framework (e.g., Logrus, Zap<br><br>
+
+
+8. **Implement fault tolerance**: Design the system with redundancy to ensure logging continuity in case of process failures. Implement redundancy by deploying multiple instances of the process, using load balancers or orchestrators, and considering backup log streams or alternate logging mechanisms
 
 
 </details>
