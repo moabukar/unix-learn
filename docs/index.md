@@ -36,3 +36,5 @@
 
 
 ### Chapter 16: [Network Sharing](https://moabukar.github.io/unix-learn/network-sharing/nfs)
+
+### Chapter 17: [Advanced Debugging & Troubleshooting](https://moabukar.github.io/unix-learn/advanced-debugging/ssh-not-working)
