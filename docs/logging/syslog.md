@@ -1,13 +1,11 @@
 # syslog
 
-## Lesson Content
-
 The syslog service manages and sends logs to the system logger. Rsyslog is an advanced version of syslog, most Linux distributions should be using this new version. The output of all the logs the syslog service collects can be found at /var/log/syslog (every message except auth messages).
 
 To find out what files are maintained by our system logger, look at the configuration files in /etc/rsyslog.d:
 
 <pre>
-pete@icebox:~$ less /etc/rsyslog.d/50-default.conf 
+mo:~$ less /etc/rsyslog.d/50-default.conf 
 # First some standard log files.  Log by facility.
 #
 auth,authpriv.*                 /var/log/auth.log
@@ -34,10 +32,11 @@ Now look inside your /var/log/syslog and you should see this entry in your logs!
 
 Look at your /etc/rsyslog.d configuration file and see what else is being logged via the system logger.
 
-## Quiz Question
+## Quiz Questions 
 
-What command can you use to manually log a message?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What command can you use to manually log a message?</summary>
 logger
+</details>

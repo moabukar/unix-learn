@@ -1,7 +1,5 @@
 # General Logging
 
-## Lesson Content
-
 There are many log files you can view on your system, many important ones can be found under /var/log. We won't go through them all, but we'll discuss a couple of the major ones. 
 
 There are two general log files you can view to get a glimpse of what your system is doing:
