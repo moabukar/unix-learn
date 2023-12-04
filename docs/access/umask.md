@@ -1,7 +1,5 @@
 # Umask
 
-## Lesson Content
-
 Every file that gets created comes with a default set of permissions. If you ever wanted to change that default set of permissions, you can do so with the umask command. This command takes the 3 bit permission set we see in numerical permissions. 
 
 Instead of adding these permissions though, umask takes away these permissions. 
@@ -20,10 +18,11 @@ When you run the umask command it will give that default set of permissions on a
 <li>Check the permissions once more on the new file, what do you expect to see?</li>
 <ol>
 
-## Quiz Question
+## Quiz Questions 
 
-What command is used to change default file permissions?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
-umask
+<details>
+<summary>What command is used to change default file permissions?</summary>
+unmask
+</details>

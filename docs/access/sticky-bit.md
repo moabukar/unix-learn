@@ -1,7 +1,5 @@
 # The Sticky Bit
 
-## Lesson Content
-
 One last special permission bit I want to talk about is the sticky bit. 
 
 This permission bit, "sticks a file/directory" this means that only the owner or the root user can delete or modify the file. This is very useful for shared directories. Take a look at the example below:
@@ -24,10 +22,11 @@ The numerical representation for the sticky bit is <b>1</b>
 
 What other files and directories do you think have a sticky bit enabled? 
 
-## Quiz Question
+## Quiz Questions 
 
-What symbol represents the sticky bit?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What symbol represents the sticky bit?</summary>
 t
+</details>

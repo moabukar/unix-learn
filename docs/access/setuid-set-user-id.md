@@ -1,7 +1,5 @@
 # Setuid
 
-## Lesson Content
-
 There are many cases in which normal users need elevated access to do stuff. The system administrator can't always be there to enter in a root password every time a user needed access to a protected file, so there are special file permission bits to allow this behavior. The Set User ID (SUID) allows a user to run a program as the owner of the program file rather than as themselves.
 
 Let's look at an example: 
@@ -46,10 +44,11 @@ As you can see the SUID is denoted by a 4 and pre-pended to the permission set. 
 
 Look at the permission for /etc/passwd in detail, do you notice anything else? Files with SUID enabled are also easily distinguishable.
 
-## Quiz Question
+## Quiz Questions 
 
-What number represents the SUID?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What number represents the SUID?</summary>
 4
+</details>

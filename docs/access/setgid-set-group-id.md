@@ -1,7 +1,5 @@
 # Setgid
 
-## Lesson Content
-
 Similar to the set user ID permission bit, there is a set group ID (SGID) permission bit. This bit allows a program to run as if it was a member of that group. 
 
 Let's look at one example: 
@@ -20,14 +18,11 @@ $ sudo chmod 2555 myfile
 
 The numerical representation for SGID is 2.
 
-## Exercise
+## Quiz Questions 
 
-No exercises for this lesson.
+Click the right arrow to view the answers
 
-## Quiz Question
-
-What number represents the SGID?
-
-## Quiz Answer
-
+<details>
+<summary>What number represents the SGID?</summary>
 2
+</details>

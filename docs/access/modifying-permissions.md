@@ -1,7 +1,5 @@
 # Modifying Permissions
 
-## Lesson Content
-
 Changing permissions can easily be done with the <b>chmod</b> command. 
 
 First, pick which permission set you want to change, user, group or other. You can add or remove permissions with a <b>+</b> or <b>-</b>, let's look at some examples.
@@ -47,10 +45,11 @@ One thing to note: it's not a great idea to be changing permissions nilly willy,
 
 Change some basic text file permissions and see the bits changing as you do an ls -l.
 
-## Quiz Question
+## Quiz Questions 
 
-What number represents the read permission when using numerical format?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What number represents the read permission when using numerical format?</summary>
 4
+</details>

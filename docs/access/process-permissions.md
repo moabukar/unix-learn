@@ -1,7 +1,5 @@
 # Process Permissions
 
-## Lesson Content
-
 Let's segway into process permissions for a bit, remember how I told you that when you run the passwd command with the SUID permission bit enabled you will run the program as root? That is true, however does that mean since you are temporarily root you can modify other user's passwords? Nope fortunately not!
 
 This is because of the many UIDs that Linux implements. There are three UIDS associated with every process:
@@ -32,10 +30,11 @@ We haven't discussed processes yet, we can still take a look at this change happ
 <li>Look at the first terminal window, you'll see a process come up for passwd. The first column in the process table is the effective user ID, lo and behold it's the root user!</li>
 </ol>
 
-## Quiz Question
+## Quiz Questions 
 
-What UID decides what access to grant?
+Click the right arrow to view the answers
 
-## Quiz Answer
-
+<details>
+<summary>What UID decides what access to grant?</summary>
 effective
+</details>
