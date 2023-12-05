@@ -13,7 +13,7 @@ Run the following commands to build and view the site locally before opening a P
 ```
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 mkdocs build
 mkdocs serve
 ```
