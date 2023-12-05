@@ -5,7 +5,7 @@ At this point, you're probably well familiar with the directory structure of you
 Go ahead and do an <b>ls -l /</b> to see the directories listed under the root directory, yours may look different than mine, but the directories should for the most part look like the following:
 
 <ul>
-<li>/ - The root directory of the entire filesystem hierarchy, everything is nestled under this directory.</li>
+<li>/ - The root directory of the entire filesystem hierarchy, everything is nested under this directory.</li>
 <li>/bin - Essential ready-to-run programs (binaries), includes the most basic commands such as ls and cp.</li>
 <li>/boot - Contains kernel boot loader files.</li>
 <li>/dev - Device files.</li>
