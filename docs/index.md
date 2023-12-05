@@ -39,8 +39,8 @@
 
 ### Chapter 17: [Advanced Debugging & Troubleshooting](https://moabukar.github.io/unix-learn/advanced-debugging/ssh-not-working)
 
-## Creator of UNIX Learn:
+### Creator of UNIX Learn:
 
-- Mohamed Abukar [LinkedIn](https://www.linkedin.com/in/moabukar/), [GitHub](https://github.com/moabukar)
+Mohamed Abukar [LinkedIn](https://www.linkedin.com/in/moabukar/), [GitHub](https://github.com/moabukar)
 
 If you have any feedback or suggestions, please feel free to reach out to me on LinkedIn.
