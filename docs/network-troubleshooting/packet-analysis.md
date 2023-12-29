@@ -11,7 +11,7 @@ $ sudo apt install tcpdump
 <b>Capture packet data on an interface</b>
 
 <pre>
-pete@icebox:~$ sudo tcpdump -i wlan0
+mo@icebox:~$ sudo tcpdump -i wlan0
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on wlan0, link-type EN10MB (Ethernet), capture size 65535 bytes
 11:28:23.958840 IP icebox.lan > nuq04s29-in-f4.1e100.net: ICMP echo request, id 1901, seq 2, length 64

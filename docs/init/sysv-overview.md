@@ -27,7 +27,7 @@ When your system starts up, it looks to see what runlevel you are in and execute
 For example:
 
 <pre>
-pete@icebox:/etc/rc.d/rc0.d$ ls
+mo@icebox:/etc/rc.d/rc0.d$ ls
 K10updates  K80openvpn        
 </pre>
 

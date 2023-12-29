@@ -9,7 +9,7 @@ To find out if you are using Upstart, if you have a /usr/share/upstart directory
 Jobs are the actions that Upstart performs and events are messages that are received from other processes to trigger jobs. To see a list of jobs and their configuration:
 
 <pre>
-pete@icebox:~$ ls /etc/init
+mo@icebox:~$ ls /etc/init
 acpid.conf                   mountnfs.sh.conf
 alsa-restore.conf            mtab.sh.conf
 alsa-state.conf              networking.conf

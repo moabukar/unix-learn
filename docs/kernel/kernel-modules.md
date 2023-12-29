@@ -22,7 +22,7 @@ Modprobe loads tries the module from <b>/lib/modules/(kernel version)/kernel/dri
 
 You can also load modules during system boot, instead of temporarily loading them with modprobe (which will be unloaded when you reboot). Just modify the <b>/etc/modprobe.d</b> directory and add a configuration file in it like so:
 
-<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf
+<pre>mo@icebox:~$ /etc/modprobe.d/peanutbutter.conf
 
 options peanut_butter type=almond
 </pre>
@@ -33,7 +33,7 @@ A bit of a outlandish example, but if you had a module named peanut_butter and y
 
 You can also make sure a module does not load on bootup by adding a configuration file like so:
 
-<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf
+<pre>mo@icebox:~$ /etc/modprobe.d/peanutbutter.conf
 
 blacklist peanut_butter
 </pre>

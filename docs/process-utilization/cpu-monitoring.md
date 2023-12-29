@@ -3,7 +3,7 @@
 Let's go over a useful command, <b>uptime</b>.
 
 <pre>
-pete@icebox:~$ uptime
+mo@icebox:~$ uptime
  17:23:35 up 1 day,  5:59,  2 users,  load average: 0.00, 0.02, 0.05
 </pre>
 

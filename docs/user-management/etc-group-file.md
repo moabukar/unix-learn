@@ -4,7 +4,7 @@ Another file that is used in user management is the /etc/group file. This file a
 
 <pre>$ cat /etc/group
 
-root:*:0:pete
+root:*:0:mo
 </pre>
 
 Very similar to the /etc/password field, the /etc/group fields are as follows:

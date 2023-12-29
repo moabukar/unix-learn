@@ -24,16 +24,13 @@
 
 ### Chapter 11: [DNS](https://moabukar.github.io/unix-learn/dns/what-is-dns)
 
-
 ### Chapter 12: [Network Fundamentals](https://moabukar.github.io/unix-learn/network-fundamentals/osi-model)
 
 ### Chapter 13: [Routing](https://moabukar.github.io/unix-learn/routing/what-is-a-router)
 
 ### Chapter 14: [Subnetting](https://moabukar.github.io/unix-learn/subnetting/subnets)
 
-
 ### Chapter 15: [Network Troubleshooting](https://moabukar.github.io/unix-learn/network-troubleshooting/ping)
-
 
 ### Chapter 16: [Network Sharing](https://moabukar.github.io/unix-learn/network-sharing/nfs)
 
@@ -44,3 +41,5 @@
 Mohamed Abukar [LinkedIn](https://www.linkedin.com/in/moabukar/), [GitHub](https://github.com/moabukar)
 
 If you have any feedback or suggestions, please feel free to reach out to me on LinkedIn.
+
+## Book link (TBC)

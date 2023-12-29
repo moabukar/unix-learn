@@ -3,7 +3,7 @@
 One of the most simplest networking tools <b>ping</b>, it's used to test whether or not a packet can reach a host. It works by sending ICMP echo request (Type 8) packets to the destination host and waits for an ICMP echo reply (Type 0). Ping is successful when a host sends out the request packet and receives a response from the target. Let's look at an example: 
 
 <pre>
-pete@icebox:~$ ping -c 3 www.google.com
+mo@icebox:~$ ping -c 3 www.google.com
 PING www.google.com (74.125.239.112) 56(84) bytes of data.
 64 bytes from nuq05s01-in-f16.1e100.net (74.125.239.112): icmp_seq=1 ttl=128 time=29.0 ms
 64 bytes from nuq05s01-in-f16.1e100.net (74.125.239.112): icmp_seq=2 ttl=128 time=23.7 ms
