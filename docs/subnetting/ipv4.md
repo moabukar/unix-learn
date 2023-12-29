@@ -19,6 +19,18 @@ eth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce
 
 As you can see my IPv4 address is: 192.168.1.129
 
+### Packet structure of IPv4 vs IPv6
+
+#### IPv4
+
+- Every packet has a source and destination IP address
+- Protocol field (which is layer 4) like ICMP, TCP, UDP
+  - If you're storing TCP data inside a packet, this value will be 6
+  - If you're storing UDP data inside a packet, this value will be 17
+  - If you're storing ICMP data inside a packet, this value will be 1
+- Bulk of the field within a packet is taken up by the data. 
+- A field called TTL
+
 ## Exercise
 
 Find your IP address with ifconfig.

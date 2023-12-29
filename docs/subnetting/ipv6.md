@@ -6,6 +6,12 @@ We've heard the term IPv6 here and there, but what is it? Every device that conn
 2dde:1235:1256:3:200:f8ed:fe23:59cf
 </pre>
 
+#### Packet structure of IPv6
+
+- Source & IP (Bigger & therefore, larger addresses)
+- Data
+- Hop limit (like TTL)
+
 ## Exercise
 
 Check ifconfig to see if you have an IPv6 address listed.

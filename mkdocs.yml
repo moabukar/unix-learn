@@ -178,6 +178,7 @@ nav:
 - Networking Fundamentals:
     - OSI Model: network-fundamentals/osi-model.md
     - TCP/IP Model: network-fundamentals/tcp-ip-model.md
+    - OSI Model Detailed: network-fundamentals/osi-detailed.md
     - Network Basics: network-fundamentals/network-basics.md
     - TCP: network-fundamentals/tcp.md
     - UDP: network-fundamentals/udp.md
@@ -186,9 +187,11 @@ nav:
     - Network layer: network-fundamentals/network-layer.md
     - Network Addressing: network-fundamentals/network-addressing.md
     - Link Layer: network-fundamentals/link-layer.md
+    - DNS: network-fundamentals/dns.md
 - Routing:
     - What is a router: routing/what-is-a-router.md
     - Routing Protocols: routing/routing-protocols.md
+    - ARP: routing/arp.md
     - Routing Table: routing/routing-table.md
     - Path of a packet: routing/path-of-a-packet.md
     - BGP Border Gateway Protocol: routing/bgp.md
