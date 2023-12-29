@@ -192,6 +192,7 @@ nav:
     - What is a router: routing/what-is-a-router.md
     - Routing Protocols: routing/routing-protocols.md
     - ARP: routing/arp.md
+    - NAT: routing/nat.md
     - Routing Table: routing/routing-table.md
     - Path of a packet: routing/path-of-a-packet.md
     - BGP Border Gateway Protocol: routing/bgp.md
@@ -216,6 +217,8 @@ nav:
 - Advanced Debugging & Troubleshooting:
     - SSH not working: advanced-debugging/ssh-not-working.md
     - Log not working: advanced-debugging/log-not-working.md
+    - DNS deep dive: advanced-debugging/dns-deep-dive.md
+    - Famous WWW question: advanced-debugging/www.md
 
 
 - Contribute: CONTRIBUTING.md
