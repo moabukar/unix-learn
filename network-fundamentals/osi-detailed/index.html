@@ -1,0 +1,1634 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>OSI Model Detailed - Learn Linux & Networking</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://moabukar.github.io/unux-learn/network-fundamentals/osi-detailed/">
+        <meta name="author" content="Mo Abukar">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Learn Linux & Networking</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#command-line-collapse" aria-expanded="false">
+                    Command-line
+                </a>
+                <div class="collapse" id="command-line-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/alias-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Alias
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/cat-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/cd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Change Directory
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/cp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Copy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/exit-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/find-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Find
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/help-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Help
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/history-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/less-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Less
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/ls-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            List
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/man-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Man
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/mkdir-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkdir
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/mv-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Move
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/pwd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pwd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/rm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Remove
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/the-shell/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Shell
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/touch-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Touch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/whatis-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            What is
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#filesystem-collapse" aria-expanded="false">
+                    Filesystem
+                </a>
+                <div class="collapse" id="filesystem-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/filesystem-hierarchy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filesystem Hierarchy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/filesystem-types/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filesystem types
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/creating-filesystems/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Creating filesytems
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/filesystem-repair/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filesystem repair
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/inodes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Inodes
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/symlinks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Symbolic Links
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/swap-space/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Swap Space
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/mounting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mounting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/disk-usage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Disk Usage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/disk-partitioning/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Disk partitioning
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/anatomy-of-a-disk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Anatomy of a disk
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#processes-collapse" aria-expanded="false">
+                    Processes
+                </a>
+                <div class="collapse" id="processes-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-details/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Details
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-creation/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Creation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-signals/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Signals
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-states/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process States
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-termination/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Termination
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-niceness/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Niceness
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/ps-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ps command
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/proc-filesystem/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proc Filesystem
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/killing-processes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Killing processes
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/job-control/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Job Control
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/controlling-terminal/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Controlling Terminal
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#access-collapse" aria-expanded="false">
+                    Access
+                </a>
+                <div class="collapse" id="access-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/file-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File Permissions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/modifying-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modifying Permissions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/ownership-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ownership Permissions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/process-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Permissions
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#user-management-collapse" aria-expanded="false">
+                    User Management
+                </a>
+                <div class="collapse" id="user-management-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../user-management/users-and-groups/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Users & Groups
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../user-management/user-management-tools/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            User Management Tools
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../user-management/root-user/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Root User
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#devices-collapse" aria-expanded="false">
+                    Devices
+                </a>
+                <div class="collapse" id="devices-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/dev-directory/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dev directory
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/device-types/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Device Types
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/device-names/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Device Names
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/listing-devices/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Listing Devices
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/dd-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DD command
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/sysfs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sysfs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/udev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Udev
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#text-maniplutaion-collapse" aria-expanded="false">
+                    Text Maniplutaion
+                </a>
+                <div class="collapse" id="text-maniplutaion-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/cut-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cut
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/env-environment/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Env
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/expand-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Expand
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/grep-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Grep
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/head-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Head
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/pipe-tee-redirect/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pipe/Tee
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/sort-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sort
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/tail-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/tr-translate-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Translate (TR)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#linux-boot-process-collapse" aria-expanded="false">
+                    Linux Boot Process
+                </a>
+                <div class="collapse" id="linux-boot-process-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-overview/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-bios/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (1) BIOS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-bootloader/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (2) Bootloader
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-kernel/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (3) Kernel
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-init/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (4) Init
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#kernel-collapse" aria-expanded="false">
+                    Kernel
+                </a>
+                <div class="collapse" id="kernel-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-overview/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-installation/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Installation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-modules/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modules
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-location/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Location
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-privilege-levels/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Privilege Levels
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/system-calls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            System calls
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#process-utilisation-collapse" aria-expanded="false">
+                    Process Utilisation
+                </a>
+                <div class="collapse" id="process-utilisation-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/continuous-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/cpu-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CPU Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/cron-jobs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cron Jobs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/io-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            I/O Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/memory-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Memory Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/process-threads/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Threads
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/tracking-processes-lsof/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tracking Processes lsof
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/tracking-processes-top/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tracking Processes top
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#dns-collapse" aria-expanded="false">
+                    DNS
+                </a>
+                <div class="collapse" id="dns-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/what-is-dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            What is DNS?
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-components/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Components
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-process/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-setup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-tools/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tools
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/etc-hosts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            etc-hosts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#networking-fundamentals-collapse" aria-expanded="false">
+                    Networking Fundamentals
+                </a>
+                <div class="collapse" id="networking-fundamentals-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../osi-model/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            OSI Model
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tcp-ip-model/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            TCP/IP Model
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            OSI Model Detailed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network Basics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tcp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            TCP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../udp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            UDP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../application-layer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Application Layer
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dhcp-overview/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DHCP Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-layer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network layer
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-addressing/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network Addressing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../link-layer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Link Layer
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DNS
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#routing-collapse" aria-expanded="false">
+                    Routing
+                </a>
+                <div class="collapse" id="routing-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/what-is-a-router/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            What is a router
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/routing-protocols/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Routing Protocols
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/arp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ARP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/nat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/routing-table/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Routing Table
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/path-of-a-packet/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Path of a packet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/bgp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            BGP Border Gateway Protocol
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#subnetting-collapse" aria-expanded="false">
+                    Subnetting
+                </a>
+                <div class="collapse" id="subnetting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/subnets/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Subnets
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/ipv4/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            IPv4
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/ipv6/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            IPv6
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/nat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/cidr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CIDR
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#network-troubleshooting-collapse" aria-expanded="false">
+                    Network Troubleshooting
+                </a>
+                <div class="collapse" id="network-troubleshooting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/ping/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ping
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/netstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/traceroute/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Traceroute
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/icmp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ICMP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/packet-analysis/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Packet Analysis
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#network-sharing-collapse" aria-expanded="false">
+                    Network Sharing
+                </a>
+                <div class="collapse" id="network-sharing-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/network-file-sharing/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network File Sharing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/nfs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network File Share (NFS)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/rsync/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rsync
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/samba/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Samba
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/simple-http-server/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Simple HTTP Server
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#advanced-debugging-&-troubleshooting-collapse" aria-expanded="false">
+                    Advanced Debugging & Troubleshooting
+                </a>
+                <div class="collapse" id="advanced-debugging-&-troubleshooting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/ssh-not-working/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SSH not working
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/log-not-working/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Log not working
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/dns-deep-dive/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DNS deep dive
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/www/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Famous WWW question
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../CONTRIBUTING/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Contribute
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../CODE_OF_CONDUCT/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Code of Conduct
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../tcp-ip-model/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../network-basics/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="osi">OSI</h1>
+<h2 id="layer-1-physical">Layer 1 - Physical</h2>
+<ul>
+<li>Layer 1 specifications define the transmission and reception of raw BIT STREAMS between a device and a shared physical medium.</li>
+<li>Physical medium can be copper (electrical signals), fibre (light), wifi (radio frequencies or waves)</li>
+<li>Like a physical hub used to connect multiple devices together</li>
+<li>No device addressing, all data is processed by all devices. It's liek shouting in a room without saying any names and everyone hears it. This is a limitation and it's solved by layer 2.</li>
+<li>No media access control</li>
+</ul>
+<h2 id="layer-2-data-link">Layer 2 - Data Link</h2>
+<ul>
+<li>Runs over layer 1 and it requires a functional layer 1 to operate</li>
+<li>Higher layers build on lower layers</li>
+<li>Frames are a format used in layer 2 to send information over a layer 2 network</li>
+<li>Layer 2 also introduces a new unique hardware address aka a MAC address. This address is uniquely assigned to a specific hardware.</li>
+<li>MAC address is formed of 2 parts:<ul>
+<li>OUI (Organizationally Unique Identifier) - first 3 bytes of the MAC address (assigned to companies who manufacture network devices)</li>
+<li>NIC (Network Interface Controller) - last 3 bytes of the MAC address</li>
+</ul>
+</li>
+<li>Layer 2 uses layer 1: This means that a layer 2 or ethernet frame can be transmitted onto the shared physical medium by layer 1. These are converted to voltages, RF or light</li>
+<li>Layer 2 provides frames &amp; Layer 1 handles the physical transmission and reception onto and from the physical medium</li>
+<li>
+<p>So when layer 1 is transmitting a frame onto the physical medium, layer 1 doesn't understand the frame. Layer 1 simply transmits raw data onto the physical medium. </p>
+</li>
+<li>
+<p>Layer 2 has different parts:</p>
+</li>
+<li>Preamble bits &amp; start frame delimiter (the function of this is to allow devices to know that it's the start of a frame)</li>
+<li>Next is the destination and source MAC address. All devices on a layer 2 network have a unique MAC address</li>
+<li>And a frame can be sent to a specific device by putting its MAC address destination. Or you can put all Fs if you want to send the frame to every device on the local network. This is called a broadcast.</li>
+<li>Next is Ethertype which is a layer 3 protocol. Layer 3 uses layer 2 frames for device to device communication on a local network. So when recieving a frame at the other side, you need to know which layer 3 protocol originally put data into that frame. A common example is IP or Internet Protocol. And this is what the ethertype field is for. It tells the receiving device which layer 3 protocol put data into the frame.</li>
+<li>These 3 fields (Dest MAC address, Source MAC address, Ethertype) are called the MAC header of the frame.</li>
+<li>After the header, it's the payload. It contains the data that the frame is sending. The data is generally provided by the layer 3 protocol. This process is called encapsulation. You have something which layer 3 generates, often this is an IP packet and it's put inside an ethernet frame. It's encapsulated in that frame. The frame delivers that data to a different layer 2 destination. </li>
+<li>At the end of the frame is the frame check sequence which is used to identify any errors in the frame. </li>
+<li>Using a HUB (let's say we have 4 devices connected to a HUB) - a hub is a layer 1 device. The data can have collisions. What you need is a switch. </li>
+<li>A switch is a layer 2 device. Works the same way physically as a HUB but it understands layer 2.</li>
+<li>It maintains a MAC address table. Switches over tie learn what's connected to each port. When a switch sees frames, it can interpret frames, it can intercept them and see the source and destination MAC addresses. So over time, with this network, the MAC address table will be populated with each of the devices. So the switch will store the MAC addresses it sees on a port and the port itself. </li>
+<li>Switches are intelligent. They don't just repeat the physical level. They interpret the frames and they can make decisions based on the source and destination MAC address table.</li>
+<li>So switches store and forward frames. It doesn't repeat like a dumb layer 1 device. It means it wont forward collisions. In fact, each port on the switch is a separate collision domain. So if there's a collision on one port, it won't affect the other ports. The switch will not forward that corrupted data to the other ports.</li>
+<li>Layer 2 is the foundation for all networks which we use day to day. It's how our wired networks work. It's how our wifi networks work. It's how the internt works which is a huge collection of interconnected layer 2 networks.</li>
+<li>The name itself stands for an inter-network of networks.</li>
+</ul>
+<h3 id="summary-of-when-adding-layer-2">Summary of when adding layer 2</h3>
+<ul>
+<li>Identifiable devices using MAC addresses. Allows for device to device comms</li>
+<li>Media access control (sharing) - devices can share media in a nice way - avoiding collisions and cross talk</li>
+<li>Collision detection (when using switches)</li>
+<li>Unicase 1:1, Broadcast 1:All, Multicast 1:Many</li>
+<li>We have switches - basically like hubs but with super powers (layer 2) which are more intelligent and can make better decisions compared to layer 1 - ability to scale and avoid collisions</li>
+</ul>
+<h2 id="layer-3-network">Layer 3 - Network</h2>
+<ul>
+<li>Let's say you have LAN 1 and LAN 2 which are isolated networks. Devices on each local network can communicate with each other but not outside of that layer 2 network</li>
+<li>Ethernet is a layer 2 protocol. Generally used for local networks. Long distance point to point connections are not possible with ethernet and will use more suitable protocols like PPP (Point to Point Protocol), MPLS (Multi Protocol Label Switching), Frame Relay, ATM (Asynchronous Transfer Mode)</li>
+<li>Layer 2 is the layer of the OSI stack which moves frames. Moving frames from a local source to a local destination.</li>
+<li>So to move data between different local networks, which is known as inter-networking, this is where the internet comes from, we need layer 3</li>
+<li>Layer 3 adds the internet protcol or IP. You get IP addresses which across networking addresses which you can assign to devices and these can be used to communicate between different local networks using routing.</li>
+<li>IP packets are moved source to destination across the internet through many intermediate networks. Devices called routers which are layer 3 devices are used to move IP packets across different networks.</li>
+<li>They encapsulate IP packets into layer 2 ethernet frames. So they take the IP packet and put it into a layer 2 frame. </li>
+<li>Encapsulaton here means that an IP packet is put inside an ethernet frame for that part of the journey.</li>
+</ul>
+<h3 id="ip-packets">IP &amp; Packets</h3>
+<ul>
+<li>Packets in many ways are similar to frames. They contain data to be moved and they have a source and dest address. With frames, both the source and dest address are moved across a LAN. With IP packets, the source and dest address are moved across the internet and could be on opposite sides of the planet.</li>
+</ul>
+<h3 id="packet-structure-of-ipv4-vs-ipv6">Packet structure of IPv4 vs IPv6</h3>
+<h4 id="ipv4">IPv4</h4>
+<ul>
+<li>Every packet has a source and destination IP address</li>
+<li>Protocol field (which is layer 4) like ICMP, TCP, UDP</li>
+<li>If you're storing TCP data inside a packet, this value will be 6</li>
+<li>If you're storing UDP data inside a packet, this value will be 17</li>
+<li>If you're storing ICMP data inside a packet, this value will be 1</li>
+<li>Bulk of the field within a packet is taken up by the data. </li>
+<li>A field called TTL</li>
+<li>And other stuff too..</li>
+</ul>
+<h4 id="ipv6">IPv6</h4>
+<ul>
+<li>Source &amp; IP (Bigger &amp; therefore, larger addresses)</li>
+<li>Data</li>
+<li>Hop limit (like TTL)</li>
+</ul>
+<h3 id="ip-addressing-v4">IP addressing (v4)</h3>
+<ul>
+<li>Example: 133.33.3.7</li>
+<li>133.33 is the 'network' part</li>
+<li>3.7 is the 'host' part which represents hosts on that network</li>
+<li>In this case, 3.7 is laptop on the network 133.33</li>
+<li>Note: If the network part of the IP address match between 2 different IP addresses, they are on the same IP network. If they don't match, they are on different IP networks.</li>
+<li>Each part is 8 bits. So 4 parts = 32 bits. This is why IPv4 is 32 bits. Each 8 bit part is called an octet.</li>
+<li>So for example: 133.33.3.7 and 133.33.33.37</li>
+<li>They are on the same network because the first 2 octets match</li>
+<li>They are different hosts because the last 2 octets are different</li>
+<li>Now IP addresses are either statically assigned by huamns which is known as static IP addressing or they are assigned dynamically/automatically by a service called DHCP (Dynamic Host Configuration Protocol). So the servers on your network running DHCP server software will automatically assign IP addresses to devices on your network. This is known as dynamic IP addressing.</li>
+</ul>
+<h4 id="subnet-masks">Subnet Masks</h4>
+<ul>
+<li>A subnet mask is configured on a host device in addition to an IP address e.g. 255.255.0.0 &amp; this is the same as a /16 prefix.</li>
+<li>Subnet masks are used to identify the network &amp; host part of an IP address.</li>
+</ul>
+<h3 id="route-tables-routes">Route Tables &amp; Routes</h3>
+<ul>
+<li>Example of packet moving between routers</li>
+<li>Home &gt; ISP &gt;  AWS/Upstream ISP/Netflix (Remote networks)</li>
+<li>Create a packet on our local device which has our IP and the source IP address</li>
+<li>Default route 0.0.0.0/0 sends all packets to ISP</li>
+<li>Your packet that was generated is now in the router that has multiple network interface cards connecting to all of the remote networks (AWS/Netflix/Upstream ISP)</li>
+<li>The ISP uses route tables to forward packets/data to remote networks. Every router will have at least 1 route table</li>
+<li>A route table is a collection of routes: Destination to Next hop/target</li>
+<li>Packets are routed, hop by hop across the internet. From source to destination. Router compares packet destination IP and route table for matching destinations. The more specific prefixes are preferred (0 lowest, 32 higher). Packet is forwarded to next hop/target. This process is repeated until the packet reaches the destination.</li>
+<li>Routers can be statically populate or there are protocols such as BGP (border gateway protocol) which allow routers to communicate with each other to exchange which networks they know about and this is how the core of the internet functions</li>
+<li>Important note: when our ISP router is forwarding the packet through to the AWS router, it's forwarding at layer 2</li>
+<li>It wraps the packet in a frame. The packet doesn't change. The frame though, it has the AWS router's MAC address as its destination. But how do we determine the MAC address of the AWS router here?<ul>
+<li>We use something called the ARP (Address Resolution Protocol) Continued below!</li>
+</ul>
+</li>
+</ul>
+<h3 id="arp-address-resolution-protocol">ARP (Address Resolution Protocol)</h3>
+<ul>
+<li>The ARP is used when you have a layer 3 packet and you want to encapsulate it inside a frame and send that frame to a MAC address. We don't initially know the MAC address and we need a protocol which can find the MAC address for a given IP address</li>
+<li>For example if you communicate with AWS, AWS will be the destination of the IP packets but we will forward via our home router which is the default gateway and so we will need the MAC address of that default gateway to send the frame to containing the packet. This is where ARP comes in</li>
+<li>ARP will give you the MAC address for a given IP address</li>
+</ul>
+<p>Example of ARP:</p>
+<ul>
+<li>2 laptops: Laptop A (133.33.3.7) wants to send data to Laptop B (133.33.3.10). THey are both on the same network since the IPs have same subnet masks</li>
+<li>Laptop A takes the data and passes it to layer 3 which creates packet. The packet has its IP address as the source and laptop B as the destination IP</li>
+<li>Now we need a way of being able to create a frame to put that packet in for a transmission. We need the MAC address of laptop B</li>
+<li>This is what ARP does for us. It’s a process which runs between layer 2 and layer 3. Because both IPs have same subnet mask and it knows they are on the same local network, this is a direct connection. Routers aren’t required here. We don’t use routers for this type of comms</li>
+<li>ARP broadcasts on layer 2. It sends an ARP frame to all Fs as a MAC address and it asks who has the IP address 133.33.3.10. Laptop B is also running ARP. The ARP software sees this broadcast and it responds by saying im that IP address and here is my MAC address</li>
+<li>Now Laptop A has the destination MAC address of laptop B, it can use it to build a frame, encapsulate the packet in this frame and once frame is ready, it can be given to layer 1 and sent across the physical network. Layer 1 receives the physical raw bit stream and hands it off to layer 2 of the laptop. Layer 2 software of the laptop B reviews the dest MAC address and knows it meant for it.</li>
+<li>So it strips off the frame and sends the packet to its layer 3 software. Layer 3 sees the packet and sees it is the intended destination and it de-encapsulates the data and hands it to the game.</li>
+</ul>
+<h2 id="layer-3-ip-routing">Layer 3 - IP routing</h2>
+<ul>
+<li>Example of a packet moving from multiple routers</li>
+<li>ARP is used to obtain a MAC address of another target. If a packet is going from another network, it uses a router. If it’s leaving a router to another one. ARP is used to find the MAC address of the default gateway of the router. The router picks it up in a frame and strips it but realises it’s not meant for it. It encapsulates it ina frame and knows the next hop for another router. The next router picks it up and strips it but finds the destination on the same network. So it uses ARP to find the MAC address of the destination. The destination picks it up and takes the data.</li>
+</ul>
+<h2 id="layer-3-summary">Layer 3 Summary</h2>
+<ul>
+<li>IP addresses (IPv4/6) - cross network addressing</li>
+<li>ARP - find the MAC address for a certain IP</li>
+<li>Routes: where to forward packets</li>
+<li>Route tables: containing multiple routes</li>
+<li>Router: moves packets from source to destination (encapsulating in L2 frames on the way)</li>
+<li>This allows for device to device comms over the internet</li>
+<li>IP doesn’t provide method for channels of comms (SRC IP to DST IP only)</li>
+<li>Layer 3 provides packets and packets only have source and dest IP. So if we have 2 devices, you can only have one stream of comms. So you can’t have different apps on the devices communicating at the same time. And this limitation is solved by layer 4.</li>
+<li>In theory, packets can be delivered out of order. No guarantee it will take the same route</li>
+</ul>
+<h1 id="layer-4-transport-layer">Layer 4 - Transport Layer</h1>
+<h2 id="layer-3-problems">Layer 3 problems</h2>
+<ul>
+<li>Each IP packet on layer 3 is routed independently and isolated from each packet<ul>
+<li>you might think that all IP packets arrive in proper order and good conditions but no:<ul>
+<li>you’re going to have intermittent network conditions</li>
+<li>packets can arrive in diff conditions and they can be out of order</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Layer 3, specifically IP, providers no method to ensure the ordering of packet arrival and packets can go missing. This can be due to network outages or network conditions which cause temporary routing loops.</li>
+<li>This is the negative of layer and it is solved by Layer 4. With IP only, there is no reliable method of ensuring packet delivery</li>
+<li>Another issue with layer 3 is that if you think back to the structure of IP packets, they have a source and destination field and nothing beyond that to distinguish channels of communication like ports which are solved in layer 4. Packets have only source IP and destination IP, theres is no method of splitting by APP or CHANNEL like ports.<ul>
+<li>You can’t have 2 apps running on the source IP communicating with 2 apps on the destination IP as there is no method of distinguishing between the apps.</li>
+<li>You could have an SSH connection open as well as a HTTP request running in the background.</li>
+</ul>
+</li>
+<li>IP also has no flow control: if the source transmits faster than the destinaition can receive, it can sautrate the destination causing packet loss.</li>
+</ul>
+<h2 id="layer-4-how-does-this-solve-the-problem">Layer 4 - how does this solve the problem?</h2>
+<ul>
+<li>In layer 3, we had IP address and routing. Routed packets across a network of networks</li>
+<li>Layer 4 builds on top of this: It adds 2 new protocols which are TCP &amp; UDP<ul>
+<li>Both of these run on top of IP. If you have heard TCP/IP - this means TCP running on top of IP. At a high level, you would pick TCP when you want reliability and error correction and ordering of data (slower and reliable)<ul>
+<li>It’s used for most of the important application layer protocols such as HTTP, HTTPS, SSH etc</li>
+<li>TCP is a connection-oriented protocol which means you set up a connection between 2 devices and once set up, it creates a bidirectional channel of communication</li>
+</ul>
+</li>
+<li>UDP, on the other hand, is faster, because it doesn’t have the TCP overhead required for the reliable delivery of data. It’s less reliable than TCP<ul>
+<li>There’s a great joke about UDP: I’d tell you about it…. but you might not get it 😁</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Both TCP and UDP run on top of IP. They use IP as transit. TCP just offers a more reliable connection oriented architecture whereas UDP is all about performance</li>
+<li>TCP introduces something called TCP segments. Segments are encapsulated within IP packets. TCP segments are placed inside IP packets. And the packets carry the segments.<ul>
+<li>Segments dont have SRC and DST IP - the packets provide device addressing</li>
+<li>Inside a TCP segment, you now have SRC port and DST port in addition to SRC IP and DST IP. And this gives the combined TCP/IP protocol. Giving the ability to have multiple streams of conversation or apps running in 1 IP or machine at the same time between 2 devices</li>
+<li>Inside segments you also have sequence number and is a way of uniquely identifying a particular segment and for ordering purposes</li>
+<li>You also have acknowledgements. It is a way that one side can indicate it’s received. Every segment transmitted needs to be acknowledged.</li>
+<li>You also have windows: this defines the number of bytes that indicate that you’re willing to receive between acknowledgements. Once reached, the sender will pause until you acknowledge that amount of data and this is how flow control is implemented. It allows the receive to control the rate at which the sender sends the data.<ul>
+<li>If you use a smaller window, it provides additional levels of control over how quickly you’re sent data</li>
+<li>Larger windows are more efficient because the header of a TCP segment takes up an amount of space, and the smaller the window, the more headers are involved.</li>
+</ul>
+</li>
+<li>Checksums are used for error checking: it means that the TCP layer is able to detect errors and can arrange for retransmission of the data as required</li>
+<li>There are more fields inside a TCP segment but the above mentioned are the most important</li>
+<li>All these field together are known as the TCP header. The capacity of the TCP segment remaining is used for data.</li>
+</ul>
+</li>
+</ul>
+<h3 id="tcp-architecture">TCP Architecture</h3>
+<ul>
+<li>TCP, like IP, is used to allow communications between 2 devices.</li>
+<li>TCP is a connection based protocol. A connection is established between two devices using random port on a client and a known port on the server. Once established the connection is bi-directional. The “connection” is a reliable connection, provided via the segments encapsulated in IP packets.</li>
+<li>You have L3 packets which have no error checking, no ordering, no association.</li>
+<li>Now you have a game laptop and a game server. The game server (the client) uses tcp port 23060 and communicates with the server on tcp port 443<ul>
+<li>This is a communication channel. TCP connections are bidirectional and this means the server will send data back to the client. To do this, it just flips the ports: so the SRC port is TCP 443 on the server and the destination port on the client is 23060.</li>
+<li>And it’s why you need two sets of rules on a NACL with in AWS. One set for the initiating part (laptop to server) and one set for the response part (server to laptop)</li>
+<li>This can be conceptually viewed as a channel. These channels aren’t real, they are created using segments.</li>
+<li>When you hear the term ephemeral ports or high ports, this means the port range that the client picks as the source port. Often you need to add firewall rules allowing all of this range back to the client.</li>
+</ul>
+</li>
+</ul>
+<h3 id="tcp-3-way-handshake">TCP 3 way handshake</h3>
+<ul>
+<li>In the TCP segment structure, there’s something called “Flags n things”</li>
+<li>
+<p>Flags which can be used to set to alter the connection. e.g. FIN can be used to close, ACK for acknowledgements, syn to sync between sequence numbers</p>
+</li>
+<li>
+<p>So you have a client and a server:</p>
+<ul>
+<li>Before any data can be transferred through TCP, a connection needs to be established and this uses a 3 way handshake</li>
+<li>So in step 1, the client needs to send a segment to the server. This segment contains a random sequence number. Send a segment with SYN</li>
+<li>The server responds back with another random sequence number and sends a segment called SYN &amp; ACK.</li>
+<li>The server then sends back a segment with ACK for acknowledge</li>
+<li>Now a connection is established and client and server can both send data</li>
+</ul>
+</li>
+</ul></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../assets/js/mkdocs.js""></script>
+			<script src="../../assets/js/hljs/highlight.pack.js" defer></script>
+			<script src="../../assets/js/extra.js" defer></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

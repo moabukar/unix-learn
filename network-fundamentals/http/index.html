@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>HTTP - Learn Linux & Networking</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="canonical" href="https://moabukar.github.io/unux-learn/network-fundamentals/http/">
+        <meta name="author" content="Mo Abukar">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Learn Linux & Networking</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#command-line-collapse" aria-expanded="false">
+                    Command-line
+                </a>
+                <div class="collapse" id="command-line-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/alias-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Alias
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/cat-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/cd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Change Directory
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/cp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Copy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/exit-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Exit
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/find-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Find
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/help-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Help
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/history-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            History
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/less-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Less
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/ls-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            List
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/man-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Man
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/mkdir-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mkdir
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/mv-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Move
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/pwd/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pwd
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/rm/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Remove
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/the-shell/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Shell
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/touch-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Touch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../command-line/whatis-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            What is
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#filesystem-collapse" aria-expanded="false">
+                    Filesystem
+                </a>
+                <div class="collapse" id="filesystem-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/filesystem-hierarchy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filesystem Hierarchy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/filesystem-types/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filesystem types
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/creating-filesystems/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Creating filesytems
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/filesystem-repair/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Filesystem repair
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/inodes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Inodes
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/symlinks/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Symbolic Links
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/swap-space/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Swap Space
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/mounting/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mounting
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/disk-usage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Disk Usage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/disk-partitioning/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Disk partitioning
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../filesystem/anatomy-of-a-disk/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Anatomy of a disk
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#processes-collapse" aria-expanded="false">
+                    Processes
+                </a>
+                <div class="collapse" id="processes-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-details/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Details
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-creation/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Creation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-signals/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Signals
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-states/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process States
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-termination/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Termination
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/process-niceness/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Niceness
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/ps-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ps command
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/proc-filesystem/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Proc Filesystem
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/killing-processes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Killing processes
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/job-control/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Job Control
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../processes/controlling-terminal/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Controlling Terminal
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#access-collapse" aria-expanded="false">
+                    Access
+                </a>
+                <div class="collapse" id="access-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/file-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            File Permissions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/modifying-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modifying Permissions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/ownership-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ownership Permissions
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../access/process-permissions/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Permissions
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#user-management-collapse" aria-expanded="false">
+                    User Management
+                </a>
+                <div class="collapse" id="user-management-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../user-management/users-and-groups/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Users & Groups
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../user-management/user-management-tools/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            User Management Tools
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../user-management/root-user/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Root User
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#devices-collapse" aria-expanded="false">
+                    Devices
+                </a>
+                <div class="collapse" id="devices-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/dev-directory/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Dev directory
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/device-types/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Device Types
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/device-names/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Device Names
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/listing-devices/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Listing Devices
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/dd-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DD command
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/sysfs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sysfs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../devices/udev/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Udev
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#text-maniplutaion-collapse" aria-expanded="false">
+                    Text Maniplutaion
+                </a>
+                <div class="collapse" id="text-maniplutaion-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/cut-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cut
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/env-environment/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Env
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/expand-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Expand
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/grep-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Grep
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/head-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Head
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/pipe-tee-redirect/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pipe/Tee
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/sort-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Sort
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/tail-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../text-manipulation/tr-translate-command/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Translate (TR)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#linux-boot-process-collapse" aria-expanded="false">
+                    Linux Boot Process
+                </a>
+                <div class="collapse" id="linux-boot-process-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-overview/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-bios/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (1) BIOS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-bootloader/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (2) Bootloader
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-kernel/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (3) Kernel
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../booting/boot-process-init/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            (4) Init
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#kernel-collapse" aria-expanded="false">
+                    Kernel
+                </a>
+                <div class="collapse" id="kernel-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-overview/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-installation/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Installation
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-modules/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Modules
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-location/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Location
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/kernel-privilege-levels/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Privilege Levels
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../kernel/system-calls/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            System calls
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#process-utilisation-collapse" aria-expanded="false">
+                    Process Utilisation
+                </a>
+                <div class="collapse" id="process-utilisation-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/continuous-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/cpu-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CPU Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/cron-jobs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cron Jobs
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/io-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            I/O Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/memory-monitoring/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Memory Monitoring
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/process-threads/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process Threads
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/tracking-processes-lsof/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tracking Processes lsof
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../process-utilization/tracking-processes-top/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tracking Processes top
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#dns-collapse" aria-expanded="false">
+                    DNS
+                </a>
+                <div class="collapse" id="dns-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/what-is-dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            What is DNS?
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-components/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Components
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-process/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Process
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-setup/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Setup
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/dns-tools/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Tools
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../dns/etc-hosts/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            etc-hosts
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#networking-fundamentals-collapse" aria-expanded="false">
+                    Networking Fundamentals
+                </a>
+                <div class="collapse" id="networking-fundamentals-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../osi-model/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            OSI Model
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tcp-ip-model/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            TCP/IP Model
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../osi-detailed/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            OSI Model Detailed
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-basics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network Basics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../tcp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            TCP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../udp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            UDP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../application-layer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Application Layer
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dhcp-overview/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DHCP Overview
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-layer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network layer
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../network-addressing/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network Addressing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../link-layer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Link Layer
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DNS
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#routing-collapse" aria-expanded="false">
+                    Routing
+                </a>
+                <div class="collapse" id="routing-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/what-is-a-router/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            What is a router
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/routing-protocols/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Routing Protocols
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/arp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ARP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/nat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/routing-table/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Routing Table
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/path-of-a-packet/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Path of a packet
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../routing/bgp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            BGP Border Gateway Protocol
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#subnetting-collapse" aria-expanded="false">
+                    Subnetting
+                </a>
+                <div class="collapse" id="subnetting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/subnets/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Subnets
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/ipv4/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            IPv4
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/ipv6/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            IPv6
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/nat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../subnetting/cidr/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CIDR
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#network-troubleshooting-collapse" aria-expanded="false">
+                    Network Troubleshooting
+                </a>
+                <div class="collapse" id="network-troubleshooting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/ping/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Ping
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/netstat/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Netstat
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/traceroute/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Traceroute
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/icmp/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            ICMP
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-troubleshooting/packet-analysis/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Packet Analysis
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#network-sharing-collapse" aria-expanded="false">
+                    Network Sharing
+                </a>
+                <div class="collapse" id="network-sharing-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/network-file-sharing/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network File Sharing
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/nfs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Network File Share (NFS)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/rsync/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rsync
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/samba/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Samba
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../network-sharing/simple-http-server/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Simple HTTP Server
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#advanced-debugging-&-troubleshooting-collapse" aria-expanded="false">
+                    Advanced Debugging & Troubleshooting
+                </a>
+                <div class="collapse" id="advanced-debugging-&-troubleshooting-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/ssh-not-working/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SSH not working
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/log-not-working/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Log not working
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/dns-deep-dive/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            DNS deep dive
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../advanced-debugging/www/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Famous WWW question
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../CONTRIBUTING/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Contribute
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../CODE_OF_CONDUCT/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Code of Conduct
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="http">HTTP</h1>
+<p>Till this point we have only got the IP address of google.com. The HTML page of google.com is served by HTTP protocol which the browser renders. Browser sends a HTTP request to the IP of the server determined above.</p>
+<p>Request has a verb GET, PUT, POST followed by a path and query parameters and lines of key value pair which gives information about the client and capabilities of the client like contents it can accept and a body (usually in POST or PUT)</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Eg run the following in your machine and have a look at the headers </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>curl<span class="w"> </span>google.com<span class="w"> </span>-v
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>❯<span class="w"> </span>curl<span class="w"> </span>google.com<span class="w"> </span>-v
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>*<span class="w">   </span>Trying<span class="w"> </span><span class="o">[</span>2a00:1450:4009:815::200e<span class="o">]</span>:80...
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>*<span class="w"> </span>Connected<span class="w"> </span>to<span class="w"> </span>google.com<span class="w"> </span><span class="o">(</span>2a00:1450:4009:815::200e<span class="o">)</span><span class="w"> </span>port<span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="o">(</span><span class="c1">#0)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>&gt;<span class="w"> </span>GET<span class="w"> </span>/<span class="w"> </span>HTTP/1.1
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>&gt;<span class="w"> </span>Host:<span class="w"> </span>google.com
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>&gt;<span class="w"> </span>User-Agent:<span class="w"> </span>curl/8.1.2
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>&gt;<span class="w"> </span>Accept:<span class="w"> </span>*/*
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>&gt;
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>&lt;<span class="w"> </span>HTTP/1.1<span class="w"> </span><span class="m">301</span><span class="w"> </span>Moved<span class="w"> </span>Permanently
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>&lt;<span class="w"> </span>Location:<span class="w"> </span>http://www.google.com/
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>&lt;<span class="w"> </span>Content-Type:<span class="w"> </span>text/html<span class="p">;</span><span class="w"> </span><span class="nv">charset</span><span class="o">=</span>UTF-8
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>&lt;<span class="w"> </span>Content-Security-Policy-Report-Only:<span class="w"> </span>object-src<span class="w"> </span><span class="s1">&#39;none&#39;</span><span class="p">;</span>base-uri<span class="w"> </span><span class="s1">&#39;self&#39;</span><span class="p">;</span>script-src<span class="w"> </span><span class="s1">&#39;nonce-FTv-58qMVTd49N-ysFjcQA&#39;</span><span class="w"> </span><span class="s1">&#39;strict-dynamic&#39;</span><span class="w"> </span><span class="s1">&#39;report-sample&#39;</span><span class="w"> </span><span class="s1">&#39;unsafe-eval&#39;</span><span class="w"> </span><span class="s1">&#39;unsafe-inline&#39;</span><span class="w"> </span>https:<span class="w"> </span>http:<span class="p">;</span>report-uri<span class="w"> </span>https://csp.withgoogle.com/csp/gws/other-hp
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>&lt;<span class="w"> </span>Date:<span class="w"> </span>Mon,<span class="w"> </span><span class="m">04</span><span class="w"> </span>Dec<span class="w"> </span><span class="m">2023</span><span class="w"> </span><span class="m">19</span>:36:43<span class="w"> </span>GMT
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>&lt;<span class="w"> </span>Expires:<span class="w"> </span>Wed,<span class="w"> </span><span class="m">03</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">2024</span><span class="w"> </span><span class="m">19</span>:36:43<span class="w"> </span>GMT
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>&lt;<span class="w"> </span>Cache-Control:<span class="w"> </span>public,<span class="w"> </span>max-age<span class="o">=</span><span class="m">2592000</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>&lt;<span class="w"> </span>Server:<span class="w"> </span>gws
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>&lt;<span class="w"> </span>Content-Length:<span class="w"> </span><span class="m">219</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>&lt;<span class="w"> </span>X-XSS-Protection:<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>&lt;<span class="w"> </span>X-Frame-Options:<span class="w"> </span>SAMEORIGIN
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>&lt;
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>&lt;HTML&gt;&lt;HEAD&gt;&lt;meta<span class="w"> </span>http-equiv<span class="o">=</span><span class="s2">&quot;content-type&quot;</span><span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;text/html;charset=utf-8&quot;</span>&gt;
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>&lt;TITLE&gt;301<span class="w"> </span>Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>&lt;H1&gt;301<span class="w"> </span>Moved&lt;/H1&gt;
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>The<span class="w"> </span>document<span class="w"> </span>has<span class="w"> </span>moved
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>&lt;A<span class="w"> </span><span class="nv">HREF</span><span class="o">=</span><span class="s2">&quot;http://www.google.com/&quot;</span>&gt;here&lt;/A&gt;.
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>&lt;/BODY&gt;&lt;/HTML&gt;
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>*<span class="w"> </span>Connection<span class="w"> </span><span class="c1">#0 to host google.com left intact</span>
+</code></pre></div></p>
+<p>Here, in the first line GET is the verb, / is the path and 1.1 is the HTTP protocol version. Then there are key value pairs which give client capabilities and some details to the server. The server responds back with HTTP version, Status Code &amp; Status Message. Status codes 2xx means success, 3xx denotes redirection, 4xx denotes client side errors and 5xx server side errors.</p>
+<p>We will now jump in to see the difference between HTTP/1.0 and HTTP/1.1. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">#On the terminal type</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>telnet<span class="w">  </span>www.google.com<span class="w"> </span><span class="m">80</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">#Copy and paste the following with an empty new line by pressing enter at last in the telnet STDIN</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>GET<span class="w"> </span>/<span class="w"> </span>HTTP/1.1
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>HOST:google.com
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>USER-AGENT:<span class="w"> </span>curl
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># then press enter</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>----
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>Output:
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>❯<span class="w"> </span>telnet<span class="w">  </span>www.google.com<span class="w"> </span><span class="m">80</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>Trying<span class="w"> </span>2a00:1450:4009:820::2004...
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>Connected<span class="w"> </span>to<span class="w"> </span>www.google.com.
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>Escape<span class="w"> </span>character<span class="w"> </span>is<span class="w"> </span><span class="s1">&#39;^]&#39;</span>.
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>GET<span class="w"> </span>/<span class="w"> </span>HTTP/1.1
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>HOST:google.com
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>USER-AGENT:<span class="w"> </span>curl
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>HTTP/1.1<span class="w"> </span><span class="m">301</span><span class="w"> </span>Moved<span class="w"> </span>Permanently
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>Location:<span class="w"> </span>http://www.google.com/
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>Content-Type:<span class="w"> </span>text/html<span class="p">;</span><span class="w"> </span><span class="nv">charset</span><span class="o">=</span>UTF-8
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>Content-Security-Policy-Report-Only:<span class="w"> </span>object-src<span class="w"> </span><span class="s1">&#39;none&#39;</span><span class="p">;</span>base-uri<span class="w"> </span><span class="s1">&#39;self&#39;</span><span class="p">;</span>script-src<span class="w"> </span><span class="s1">&#39;nonce-T1jINmYahlhXaA-iSQDRMw&#39;</span><span class="w"> </span><span class="s1">&#39;strict-dynamic&#39;</span><span class="w"> </span><span class="s1">&#39;report-sample&#39;</span><span class="w"> </span><span class="s1">&#39;unsafe-eval&#39;</span><span class="w"> </span><span class="s1">&#39;unsafe-inline&#39;</span><span class="w"> </span>https:<span class="w"> </span>http:<span class="p">;</span>report-uri<span class="w"> </span>https://csp.withgoogle.com/csp/gws/other-hp
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>Date:<span class="w"> </span>Mon,<span class="w"> </span><span class="m">04</span><span class="w"> </span>Dec<span class="w"> </span><span class="m">2023</span><span class="w"> </span><span class="m">19</span>:40:14<span class="w"> </span>GMT
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>Expires:<span class="w"> </span>Wed,<span class="w"> </span><span class="m">03</span><span class="w"> </span>Jan<span class="w"> </span><span class="m">2024</span><span class="w"> </span><span class="m">19</span>:40:14<span class="w"> </span>GMT
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>Cache-Control:<span class="w"> </span>public,<span class="w"> </span>max-age<span class="o">=</span><span class="m">2592000</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>Server:<span class="w"> </span>gws
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>Content-Length:<span class="w"> </span><span class="m">219</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>X-XSS-Protection:<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>X-Frame-Options:<span class="w"> </span>SAMEORIGIN
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>&lt;HTML&gt;&lt;HEAD&gt;&lt;meta<span class="w"> </span>http-equiv<span class="o">=</span><span class="s2">&quot;content-type&quot;</span><span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;text/html;charset=utf-8&quot;</span>&gt;
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>&lt;TITLE&gt;301<span class="w"> </span>Moved&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY&gt;
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>&lt;H1&gt;301<span class="w"> </span>Moved&lt;/H1&gt;
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>The<span class="w"> </span>document<span class="w"> </span>has<span class="w"> </span>moved
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>&lt;A<span class="w"> </span><span class="nv">HREF</span><span class="o">=</span><span class="s2">&quot;http://www.google.com/&quot;</span>&gt;here&lt;/A&gt;.
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>&lt;/BODY&gt;&lt;/HTML&gt;
+</code></pre></div>
+<p>This would get server response and waits for next input as the underlying connection to www.google.com can be reused for further queries. While going through TCP, we can understand the benefits of this. But in HTTP/1.0 this connection will be immediately closed after the response meaning new connection has to be opened for each query. HTTP/1.1 can have only one inflight request in an open connection but connection can be reused for multiple requests one after another. One of the benefits of HTTP/2.0 over HTTP/1.1 is we can have multiple inflight requests on the same connection. We are restricting our scope to generic HTTP and not jumping to the intricacies of each protocol version but they should be straight forward to understand post the course.</p>
+<p>HTTP is  called <strong>stateless protocol</strong>. This section we will try to understand what stateless means. Say we logged in to google.com, each request to google.com from the client will have no context of the user and it makes no sense to prompt user to login for each page/resource. This problem of HTTP is solved by <em>COOKIE</em>. A user is created a session when a user logs in. This session identifier is sent to the browser via <em>SET-COOKIE</em> header. The browser stores the COOKIE till the expiry set by the server and sends the cookie for each request from hereon for google.com. More details on cookies are available <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">here</a>. Cookies are a critical piece of information like password and since HTTP is a plain text protocol, any man in the middle can capture either password or cookies and can breach the privacy of the user. Similarly as discussed during DNS a spoofed IP of google.com can cause a phishing attack on users where an user can give google’s password to login on the malicious site. To solve both problems HTTPs came in place and HTTPs has to be mandated.</p>
+<p>HTTPS has to provide server identification and encryption of data between client and server. The server administrator has to generate a private public key pair and certificate request. This certificate request has to be signed by a certificate authority which converts the certificate request to a certificate. The server administrator has to update the certificate and private key to the webserver. The certificate has details about the server (like domain name for which it serves, expiry date), public key of the server. The private key is a secret to the server and losing the private key loses the trust the server provides. When clients connect, the client sends a HELLO. The server sends its certificate to the client. The client checks the validity of the cert by seeing if it is within its expiry time, if it is signed by a trusted authority and the hostname in the cert is the same as the server. This validation makes sure the server is the right server and there is no phishing. Once that is validated, the client negotiates a symmetrical key and cipher with the server by encrypting the negotiation with the public key of the server. Nobody else other than the server who has the private key can understand this data. Once negotiation is complete, that symmetric key and algorithm is used for further encryption which can be decrypted only by client and server from thereon as they only know the symmetric key and algorithm. The switch to symmetric algorithm from asymmetric encryption algorithm is to not strain the resources of client devices as symmetric encryption is generally less resource intensive than asymmetric. </p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">#Try the following on your terminal to see the cert details like Subject Name(domain name), Issuer details, Expiry date</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>curl<span class="w"> </span>https://www.google.com<span class="w"> </span>-v<span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>*<span class="w">   </span>Trying<span class="w"> </span><span class="o">[</span>2a00:1450:4009:820::2004<span class="o">]</span>:443...
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>*<span class="w"> </span>Connected<span class="w"> </span>to<span class="w"> </span>www.google.com<span class="w"> </span><span class="o">(</span>2a00:1450:4009:820::2004<span class="o">)</span><span class="w"> </span>port<span class="w"> </span><span class="m">443</span><span class="w"> </span><span class="o">(</span><span class="c1">#0)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>*<span class="w"> </span>ALPN:<span class="w"> </span>offers<span class="w"> </span>h2,http/1.1
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>OUT<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>Client<span class="w"> </span>hello<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span>:
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>*<span class="w">  </span>CAfile:<span class="w"> </span>/etc/ssl/cert.pem
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>*<span class="w">  </span>CApath:<span class="w"> </span>none
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>IN<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>Server<span class="w"> </span>hello<span class="w"> </span><span class="o">(</span><span class="m">2</span><span class="o">)</span>:
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>IN<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>Unknown<span class="w"> </span><span class="o">(</span><span class="m">8</span><span class="o">)</span>:
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>IN<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>Certificate<span class="w"> </span><span class="o">(</span><span class="m">11</span><span class="o">)</span>:
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>IN<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>CERT<span class="w"> </span>verify<span class="w"> </span><span class="o">(</span><span class="m">15</span><span class="o">)</span>:
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>IN<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>Finished<span class="w"> </span><span class="o">(</span><span class="m">20</span><span class="o">)</span>:
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>*<span class="w"> </span><span class="o">(</span><span class="m">304</span><span class="o">)</span><span class="w"> </span><span class="o">(</span>OUT<span class="o">)</span>,<span class="w"> </span>TLS<span class="w"> </span>handshake,<span class="w"> </span>Finished<span class="w"> </span><span class="o">(</span><span class="m">20</span><span class="o">)</span>:
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>*<span class="w"> </span>SSL<span class="w"> </span>connection<span class="w"> </span>using<span class="w"> </span>TLSv1.3<span class="w"> </span>/<span class="w"> </span>AEAD-CHACHA20-POLY1305-SHA256
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>*<span class="w"> </span>ALPN:<span class="w"> </span>server<span class="w"> </span>accepted<span class="w"> </span>h2
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>*<span class="w"> </span>Server<span class="w"> </span>certificate:
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>*<span class="w">  </span>subject:<span class="w"> </span><span class="nv">CN</span><span class="o">=</span>www.google.com
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>*<span class="w">  </span>start<span class="w"> </span>date:<span class="w"> </span>Oct<span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">11</span>:24:57<span class="w"> </span><span class="m">2023</span><span class="w"> </span>GMT
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>*<span class="w">  </span>expire<span class="w"> </span>date:<span class="w"> </span>Jan<span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">11</span>:24:56<span class="w"> </span><span class="m">2024</span><span class="w"> </span>GMT
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>*<span class="w">  </span>subjectAltName:<span class="w"> </span>host<span class="w"> </span><span class="s2">&quot;www.google.com&quot;</span><span class="w"> </span>matched<span class="w"> </span>cert<span class="s1">&#39;s &quot;www.google.com&quot;</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="s1">*  issuer: C=US; O=Google Trust Services LLC; CN=GTS CA 1C3</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="s1">*  SSL certificate verify ok.</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="s1">* using HTTP/2</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="s1">* h2 [:method: GET]</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="s1">* h2 [:scheme: https]</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="s1">* h2 [:authority: www.google.com]</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="s1">* h2 [:path: /]</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="s1">* h2 [user-agent: curl/8.1.2]</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="s1">* h2 [accept: */*]</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="s1">* Using Stream ID: 1 (easy handle 0x141812e00)</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="s1">&gt; GET / HTTP/2</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="s1">&gt; Host: www.google.com</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="s1">&gt; User-Agent: curl/8.1.2</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="s1">&gt; Accept: */*</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="s1">&gt;</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="s1">&lt; HTTP/2 200</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="s1">&lt; date: Mon, 04 Dec 2023 19:42:48 GMT</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="s1">&lt; expires: -1</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="s1">&lt; cache-control: private, max-age=0</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="s1">&lt; content-type: text/html; charset=ISO-8859-1</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="s1">&lt; content-security-policy-report-only: object-src &#39;</span>none<span class="s1">&#39;;base-uri &#39;</span>self<span class="s1">&#39;;script-src &#39;</span>nonce-_C5r_wmr6-1XyYckXKee2A<span class="s1">&#39; &#39;</span>strict-dynamic<span class="s1">&#39; &#39;</span>report-sample<span class="s1">&#39; &#39;</span>unsafe-eval<span class="s1">&#39; &#39;</span>unsafe-inline<span class="err">&#39;</span><span class="w"> </span>https:<span class="w"> </span>http:<span class="p">;</span>report-uri<span class="w"> </span>https://csp.withgoogle.com/csp/gws/other-hp
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a>&lt;<span class="w"> </span>p3p:<span class="w"> </span><span class="nv">CP</span><span class="o">=</span><span class="s2">&quot;This is not a P3P policy! See g.co/p3phelp for more info.&quot;</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a>&lt;<span class="w"> </span>server:<span class="w"> </span>gws
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a>&lt;<span class="w"> </span>x-xss-protection:<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a>&lt;<span class="w"> </span>x-frame-options:<span class="w"> </span>SAMEORIGIN
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a>&lt;<span class="w"> </span>set-cookie:<span class="w"> </span><span class="nv">SOCS</span><span class="o">=</span>CAAaBgiArbSrBg<span class="p">;</span><span class="w"> </span><span class="nv">expires</span><span class="o">=</span>Thu,<span class="w"> </span><span class="m">02</span>-Jan-2025<span class="w"> </span><span class="m">19</span>:42:48<span class="w"> </span>GMT<span class="p">;</span><span class="w"> </span><span class="nv">path</span><span class="o">=</span>/<span class="p">;</span><span class="w"> </span><span class="nv">domain</span><span class="o">=</span>.google.com<span class="p">;</span><span class="w"> </span>Secure<span class="p">;</span><span class="w"> </span><span class="nv">SameSite</span><span class="o">=</span>lax
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>&lt;<span class="w"> </span>set-cookie:<span class="w"> </span><span class="nv">AEC</span><span class="o">=</span>Ackid1RiFR-Q29PANCR-68dY5VmhSq-zMoXpMnL-oZtSAvcXXhfTlSCd2lk<span class="p">;</span><span class="w"> </span><span class="nv">expires</span><span class="o">=</span>Sat,<span class="w"> </span><span class="m">01</span>-Jun-2024<span class="w"> </span><span class="m">19</span>:42:48<span class="w"> </span>GMT<span class="p">;</span><span class="w"> </span><span class="nv">path</span><span class="o">=</span>/<span class="p">;</span><span class="w"> </span><span class="nv">domain</span><span class="o">=</span>.google.com<span class="p">;</span><span class="w"> </span>Secure<span class="p">;</span><span class="w"> </span>HttpOnly<span class="p">;</span><span class="w"> </span><span class="nv">SameSite</span><span class="o">=</span>lax
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a>&lt;<span class="w"> </span>set-cookie:<span class="w"> </span>__Secure-ENID<span class="o">=</span><span class="m">16</span>.SE<span class="o">=</span>AMen4HvAgOZLjmCBwEqVt59PxlCr5qh_7lodjFuSo67JBEjjIff9YK9rvet25lsW-E_Vh-ZJurnQQYpzrkBQHCM31JAiZNEp6cILxzPo1u8WmODpg2THMMMjFxBzhLTdih7zgUQbGlg_xZxIwK6S0ypWsQxFnTGsVShkcCoRD58<span class="p">;</span><span class="w"> </span><span class="nv">expires</span><span class="o">=</span>Fri,<span class="w"> </span><span class="m">03</span>-Jan-2025<span class="w"> </span><span class="m">12</span>:01:06<span class="w"> </span>GMT<span class="p">;</span><span class="w"> </span><span class="nv">path</span><span class="o">=</span>/<span class="p">;</span><span class="w"> </span><span class="nv">domain</span><span class="o">=</span>.google.com<span class="p">;</span><span class="w"> </span>Secure<span class="p">;</span><span class="w"> </span>HttpOnly<span class="p">;</span><span class="w"> </span><span class="nv">SameSite</span><span class="o">=</span>lax
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>&lt;<span class="w"> </span>set-cookie:<span class="w"> </span><span class="nv">CONSENT</span><span class="o">=</span>PENDING+497<span class="p">;</span><span class="w"> </span><span class="nv">expires</span><span class="o">=</span>Wed,<span class="w"> </span><span class="m">03</span>-Dec-2025<span class="w"> </span><span class="m">19</span>:42:48<span class="w"> </span>GMT<span class="p">;</span><span class="w"> </span><span class="nv">path</span><span class="o">=</span>/<span class="p">;</span><span class="w"> </span><span class="nv">domain</span><span class="o">=</span>.google.com<span class="p">;</span><span class="w"> </span>Secure
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a>&lt;<span class="w"> </span>alt-svc:<span class="w"> </span><span class="nv">h3</span><span class="o">=</span><span class="s2">&quot;:443&quot;</span><span class="p">;</span><span class="w"> </span><span class="nv">ma</span><span class="o">=</span><span class="m">2592000</span>,h3-29<span class="o">=</span><span class="s2">&quot;:443&quot;</span><span class="p">;</span><span class="w"> </span><span class="nv">ma</span><span class="o">=</span><span class="m">2592000</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>&lt;<span class="w"> </span>accept-ranges:<span class="w"> </span>none
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a>&lt;<span class="w"> </span>vary:<span class="w"> </span>Accept-Encoding
+</code></pre></div></p>
+<p>Here my system has a list of certificate authorities it trusts in this file  /etc/ssl/cert.pem. Curl validates the certificate is for www.google.com by seeing the CN section of the subject part of the certificate. It also makes sure the certificate is not expired by seeing the expire date. It also validates the signature on the certificate by using the public key of issuer Digicert in  /etc/ssl/cert.pem. Once this is done, using the public key of www.google.com it negotiates cipher TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 with a symmetric key. Subsequent data transfer including first HTTP request uses the same cipher and symmetric key.</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../assets/js/mkdocs.js""></script>
+			<script src="../../assets/js/hljs/highlight.pack.js" defer></script>
+			<script src="../../assets/js/extra.js" defer></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
